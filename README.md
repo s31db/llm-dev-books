@@ -22,3 +22,5 @@ Le contenu de ce dépôt est publié sous licence [CC BY-NC-NC-ND 4.0](https://c
 ---
 
 > Pour toute contribution, suggestion ou retour, n’hésitez pas à ouvrir une *issue* ou une *pull request*.
+> 
+> Dans le cadre des contributions la copie et les modifications préparées pour soumissions sont autorisées et ne seront pas considérées comme des œuvres dérivées.
