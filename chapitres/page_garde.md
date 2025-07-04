@@ -1,6 +1,16 @@
+
+
+<div style="text-align: right; margin-right: 20px;margin-top: 40px;">
+    <img src="../images/llm.png" alt="Logo LLM-Assisted Software Design, a Pattern Language of New Development Practices" width="120"/>
+</div>
+
 # **LLM-Assisted Software Design**
 
 ## *Un langage de motifs pour les nouvelles pratiques de conception logicielle*
+
+<h2 style="text-align: center; font-size: 18pt; color: #f582ae; font-style: italic;">
+    “Design is intelligence made visible.” – Alina Wheeler
+</h2>
 
 ### Samuel Bastiat
 

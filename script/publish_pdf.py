@@ -1,4 +1,5 @@
 from markdown_pdf import MarkdownPdf, Section
+from os import path
 import re
 
 css = """
@@ -60,29 +61,25 @@ blockquote {
 """
 
 
-def export_pdf():
+def export_pdf(files):
 
     pdf = MarkdownPdf(toc_level=3, optimize=True)
     pdf.borders = (50, 50, 50, 50)
 
+    # base_dir = path.dirname(path.dirname(path.abspath(__file__)))
+    # image_path = path.join(base_dir, "images", "cover.png")
+    # print(image_path)
+    # cover_image_md = f'![Couverture]({image_path})\n\n<div style="page-break-after: always;"></div>\n'
+
+    cover_page = "<img src='images/cover.png' alt='Cover' width='80%'/>"
+    cover_page = '![Page de couverture](cover.png)\n\n<div style="page-break-after: always;"></div>'
+    # cover_page = f"![Page de couverture]({image_path})"
+
+    # pdf.add_section(Section(cover_page, toc=False), user_css=css)
+
     regex = re.compile(r"## Chapitre \d* — ")
-    for file in [
-        "../chapitres/page_garde.md",
-        "../chapitres/sommaire.md",
-        "../chapitres/avant_propos.md",
-        "../chapitres/chapitre01.md",
-        "../chapitres/chapitre02.md",
-        "../chapitres/chapitre03.md",
-        "../chapitres/chapitre04.md",
-        "../chapitres/chapitre05.md",
-        "../chapitres/chapitre06.md",
-        "../chapitres/chapitre07.md",
-        "../chapitres/chapitre08.md",
-        "../chapitres/chapitre09.md",
-        "../chapitres/chapitre10.md",
-        "../chapitres/chapitre11.md",
-        "../chapitres/quatrieme_couverture.md",
-    ]:
+    regex_sommaire = re.compile(r"### \*\*Chapitre \d* — ")
+    for file in files:
         with open(file, "r", encoding="utf-8") as f:
             markdown_text = f.read()
         markdown_text = markdown_text.replace("---", "")
@@ -90,7 +87,9 @@ def export_pdf():
         # markdown_text = markdown_text.replace("images/", "../chapitres/images/")
 
         # regex = re.compile(r"## Chapitre %d*")
-        markdown_text = regex.sub("## ", markdown_text)
+
+        # markdown_text = regex.sub("## ", markdown_text)
+        # markdown_text = regex_sommaire.sub("### **", markdown_text)
         pdf.add_section(Section(markdown_text), user_css=css)
 
     pdf.meta["title"] = (
@@ -104,4 +103,22 @@ def export_pdf():
 
 
 if __name__ == "__main__":
-    export_pdf()
+    export_pdf(
+        [
+            "../chapitres/page_garde.md",
+            "../chapitres/sommaire.md",
+            "../chapitres/avant_propos.md",
+            "../chapitres/introduction.md",
+            "../chapitres/grammaire_intention.md",
+            "../chapitres/motifs_dialogue.md",
+            "../chapitres/anatomie_prompt.md",
+            "../chapitres/cartographie_prompt.md",
+            "../chapitres/motifs.md",
+            "../chapitres/role_competences.md",
+            "../chapitres/responsabilite.md",
+            "../chapitres/prospectifs.md",
+            "../chapitres/cadre.md",
+            "../chapitres/conclusion.md",
+            "../chapitres/quatrieme_couverture.md",
+        ]
+    )
