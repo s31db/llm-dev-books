@@ -96,11 +96,9 @@ Les coachs techniques ou agiles peuvent s’appuyer sur l’IA pour :
 
 Cela favorise une montée en compétences rapide, sans alourdir la charge humaine de transmission.
 
----
-
-### Encadré — Prompt Book : un nouveau type de livrable
-
-De plus en plus d’équipes documentent leurs pratiques LLM dans un “*prompt book*” ou “*carnet de design dialogué*” : une collection structurée de prompts testés, commentés, adaptés à leur contexte métier. Ce format devient un **patrimoine collectif**, précieux pour l’onboarding, la mémoire projet, et la montée en compétence.
+> **Encadré — Prompt Book : un nouveau type de livrable**
+> 
+>De plus en plus d’équipes documentent leurs pratiques LLM dans un “*prompt book*” ou “*carnet de design dialogué*” : une collection structurée de prompts testés, commentés, adaptés à leur contexte métier. Ce format devient un **patrimoine collectif**, précieux pour l’onboarding, la mémoire projet, et la montée en compétence.
 
 ---
 

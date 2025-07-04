@@ -58,6 +58,11 @@ blockquote {
   page-break-inside: avoid;
 }
 
+th, td { 
+  border:0.5px solid black; 
+  border-collapse: collapse;
+}
+
 """
 
 
@@ -83,7 +88,8 @@ def export_pdf(files):
         with open(file, "r", encoding="utf-8") as f:
             markdown_text = f.read()
         markdown_text = markdown_text.replace("---", "")
-        markdown_text = markdown_text.replace("> **Encadré : ", "> **")
+        markdown_text = markdown_text.replace(" **Encadré : ", " **")
+        markdown_text = markdown_text.replace(" **Encadré — ", " **")
         # markdown_text = markdown_text.replace("images/", "../chapitres/images/")
 
         # regex = re.compile(r"## Chapitre %d*")

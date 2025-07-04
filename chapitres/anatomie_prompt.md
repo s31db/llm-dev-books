@@ -94,7 +94,7 @@ Concevoir un prompt efficace pour interagir avec un LLM dans un contexte de dév
 #### 📐 Structure type d’un prompt efficace
 
 | Élément            | Description                                              | Exemple                                                                           |
-| ------------------ | -------------------------------------------------------- | --------------------------------------------------------------------------------- |
+|--------------------| -------------------------------------------------------- |-----------------------------------------------------------------------------------|
 | **Contexte**       | Donne le cadre technique, fonctionnel ou organisationnel | "Je travaille sur une API REST en Python avec FastAPI, déployée sur AWS Lambda…"  |
 | **Tâche claire**   | Décrit précisément ce que vous attendez                  | "…je veux une fonction pour vérifier un JWT dans les headers d’une requête HTTP." |
 | **Contraintes**    | Précise les choix technos, limites ou préférences        | "Sans utiliser d’ORM, et avec des logs clairs en cas d’échec de validation."      |

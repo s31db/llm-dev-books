@@ -50,7 +50,7 @@ def unique_md(cover: bool = True, images: bool = True) -> None:
             with open(file, "r", encoding="utf-8") as f2:
                 content = f2.read()
 
-                print(f"file:///{abspath(file).replace('\\', '/')}")
+                # print(f"file:///{abspath(file).replace('\\', '/')}")
                 if "## Chapitre" in content:
                     content = content.replace(
                         "## Chapitre", f"## Chapitre {i_chapitre}"
@@ -73,7 +73,8 @@ def unique_md(cover: bool = True, images: bool = True) -> None:
                     )
                 content = content.replace("../images/", "")
                 f.write(f"{content}\n")
-                f.write('<div style="page-break-after: always;"></div>\n')
+                if "quatrieme_couverture" not in file:
+                    f.write('<div style="page-break-after: always;"></div>\n')
 
 
 if __name__ == "__main__":

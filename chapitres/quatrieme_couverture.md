@@ -1,3 +1,6 @@
+
+---
+
 ## **Et si coder ne signifiait plus écrire du code, mais converser pour concevoir ?**
 
 L’avènement des modèles de langage (LLM) transforme radicalement la manière de penser, d’écrire et de faire vivre le logiciel. Développeur, architecte, enseignant ou coach : chacun voit son rôle évoluer vers une nouvelle forme d’artisanat, mêlant langage naturel, intelligence artificielle et design itératif.

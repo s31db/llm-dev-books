@@ -7,7 +7,7 @@
 
 L’introduction de l’IA dans le développement logiciel transforme les pratiques, mais elle ne doit pas remettre en cause les principes de l’agilité. Bien au contraire, l’usage des LLM peut renforcer certaines valeurs agiles : itération rapide, collaboration constante, amélioration continue. Encore faut-il savoir **comment** intégrer ces outils intelligents dans les *cadences* et les *rituels* qui structurent la vie d’une équipe agile.
 
-Dans ce chapitre, nous explorerons les points de contact entre l’IA (notamment les modèles de langage) et les cycles agiles : backlog grooming, sprint planning, daily meetings, revues, rétrospectives. Nous proposerons également des bonnes pratiques pour maximiser la valeur ajoutée sans altérer la dynamique humaine et collective.
+Dans ce chapitre, nous explorerons les points de contact entre l’IA (notamment les modèles de langage) et les cycles agiles : backlog affinage, sprint planning, daily meetings, revues, rétrospectives. Nous proposerons également des bonnes pratiques pour maximiser la valeur ajoutée sans altérer la dynamique humaine et collective.
 
 ---
 
@@ -60,11 +60,10 @@ Cela n’exclut pas l’intelligence collective humaine, mais permet de **poser 
 * **Favoriser l’apprentissage mutuel** : une veille régulière sur les usages IA en équipe peut créer une culture de progression continue.
 * **Identifier les biais** : toujours valider les suggestions du LLM, notamment sur les choix d’architecture, de sécurité ou de performance.
 
----
 
-### Encadré — « L’IA est-elle un membre de l’équipe ? »
-
-C’est une question qui revient souvent. Un LLM peut-il être considéré comme un *membre virtuel* de l’équipe ? Pour certains, cela aide à le personnifier et à structurer les interactions (ex. : "notre assistant d’équipe"). Pour d’autres, cela dilue la responsabilité collective. Une position intermédiaire consiste à le voir comme **un outil de facilitation intelligente**, à la fois accessible à tous et gouverné par des règles d’usage partagées.
+> **Encadré — « L’IA est-elle un membre de l’équipe ? »**
+>
+>C’est une question qui revient souvent. Un LLM peut-il être considéré comme un *membre virtuel* de l’équipe ? Pour certains, cela aide à le personnifier et à structurer les interactions (ex. : "notre assistant d’équipe"). Pour d’autres, cela dilue la responsabilité collective. Une position intermédiaire consiste à le voir comme **un outil de facilitation intelligente**, à la fois accessible à tous et gouverné par des règles d’usage partagées.
 
 ---
 
