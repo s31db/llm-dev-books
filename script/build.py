@@ -11,7 +11,7 @@ def img64(image_path: str) -> str:
         return b64encode(image_file.read()).decode("utf-8")
 
 
-def unique_md(cover: bool = True, images: bool = True) -> None:
+def unique_md(cover: bool = True, images64: bool = True) -> None:
     files = [
         "../chapitres/page_garde.md",
         "../chapitres/preface.md",
@@ -63,22 +63,23 @@ def unique_md(cover: bool = True, images: bool = True) -> None:
                 #    print(f"{file.replace('../chapitres/', '')} n'a pas de titre")
                 ## f.write(f"## {file[:-3]}\n")
 
-                if not images:
-                    for find in findall(r'<img src="../images/.*.png".*/>', content):
-                        content = content.replace(find, "")
-
-                for find in findall(r"../images/.*.png", content):
-                    content = content.replace(
-                        find, f"data:image/png;base64,{img64(find)}"
-                    )
-                content = content.replace("../images/", "")
+                # if not images:
+                #    for find in findall(r'<img src="../images/.*.png".*/>', content):
+                #        content = content.replace(find, "")
+                if images64:
+                    for find in findall(r"../images/.*.png", content):
+                        content = content.replace(
+                            find, f"data:image/png;base64,{img64(find)}"
+                        )
+                else:
+                    content = content.replace("../images/", "")
                 f.write(f"{content}\n")
                 if "quatrieme_couverture" not in file:
                     f.write('<div style="page-break-after: always;"></div>\n')
 
 
 if __name__ == "__main__":
-    unique_md()
+    unique_md(True, True)
     from publish_pdf import export_pdf
 
     export_pdf(
@@ -89,7 +90,6 @@ if __name__ == "__main__":
 
     from publish_epub import export_epub
 
-    # TODO epub avec image
     unique_md(False, False)
     export_epub(
         [
@@ -100,5 +100,6 @@ if __name__ == "__main__":
             "--epub-cover-image=../images/cover.png",
             "--metadata",
             "language=fr",
+            "--resource-path=../images",
         ],
     )

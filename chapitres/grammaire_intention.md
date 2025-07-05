@@ -18,6 +18,11 @@ Voici quelques principes émergents :
 * Demander des justifications.
 * Réinjecter les décisions importantes dans la suite du dialogue.
 
+
+<p style="text-align: center;">
+    <img src="../images/collaboration.png" width="50%" />
+</p>
+
 Exemple : dans un projet d’application de gestion de stock, une équipe a utilisé un LLM pour explorer les choix entre architecture en microservices ou en monolithe modulaire. Le prompt initial était vague. Le LLM a généré un comparatif généraliste. En affinant, en injectant des contraintes spécifiques (taille de l’équipe, fréquence des déploiements, besoin d’évolutivité horizontale), les réponses sont devenues beaucoup plus pertinentes. C’est cette capacité à dialoguer, à cadrer, à itérer, qui fait la qualité de la collaboration. Le LLM devient alors un partenaire de simulation, un interlocuteur technique, voire un copilote décisionnel.
 
 Ce chapitre introduit ainsi les grands gestes de cette grammaire nouvelle : cadrer, questionner, reformuler, résumer, contrôler. Cela suppose également une posture d’écoute active et de vigilance critique : il ne suffit pas d’obtenir une réponse, encore faut-il en interroger la pertinence, la source, la cohérence avec le reste du projet. Une équipe travaillant sur une application bancaire a ainsi développé une habitude utile : chaque fois qu’un LLM proposait une solution, l’un des développeurs reformulait cette solution sous forme de diagramme ou de cas d’usage, puis la soumettait au modèle pour validation ou extension. Cette méthode, fondée sur la reformulation visuelle et le questionnement continu, s’est révélée très efficace pour détecter des erreurs subtiles ou des raccourcis dangereux. Elle invite à articuler langage technique et visualisation pour renforcer la robustesse des idées générées.

@@ -16,6 +16,10 @@ L’objectif est ici de mettre en lumière des structures de pensée récurrente
 
 Ces situations sont autant d’occasions de formaliser des motifs. Nous les présenterons à travers une fiche type comprenant : nom, contexte, problème, solution, conséquences, et exemples. Le tout vise à construire un langage partagé qui outille les praticiens, tout en renforçant leur posture critique.
 
+<div style="page-break-after: always;"></div>
+
+---
+
 ### Motif 1 : « Question Socratique » — Reformuler pour comprendre
 
 **Contexte** : Vous êtes confronté à un besoin exprimé de manière floue ou partielle (ex. : "Je veux faire une API pour envoyer des alertes en cas d'erreur système"), ou vous devez explorer un domaine que vous maîtrisez peu.
@@ -36,7 +40,15 @@ Cette technique, inspirée de la maïeutique socratique, pousse le demandeur (vo
 * Le prompt s’enrichit naturellement à chaque itération.
 * Le LLM agit comme un catalyseur de réflexion, pas simplement comme un moteur de complétion.
 
+<p style="text-align: center;">
+    <img src="../images/carte_mentale_motifs_dialogue.png" width="50%" />
+</p>
+
 **Exemple** : Dans un projet d'alerte météo automatisée, une équipe a d’abord demandé au LLM de "créer un script d’envoi d’alertes". La réponse obtenue ne convenait pas : elle reposait sur des hypothèses erronées (envoi par email, langage Python, etc.). En reformulant progressivement les besoins (fréquence, canal, gestion des seuils de gravité, intégration dans l’architecture existante), le LLM a fini par générer une solution beaucoup plus proche du besoin réel. Cette posture a ensuite été institutionnalisée dans l’équipe sous la forme d’un atelier régulier de co-design assisté par LLM.
+
+<div style="page-break-after: always;"></div>
+
+---
 
 ### Motif 2 : « Exploration Guidée » — Décomposer pour mieux avancer
 
@@ -78,6 +90,8 @@ Le but est de transformer une montagne confuse en une série de collines franchi
 > * Prévoir l’export comptable.
 >
 > À partir de cette réponse, les deux développeurs réorganisent leur backlog, définissent les premières user stories, et rédigent ensemble les spécifications du MVP. Le LLM a non seulement servi de facilitateur technique, mais aussi de médiateur de compréhension mutuelle, révélant des angles morts et clarifiant les priorités. L’exploration guidée a permis de sortir du flou initial pour entrer dans l’action concrète.
+
+<div style="page-break-after: always;"></div>
 
 ---
 
@@ -201,6 +215,8 @@ Voici une **routine de revue de code assistée** utilisant ce motif :
 * Utiliser les réponses comme **base de discussion**, notamment avec les parties prenantes non techniques.
 * Croiser les approches : spécification inversée → exploration guidée → design dialogué.
 
+<div style="page-break-after: always;"></div>
+
 ---
 
 ### Motif 4 : « Modèle Miroir » — Comparer plusieurs versions pour éclairer un choix
@@ -264,6 +280,8 @@ Cette analyse partagée permet à l’équipe de trancher plus sereinement, *en 
 * **Miroir de paradigmes** : comparer des approches (ex. polling vs event-driven).
 * **Miroir de technologies** : comparer frameworks, langages, ou bibliothèques en fonction d’un usage ciblé.
 
+<div style="page-break-after: always;"></div>
+
 ---
 
 ### Motif 5 : « Clarification par contre-exemple » — Explorer les limites d'une proposition
@@ -295,6 +313,8 @@ Cette manière de questionner pousse le modèle (et le praticien) à réfléchir
 > L’une des illusions les plus tenaces dans l’usage des LLM est celle de la "réponse parfaite" dès la première itération. Un motif comme "Clarification par contre-exemple" invite à adopter une posture scientifique : tester, falsifier, chercher ce qui ne va pas, même quand tout semble aller bien. Cela s’apparente à une relecture interne du raisonnement — une forme de revue de code dialoguée — où le développeur devient enquêteur des failles possibles. C’est aussi une manière de former les plus jeunes à ne pas confondre autorité de l’outil et vérité absolue.
 
 Voici une **fiche de motif** associée au *Test-Driven Prompting*, conforme à la structure utilisée dans les chapitres précédents :
+
+<div style="page-break-after: always;"></div>
 
 ---
 
@@ -334,6 +354,4 @@ Une équipe travaillant sur un assistant de support client voulait générer aut
 <p style="text-align: center;">
     <img src="../images/tdp.png" width="50%" />
 </p>
-
----
 

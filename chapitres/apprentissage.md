@@ -8,6 +8,10 @@ L’arrivée des modèles de langage transforme profondément nos manières d’
 
 Dans ce chapitre, nous explorons comment les LLM peuvent faciliter l’apprentissage individuel, enrichir les pratiques de documentation, et favoriser la transmission collective. Nous introduirons également la notion émergente de *prompt comme artefact*, et proposerons des exemples d’ateliers et de dispositifs pour renforcer les boucles d’apprentissage dans les équipes.
 
+<p style="text-align: center;">
+    <img src="../images/apprentissage.png" width="50%" />
+</p>
+
 ---
 
 ### 1. L’IA comme tuteur et partenaire pédagogique
