@@ -21,7 +21,8 @@ Le contenu de ce dépôt est publié sous licence [CC BY-NC-NC-ND 4.0](https://c
 
 ---
 
-Entretien audio par Gemini 🎵 [Écouter le son](resume/LLM et conception logicielle _ l'artisanat dialogique et les motifs pour converser avec l'IA.mp3)
+Entretien audio par Gemini 🎵 
+[LLM et conception logicielle, l'artisanat dialogique et les motifs pour converser avec l'IA](resume/entretien.mp4)
 
 
 ---
