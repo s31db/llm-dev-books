@@ -1,0 +1,65 @@
+/* Empêche la césure automatique des mots */
+body, h1, h2, h3, h4, h5, h6, p {
+  hyphens: none;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* Améliore l'espacement des paragraphes */
+p {
+  line-height: 1.5;
+  margin-bottom: 12pt;
+}
+
+/* Évite les sauts de page après les titres */
+h1, h2, h3 {
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+
+img {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+body {
+  background-color: #fef6e4;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1, h2 {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+hr {
+  border: none;
+  border-top: 3px dotted #8bd3dd;
+}
+
+@page {
+  margin: 50pt;
+}
+
+blockquote {
+  border: 2px solid #444;
+  background: #fef6e4;
+  padding: 4px;
+  border-radius: 1px;
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+th, td {
+  border: 0.75px solid black;
+  border-collapse: collapse;
+  padding: 3px;
+}

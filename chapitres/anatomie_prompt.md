@@ -1,127 +1,126 @@
 
 ---
 
-## Chapitre — Anatomie d’un bon prompt : précision, contexte et intention
+## 🎯 Chapitre 1 — Anatomie d’un bon prompt : précision, contexte et intention
 
-> Le prompt est au cœur de toute interaction réussie avec un LLM. Avant d’explorer les motifs, découvrons comment formuler des demandes claires, contextualisées et orientées vers un but précis.
-
-Les performances des modèles de langage ne dépendent pas uniquement de leur puissance technique, mais surtout de **la qualité de l’interaction** qu’on construit avec eux. Et au cœur de cette interaction se trouve l’art du *prompt*. Ce chapitre propose une plongée dans la construction de bons prompts, en analysant leurs composants essentiels, en montrant des exemples concrets, et en définissant des motifs récurrents d’écriture.
+> Le prompt n’est pas une commande. C’est une interface de pensée. Il structure le dialogue, oriente la réponse, et conditionne la qualité de la collaboration.
 
 ### Pourquoi ce chapitre ?
 
-Trop souvent, on pense qu’un prompt est une simple question. Mais un bon prompt est en réalité un **acte de design**, une manière de structurer la pensée, de poser le cadre, de transmettre une intention. Il s’apparente à une interface entre deux intelligences : humaine et artificielle.
+Dans tout échange avec un LLM, **le prompt est le point d’entrée**. C’est lui qui définit le cadre, la tâche, le niveau de détail attendu. Mais un bon prompt ne se résume pas à une question bien formulée. C’est un acte de design. Il combine trois dimensions fondamentales : la **précision**, le **contexte** et l’**intention**. Il s’apparente à une interface entre deux intelligences : humaine et artificielle.
 
-### Trois dimensions fondamentales
-
-1. **Précision** : éviter les formulations vagues, ambigües ou multi-interprétables.
-   → Ex : "Donne-moi un code Python" → **trop large**
-   ✅ Préférer : "Écris une fonction Python qui trie une liste de dictionnaires par une clé 'date', en ordre décroissant."
-
-2. **Contexte** : fournir les éléments utiles pour cadrer la réponse : langage, environnement, style, contraintes métier…
-   → Ex : "Je développe une API REST en Node.js dans un contexte de microservices gérés par Docker."
-
-3. **Intention** : exprimer clairement le *but* visé, pas seulement la tâche.
-   → Ex : "Je veux un script Shell pour automatiser le déploiement, afin que même un stagiaire puisse l’exécuter sans rien casser."
-
-> 📌 **Encadré — Le prompt n’est pas une requête, c’est une conversation dirigée**
->
-> Il est utile de penser le prompt comme une amorce de conversation, pas comme un ordre. Le prompt bien conçu contient souvent une *dynamique* : il prépare la suite du dialogue. Un bon prompt anticipe les rebonds, les vérifications, les approfondissements. Il ouvre l’espace d’échange au lieu de le fermer.
+Dans ce chapitre, nous proposons une grille simple mais robuste pour concevoir des prompts utiles, exploitables et adaptés aux situations réelles de développement logiciel.
 
 ---
 
-### Typologie des prompts efficaces
+### Trois dimensions fondamentales d’un prompt efficace
 
-Nous proposons ici une typologie structurée, illustrée de motifs que l’on retrouvera tout au long du livre :
+#### 1. **Précision : clarifier ce que vous attendez**
 
-* **Prompt "Contexte + Tâche"** :
+Un prompt vague produit une réponse vague.
 
-  > "Dans le cadre d’un service d’authentification OAuth2 en Go, écris un middleware qui vérifie la présence d’un token JWT valide."
+> ❌ *« Donne-moi un code de trie. »*
+> ✅ *« Écris une fonction Python qui trie une liste de dictionnaires par la clé ‘date’, en ordre décroissant. »*
 
-* **Prompt "Exemple + Variation"** :
+Soyez explicite. Précisez la tâche, le niveau de détail, le langage. Définissez les frontières de la réponse attendue.
 
-  > "Voici une fonction JavaScript pour filtrer un tableau. Peux-tu proposer une version plus performante avec `reduce` ?"
+#### 2. **Contexte : donner au modèle de quoi raisonner juste**
 
-* **Prompt "Roleplay"** :
+Un LLM ne connaît pas l'ensemble de votre projet, ni vos contraintes. C’est à vous de les formuler.
 
-  > "Agis comme un expert Django senior. Donne-moi les étapes clés pour refactorer une app monolithique en microservices."
+> *« Je développe une API REST en Node.js, dans un environnement de microservices conteneurisés via Docker. »*
 
-* **Prompt "Pas-à-pas"** :
+Fournir le bon contexte, c’est permettre une réponse plus ciblée, plus pertinente, plus réaliste.
 
-  > "Explique-moi étape par étape comment sécuriser une API avec des jetons CSRF, comme à un étudiant de niveau bac+2."
+#### 3. **Intention : dire pourquoi vous posez la question**
 
----
+La qualité de l’échange dépend de la clarté du but visé.
 
-### Bonnes pratiques et erreurs fréquentes
+> *« Je veux que même un stagiaire puisse exécuter ce script sans risque d’erreur. »*
 
-✅ **Bonnes pratiques** :
-
-* Être explicite sur les contraintes : langage, version, bibliothèque cible.
-* Utiliser le formatage (listes, bullet points, code blocks) pour structurer la demande.
-* Préciser le niveau de détail attendu : résumé, tutoriel, snippet, code complet, benchmark ?
-
-❌ **Erreurs fréquentes** :
-
-* Poser plusieurs questions en une.
-* Employer des termes vagues : "optimiser", "simplifier", "améliorer" — sans dire ce qu’on entend par là.
-* Oublier le *pourquoi* de la demande.
+Nommer l’intention, c’est guider la forme, le ton, et le niveau de complexité de la réponse.
 
 ---
 
-### Exemple comparatif
+### 🗨️ Le prompt est une conversation amorcée
 
-**Prompt faible :**
-
-> "Fais-moi une API Node."
-
-**Résultat :** réponse générique, non contextualisée.
-
-**Prompt amélioré :**
-
-> "Je veux créer une API REST en Node.js avec Express. Elle doit permettre de créer, lire, mettre à jour et supprimer des utilisateurs stockés dans une base MongoDB. Je veux du code modulaire, avec une bonne séparation des responsabilités, sans ORM. Peux-tu me proposer la structure de fichiers et le code de base pour démarrer proprement ?"
-
-**Résultat :** réponse structurée, adaptée, directement exploitable.
+Il est utile de voir le prompt non comme une requête, mais comme la **première phrase d’un échange**. Un bon prompt **ouvre l’espace de dialogue**, il invite à l’itération, à la reformulation, au rebond. Il pose un cadre… mais laisse de la place à la co-construction.
 
 ---
 
-### 🧰 Fiche-outil — Anatomie d’un bon prompt
+## 🧭 Typologie des formes de prompts
 
-#### 🎯 Objectif
+Voici quelques formats fréquents que vous retrouverez dans la bibliothèque de motifs (chapitre 4) :
 
-Concevoir un prompt efficace pour interagir avec un LLM dans un contexte de développement logiciel, en maximisant la pertinence et l’utilité des réponses.
-
----
-
-#### 📐 Structure type d’un prompt efficace
-
-| Élément            | Description                                              | Exemple                                                                           |
-|--------------------| -------------------------------------------------------- |-----------------------------------------------------------------------------------|
-| **Contexte**       | Donne le cadre technique, fonctionnel ou organisationnel | "Je travaille sur une API REST en Python avec FastAPI, déployée sur AWS Lambda…"  |
-| **Tâche claire**   | Décrit précisément ce que vous attendez                  | "…je veux une fonction pour vérifier un JWT dans les headers d’une requête HTTP." |
-| **Contraintes**    | Précise les choix technos, limites ou préférences        | "Sans utiliser d’ORM, et avec des logs clairs en cas d’échec de validation."      |
-| **Intention**      | Fait apparaître le *pourquoi* de la demande              | "Je veux que ce soit simple à comprendre pour un développeur junior."             |
-| **Format attendu** | Indique le type de réponse souhaitée                     | "Peux-tu me donner un exemple commenté + les tests unitaires correspondants ?"    |
+| Type de prompt          | Exemple                                                                                    | Usage typique                                 |
+|-------------------------|--------------------------------------------------------------------------------------------|-----------------------------------------------|
+| **Contexte + Tâche**    | « Dans le cadre d’un service d’authentification OAuth2 en Go, écris un middleware... »     | Implémentation ciblée                         |
+| **Exemple + Variation** | « Voici une fonction JS. Peux-tu proposer une version plus performante avec `reduce` ? »   | Refactor, optimisation                        |
+| **Roleplay**            | « Agis comme un expert Django senior. Quelles étapes pour refactorer cette application ? » | Conseil spécialisé, expertise simulée         |
+| **Pas-à-pas**           | « Explique étape par étape comment sécuriser une API contre les attaques CSRF. »           | Pédagogie, onboarding, formation              |
+| **Cascade**             | « Ajoute un système de trace des actions dans des logs spécifiques »                       | Implémentation ciblée, Refactor, optimisation |
 
 ---
 
-#### 📎 Astuces pratiques
+### ✅ Bonnes pratiques
 
-* **Soyez spécifique** : un prompt générique donne une réponse générique.
-* **Pensez séquence** : un bon prompt n’est que le premier pas d’un échange.
-* **Nommez vos contraintes** : langage, bibliothèque, niveau de détail.
-* **Ajoutez des exemples** : un exemple concret inspire une meilleure réponse.
+* Formatez vos prompts avec des **puces, blocs de code ou titres** pour structurer la pensée.
+* Ajoutez des **exemples** : ils guident le modèle et clarifient vos attentes.
+* Soyez explicite sur :
 
----
-
-#### ⚠️ À éviter
-
-* ❌ Phrases trop générales : "fais-moi un code", "aide-moi avec ce bug"
-* ❌ Absence de contexte : pas de langage, pas d’architecture, pas de but
-* ❌ Prompts fourre-tout : trop d’idées mélangées, pas de hiérarchisation
+  * le langage et la version utilisés ;
+  * le style ou niveau attendu ;
+  * les contraintes spécifiques (techniques, fonctionnelles, organisationnelles).
 
 ---
 
-#### 🧪 Exemple comparé
+### ❌ Erreurs fréquentes à éviter
 
-| Prompt faible                            | Prompt amélioré                                                                                                                                                                                                                                   |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| "Donne-moi un code pour une API Node.js" | "Crée une API REST en Node.js avec Express, qui gère des utilisateurs stockés dans MongoDB. Structure le code en suivant une architecture MVC, sans ORM. J’ai besoin des routes CRUD, d’une validation d’entrée, et de quelques tests unitaires." |
+* Empiler plusieurs demandes dans un seul prompt.
+* Employer des termes flous : “améliore”, “rends ça plus propre”… sans critère.
+* Oublier de formuler l’objectif réel derrière la tâche demandée.
+
+---
+
+### 🧪 Exemple comparatif
+
+#### Prompt faible :
+
+> *« Fais-moi une API Node. »*
+
+🔁 Résultat : réponse générique, peu exploitable.
+
+#### Prompt amélioré :
+
+> *« Je veux créer une API REST en Node.js avec Express. Elle doit gérer des utilisateurs stockés dans MongoDB. Je souhaite une architecture modulaire, sans ORM, avec séparation claire des responsabilités. Peux-tu proposer une structure de fichiers et le code de base ? »*
+
+✅ Résultat : réponse structurée, contextualisée, directement exploitable.
+
+---
+
+## 🛠 Fiche-outil — Structure d’un bon prompt
+
+| Élément            | Exemple                                                                  |
+|--------------------|--------------------------------------------------------------------------|
+| **Contexte**       | « Je travaille sur une API FastAPI en Python déployée sur AWS Lambda… »  |
+| **Tâche claire**   | « …je veux une fonction qui valide un token JWT dans les headers HTTP. » |
+| **Contraintes**    | « Sans ORM, logs clairs en cas d’échec, Python 3.10. »                   |
+| **Intention**      | « Le but est que ce soit compréhensible pour un développeur junior. »    |
+| **Format attendu** | « Exemple commenté + tests unitaires. »                                  |
+
+---
+
+## ✏️ En résumé
+
+Un bon prompt, c’est :
+
+* 🎯 une demande claire,
+* 🧱 un contexte explicite,
+* 🧠 une intention formulée,
+* 📦 un format de réponse attendu.
+
+C’est la base de toute collaboration fructueuse avec un LLM.
+
+> « Ce n’est pas l’IA qui est floue. C’est souvent notre manière de lui parler. » *ChatGPT*
+
+---

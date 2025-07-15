@@ -1,1 +1,1 @@
-![Page de couverture](../images/cover.png)
+![Page de couverture](../images/cover2.png)

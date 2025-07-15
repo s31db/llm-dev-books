@@ -1,54 +1,108 @@
 
 ---
 
-## Chapitre — Cartographier les usages : typologie des interactions LLM-développeur
+## 🗺️ Chapitre 5 — Cartographier les usages : typologie des situations et des rôles
 
-> Explorer, produire, concevoir, enseigner : autant de postures possibles face aux LLM. Ce chapitre vous aide à mieux comprendre votre propre rapport à ces outils.
-
-Dans ce chapitre, nous proposons une lecture transversale des motifs précédemment présentés en les reliant à des **situations-types** que rencontrent les développeurs dans leur quotidien. Il ne s’agit plus uniquement de parler en termes de « patterns » abstraits, mais de comprendre **quand et pourquoi** tel ou tel motif s’active, en fonction de l’intention du moment, du contexte de travail, ou encore du niveau de maturité de l’utilisateur avec les LLM.
-
-Nous allons ainsi esquisser une **cartographie des usages** qui aide à naviguer dans les interactions avec les modèles de langage. Cette typologie offre aux équipes une meilleure lecture de leurs pratiques et permet aux formateurs, coaches et tech leads d’identifier les compétences associées à chaque posture.
-
-### 1. L’explorateur 🧭 — Interagir pour comprendre un domaine
-
-> **Objectif :** recueillir des informations, structurer une compréhension initiale, identifier des angles d’approche.
-
-L’explorateur formule des questions larges, cherche à définir un périmètre, à obtenir une vue d’ensemble d’un sujet. Il active souvent les motifs « Question Socratique » ou « Reformulation Itérative ». Ce type d’interaction est fréquent en début de projet, en phase de cadrage ou lors de l’arrivée sur un domaine inconnu (nouvelle techno, architecture existante à auditer, etc.).
-
-**Exemple** : « Quels sont les principaux types de base de données NoSQL et dans quels cas les utiliser ? »
+> Concevoir avec un LLM, ce n’est pas appliquer une méthode linéaire. C’est **naviguer dans un espace d’interactions possibles**, qui varie selon le contexte, l’intention, le niveau de maturité. Ce chapitre propose une **carte de ces usages**.
 
 ---
 
-### 2. Le praticien opérationnel 🛠️ — Résoudre un problème concret
+### 🧭 Pourquoi ce chapitre ?
 
-> **Objectif :** générer ou corriger du code, automatiser une tâche, proposer une implémentation.
+Nous avons exploré :
 
-Cette posture est la plus répandue. L’utilisateur cherche une solution immédiate à un blocage technique, une aide à l’écriture, ou un gain de temps. Il utilise souvent les motifs « Co-écriture par reformulation », « Contre-exemple » ou « Prompt Contexte + Tâche ».
+* des **motifs conversationnels** (Chapitre 3),
+* les **postures et rôles** qui émergent (Chapitre 4).
 
-**Exemple** : « Génère une fonction Python qui détecte les doublons dans une liste de dictionnaires. »
-
----
-
-### 3. Le concepteur structurant 🧱 — Faire émerger une architecture ou un design
-
-> **Objectif :** co-construire une vision technique cohérente à partir d’éléments épars.
-
-Ici, le LLM est utilisé comme partenaire de réflexion. Le développeur ne cherche pas une solution, mais une structure, une articulation d’idées. Cela implique un travail en itérations, avec évaluation d’alternatives, scénarios, et documentation. Les motifs « Design Dialogué », « Exploration Parallèle » ou « Hiérarchie Intentionnelle » (chapitres suivants) y sont fréquents.
-
-**Exemple** : « Quels modèles d’architecture sont adaptés à une application de messagerie sécurisée en temps réel ? »
+Il est temps maintenant de **cartographier les situations** dans lesquelles ces éléments s’activent. L’objectif : aider chacun à **reconnaître où il se trouve** dans la pratique, et à choisir les motifs ou postures les plus adaptés.
 
 ---
 
-### 4. Le pédagogue réflexif 👨‍🏫 — Se former ou former à travers le dialogue
+## 🧩 Typologie des situations
 
-> **Objectif :** utiliser le LLM comme outil d’apprentissage, de transmission ou de formalisation.
+Nous proposons ici six situations-types, fréquentes dans le travail logiciel augmenté par les LLM.
 
-Ce profil s’adresse souvent aux enseignants, mentors, ou aux développeurs en formation. Le LLM est utilisé pour expliquer, reformuler, illustrer, simuler des erreurs. Les motifs comme « Question Socratique », « Cas Limite », ou « Décomposition Progressive » sont ici clés.
-
-**Exemple** : « Explique-moi pourquoi le mot-clé `await` est obligatoire dans une boucle for async en JavaScript. »
+| Situation           | Intention principale                           | Rôle/posture activé(e)       | Motifs typiques                             |
+| ------------------- | ---------------------------------------------- | ---------------------------- | ------------------------------------------- |
+| **Exploration**     | Découvrir un domaine, une techno, une approche | Explorateur                  | Exploration guidée, Miroir                  |
+| **Cadrage**         | Clarifier un besoin flou ou implicite          | Formulateur, facilitateur    | Question socratique, Décomposition          |
+| **Refactorisation** | Améliorer un existant                          | Analyste, critiqueur         | Spécification inversée, Contre-exemple      |
+| **Documentation**   | Générer ou reconstruire du sens                | Synthétiseur, documentaliste | Spécification inversée, Résumé ciblé        |
+| **Validation**      | Vérifier une solution, tester un raisonnement  | Curateur, relecteur          | Prompt piloté par les tests, Contre-exemple |
+| **Co-conception**   | Créer à plusieurs avec un LLM comme partenaire | Facilitateur, co-concepteur  | Miroir, Clarification, Synthèse             |
 
 ---
 
-> 🗺️ **Carte synthétique à venir : correspondance motifs ↔ postures ↔ situations**
+## 🧭 Exemple 1 — Situation “Exploration”
 
-Cette cartographie permet d’identifier la pluralité des approches et de mieux comprendre que les LLM ne sont pas simplement des outils « génériques », mais des partenaires capables d’adapter leur réponse à la posture intellectuelle de l’utilisateur. Il devient alors possible de développer une véritable **intelligence d’usage**, c’est-à-dire une capacité à activer le bon levier au bon moment.
+> **Contexte** : un développeur fullstack découvre le pattern CQRS.
+
+**Posture** : explorateur, apprenant actif
+**Prompt** : « Explique-moi CQRS étape par étape, avec un exemple Node.js. »
+**Motifs activés** :
+
+* *Exploration guidée* (pour la découverte)
+* *Contre-exemple* (pour tester la compréhension)
+* *Miroir* (CQRS vs CRUD)
+
+---
+
+## 🧭 Exemple 2 — Situation “Cadrage flou”
+
+> **Contexte** : une équipe reçoit une demande métier mal formalisée.
+
+**Posture** : facilitateur, analyste
+**Prompt** : « Voici les éléments métier reçus. Peux-tu aider à formaliser une user story complète avec critères d’acceptation ? »
+**Motifs activés** :
+
+* *Question socratique*
+* *Spécification inversée*
+* *Reformulation par test*
+
+---
+
+## 🧭 Exemple 3 — Situation “Refactorisation guidée”
+
+> **Contexte** : un dev reprend une fonction critique non testée ni commentée.
+
+**Posture** : critiqueur, nettoyeur
+**Prompt** : « Que fait ce code ? Quelle serait une version plus claire, avec tests associés ? »
+**Motifs activés** :
+
+* *Spécification inversée*
+* *Contre-exemple*
+* *Miroir de style*
+
+---
+
+## 🗺 Vers une carte d’usage dynamique
+
+On peut imaginer cette cartographie comme une **matrice vivante**, dans laquelle :
+
+* Chaque **situation** active une combinaison de postures et de motifs.
+* Ces combinaisons peuvent **évoluer avec l’expérience**.
+* Certaines équipes documentent leurs propres cartes d’usage (quels motifs pour quelles tâches ?), pour **faciliter l’onboarding ou les revues**.
+
+---
+
+## 🧪 Cas d’équipe : usages hybrides
+
+Dans une startup, deux développeuses utilisent un LLM pour concevoir un microservice d’authentification. Elles alternent :
+
+* **Exploration** de l’approche OAuth2
+* **Co-conception** d’un middleware
+* **Documentation** des choix
+* **Validation** par génération de tests
+
+Elles changent de posture selon l’étape. Le LLM devient une **surface partagée** de réflexion.
+
+---
+
+## ✏️ En résumé
+
+* Les situations-types offrent un **repère pratique** pour mobiliser les bons motifs.
+* Les rôles et postures ne sont pas figés : on **circule entre eux selon le moment.**
+* Cartographier ses usages, c’est aussi **prendre conscience de sa maturité d’interaction.**
+
+> Ce que vous faites avec un LLM dépend moins de l’outil… que de votre intention, votre posture, et votre capacité à choisir le bon motif au bon moment.
+

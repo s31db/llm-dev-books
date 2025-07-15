@@ -1,56 +1,159 @@
 
 ---
 
-## Chapitre — Responsabilité, transparence et limites : une éthique du développement augmenté
+## ⚖️ Chapitre 7 — Responsabilité, transparence et limites : une éthique du développement augmenté
 
-> L’intelligence artificielle est puissante, mais pas neutre. Ce chapitre explore les questions éthiques posées par les LLM dans le développement logiciel.
+> Utiliser un LLM dans le développement, ce n’est pas seulement une opportunité. C’est aussi une responsabilité.
+> Il ne suffit pas que le résultat fonctionne. Il faut **pouvoir expliquer comment il a été produit, et à quelles conditions**.
 
-Le recours aux LLM dans le développement logiciel ne pose pas uniquement des questions de productivité ou d’efficacité. Il soulève aussi des enjeux éthiques profonds : qui est responsable du code généré ? Comment éviter les biais ? Que faire lorsqu’un modèle propose une solution trompeuse, non sécurisée ou inadaptée ? Ce chapitre aborde la dimension éthique de cette co-construction avec des intelligences statistiques, pour une pratique plus consciente et plus responsable.
+---
 
-### La tentation de la délégation
+## 🧭 Pourquoi ce chapitre ?
 
-La qualité apparente des réponses générées par les LLM peut créer une illusion de maîtrise ou d'autorité. Pourtant :
+Dans un contexte où :
 
-* Les modèles n'ont **ni compréhension réelle** ni conscience du contexte métier ou humain.
-* Ils peuvent générer des réponses fausses avec une grande assurance linguistique.
-* Ils sont **sensibles aux biais présents dans leurs données d'entraînement**, souvent invisibles à l'œil nu.
+* des outils proposent du code sans auteur clair,
+* des équipes intègrent des blocs générés sans les comprendre,
+* des décisions d’architecture sont prises à l’aide de suggestions IA,
 
-> **Encadré : Un bug venu d’un exemple convaincant**
+la **documentation des interactions avec les LLM** devient un enjeu majeur. Non pas pour tout consigner… mais pour **rendre visible ce qui a été généré, validé, interprété**.
+
+---
+
+## 📘 Partie 1 — Documenter l’usage des LLM
+
+### 1.1 Pourquoi documenter ?
+
+* Pour garder une trace des choix faits avec l’aide de l’IA.
+* Pour éviter la **dette générative** : du code produit trop vite, sans explication.
+* Pour pouvoir réexaminer un raisonnement ou un prompt dans six mois.
+* Pour outiller les relecteurs et les équipes QA.
+
+> La documentation d’un prompt n’est pas un luxe. C’est **une condition de la maintenabilité.**
+
+---
+
+### 1.2 Que documenter ?
+
+| Élément                         | Objectif                                                      |
+| ------------------------------- | ------------------------------------------------------------- |
+| **Prompt source**               | Comprendre l’intention initiale                               |
+| **Version du LLM utilisé**      | Évaluer les limites, biais ou hallucinations potentielles     |
+| **Réponse générée**             | Historiser l’itération utilisée                               |
+| **Validation humaine apportée** | Identifier le rôle de l’humain dans l’acceptation du résultat |
+| **Hypothèses contextuelles**    | Préserver la logique derrière la génération                   |
+
+---
+
+### 1.3 Formats possibles
+
+* Annotation en commentaire dans le code
+* Historique dans l’outil LLM (chat, snapshot, fichier `.prompt.md`)
+* Documentation à part (Wiki, PR, fichier `prompts/`)
+* Modèle structuré (ex. Fiche Prompt + Tests d’intention associés)
+
+---
+
+### 1.4 Exemple concret
+
+```js
+// Fonction générée à partir d’un prompt GPT-4 le 12/04/2025
+// Prompt : “Écris une fonction en JavaScript qui valide une adresse mail avec une RegExp simple”
+// Réponse modifiée pour :
+  // - Ajouter la gestion des caractères spéciaux
+  // - Remplacer l'alerte par une exception explicite
+```
+
+---
+
+## ⚖️ Partie 2 — Enjeux éthiques et responsabilité
+
+### 2.1 LLM = responsabilité partagée
+
+> Ce n’est pas parce qu’un LLM a proposé un code que vous en êtes moins responsable.
+> Vous êtes responsable **de ce que vous comprenez, validez, intégrez**.
+
+Les modèles sont puissants, mais :
+
+* ne donnent aucune garantie de fiabilité,
+* peuvent reproduire des biais,
+* peuvent générer du contenu non conforme ou juridiquement risqué,
+* ne sont pas capables de refuser une tâche inappropriée par eux-mêmes.
+
+> **Un bug venu d’un exemple convaincant**
 >
 > Un développeur a récemment intégré un snippet de code généré par LLM pour l’authentification OAuth. Le code était syntaxiquement parfait, commenté, et semblait sécurisé… sauf qu’il utilisait une bibliothèque obsolète et vulnérable. L’audit de sécurité a révélé une faille critique. Le LLM avait simplement “recopié” un exemple daté, sans signaler de mise en garde. Résultat : plusieurs jours perdus, et une prise de conscience utile.
 
-### Qui est responsable ?
+---
 
-Face à ce genre de situation, plusieurs questions deviennent centrales :
+### 2.2 Risques fréquents
 
-* Le développeur qui copie-colle un code généré sans le tester est-il responsable ?
-* L’équipe doit-elle tracer les morceaux de code issus d’une IA ?
-* Peut-on considérer un LLM comme une source de documentation ou comme un contributeur anonyme ?
-* Que deviennent les exigences de conformité réglementaire (ex. : RGPD, cybersécurité, accessibilité) dans un monde de suggestions automatiques ?
+| Risque                        | Exemple                                                                  |
+|-------------------------------|--------------------------------------------------------------------------|
+| **Hallucination de fonction** | Fonction plausible mais non existante dans un langage donné              |
+| **Copie involontaire**        | Reproduction d’un bout de code protégé issu du corpus d’entraînement     |
+| **Biais implicite**           | Stéréotypes dans les exemples ou réponses générées                       |
+| **Surconfiance**              | Prise de décision sans relecture ni test, sur la base d’un prompt unique |
+| **Manque de traçabilité**     | Code généré sans indication de son origine ni de sa validation           |
 
-Une approche responsable repose sur **l’explicitation des intentions, des choix et des arbitrages humains** à chaque étape. L’IA est un outil, pas un auteur.
+---
 
-### Des pratiques pour une éthique active
+### 2.3 Questions à se poser (checklist éthique)
 
-Voici quelques pratiques émergentes pour renforcer l’éthique dans les usages :
+1. Ai-je compris ce que le modèle a produit ?
+2. Puis-je expliquer à quelqu’un pourquoi cette solution est valable ?
+3. Ai-je testé ou vérifié ce code ?
+4. Ai-je signalé qu’il a été généré ?
+5. Le modèle a-t-il produit une réponse biaisée ou discutable ?
+6. Cette interaction pourrait-elle être mal interprétée ou mal réutilisée par quelqu’un d’autre ?
+7. Est-ce que j’assumerais cette décision en production ?
 
-* **Tracer l’origine des suggestions IA** dans les revues de code ou les commit messages.
-* **Demander systématiquement des justifications** aux réponses générées : “Pourquoi cette solution plutôt qu’une autre ?”
-* **Inclure des tests, validations ou relectures humaines** pour tout code ou contenu produit par IA.
-* **Favoriser la diversité des points de vue** en confrontant les propositions IA à celles de l’équipe.
-* **Documenter les prompts sensibles** ou ayant un impact critique (sécurité, données, logique métier complexe).
+> Si la réponse est “non” à deux questions ou plus, il est **trop tôt pour valider cette contribution IA.**
 
-> **Encadré : Le “Journal du dialogue”**
+---
+
+## 🔍 Vers une culture de la transparence
+
+* Rendre visible l’usage des LLM n’est pas une contrainte. C’est **un levier de confiance collective.**
+* Cela permet de relire, de corriger, de transmettre.
+* Cela constitue une **preuve de diligence technique** en cas de litige ou d’incident.
+* Cela alimente une culture d’équipe où l’IA **stimule le raisonnement plutôt qu’elle ne le remplace**.
+
+---
+
+> **Le “Journal du dialogue”**
 >
 > Dans une startup du secteur santé, chaque interaction avec un LLM pour des sujets critiques (protocoles, anonymisation, sécurité) est archivée sous forme de journal. Ce journal inclut : prompt initial, itérations, choix retenus, évaluation humaine, et justification des décisions. Ce dispositif améliore la transparence interne, facilite les audits, et cultive une posture réflexive.
 
-### Les limites des LLM : mieux les connaître pour mieux les utiliser
+---
 
-Il est essentiel de garder à l’esprit certaines limites structurelles des modèles de langage actuels :
 
-* **Ils ne raisonnent pas** : ils extrapolent des séquences probables.
-* **Ils n’ont pas de mémoire de long terme** sans l’ajout explicite de contexte.
-* **Ils peuvent halluciner** (inventions crédibles mais fausses), notamment dans les domaines techniques pointus.
-* **Ils sont sensibles à la formulation** : un même problème mal posé peut produire une réponse erronée ou biaisée.
+## 🔐 Protéger les données, même dans le dialogue
 
-Connaître ces limites n’est pas un obstacle, mais une condition pour construire une relation saine et maîtrisée avec l’IA.
+> *Tout ce que vous envoyez à un LLM n’est pas neutre — ni invisible.*
+
+Les interactions avec un LLM peuvent exposer involontairement des données sensibles, confidentielles ou personnelles : noms de clients, extraits de code propriétaire, exemples de production, ou encore décisions stratégiques.
+
+Même lorsque l’outil semble local ou « sécurisé », il est essentiel d’adopter une posture de prudence active :
+
+* **Filtrer en amont** les données transmises, comme on le ferait pour une publication publique.
+* **Éviter les copier-coller aveugles** issus de documents confidentiels ou de bases internes.
+* **Utiliser des environnements contrôlés**, capables de garantir la non-exploitation des données (LLM auto-hébergés, mode entreprise, clauses contractuelles explicites).
+* **Anonymiser les données** utilisées dans les prompts, dès que possible.
+* **Former les équipes** aux risques liés à la fuite involontaire d’information via un prompt mal formulé.
+
+Enfin, se poser une question simple avant chaque envoi :
+
+> *“Aurais-je le droit d’envoyer ceci par email à une tierce personne extérieure à mon organisation ?”*
+> Si la réponse est non, alors le prompt doit être retravaillé.
+
+Ce souci de **protection des données** s’inscrit dans une éthique plus large : celle d’un développement **responsable, traçable et conscient de ses impacts** — techniques, sociaux et légaux.
+
+## ✏️ En résumé
+
+* La documentation des prompts et des interactions est une **bonne pratique technique** et un **geste éthique.**
+* Les LLM déplacent la responsabilité, mais ne la dissolvent pas.
+* Seule une **pratique transparente et partagée** peut garantir la qualité, la robustesse et l’éthique des conceptions assistées par IA.
+
+> Les LLM ne pensent pas. Ils complètent.
+> Mais vous, vous **pensez avec eux** — et cela vous engage.

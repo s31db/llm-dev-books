@@ -1,30 +1,100 @@
 
 ---
 
-## Chapitre — La grammaire de l’intention : penser et formuler avec un LLM
+## 🧠 Chapitre 2 — La grammaire de l’intention : penser et formuler avec un LLM
 
-> Au-delà des bons mots, c’est la qualité du dialogue qui compte. Ce chapitre vous propose une nouvelle grammaire pour interagir avec un LLM comme avec un partenaire de conception.
+> Un LLM ne comprend pas. Il complète. Il n'infère pas un raisonnement vrai, mais une suite plausible. C’est à nous, humains, d’en faire un partenaire valable — en cadrant l’échange, en le structurant, en l’habitant.
 
-Avant même de parler de prompts ou d’outils, il nous faut revenir à la nature même de la collaboration entre humain et LLM. À quoi ressemble une bonne interaction ? Comment reconnaître une dérive, une ambiguïté, une impasse ? Comment transformer une simple commande en un véritable dialogue productif ?
+Concevoir avec un LLM, ce n’est pas lui donner des ordres. C’est construire un dialogue. Et comme tout dialogue, il a ses règles implicites, ses codes, ses zones de friction.
 
-Un LLM ne pense pas. Il infère, il complète, il modélise des suites probables de mots. Ce fonctionnement statistique peut générer des perles… ou des absurdités. Le rôle de l’humain devient alors celui d’un médiateur du sens : il guide, corrige, affine, reformule. Ce rôle est loin d’être passif. Il implique une écoute attentive, une capacité à reformuler des attentes, une exigence dans la précision des formulations et une vigilance continue face aux biais ou aux incohérences possibles.
+Dans ce chapitre, nous proposons une **grammaire de l’interaction** : un ensemble de gestes, de réflexes, de postures qui rendent le dialogue avec un LLM productif. Ce n’est pas une syntaxe à apprendre par cœur, mais une façon de penser : **penser en interaction**.
 
-Imaginons une séance de conception entre deux développeurs, sauf que l’un d’eux est un LLM. Ce partenaire connaît tout le Web, mais ignore votre contexte exact. Il est rapide, mais naïf. Il est créatif, mais oublie parfois ce qu’il vient de dire. La grammaire de cette interaction, c’est l’ensemble des règles implicites et explicites que vous mettez en place pour que la collaboration reste productive. Ces règles ne sont pas figées : elles s’adaptent selon les outils, les objectifs et les habitudes des personnes impliquées.
+---
 
-Voici quelques principes émergents :
+### 🎼 Le LLM comme partenaire naïf
 
-* Toujours recontextualiser.
-* Poser une question à la fois.
-* Demander des justifications.
-* Réinjecter les décisions importantes dans la suite du dialogue.
+Imaginez une séance de conception avec un collègue ultra-compétent mais :
 
+* qui ignore votre contexte exact,
+* qui a une mémoire partielle de l’échange,
+* qui répond parfois avec brio, parfois à côté,
+* et qui n’ose jamais dire « je ne sais pas ».
+
+C’est cela, travailler avec un LLM. Il faut donc créer les conditions d’un échange utile : structurer, contextualiser, itérer.
+
+> Le LLM connaît tout, mais ne sait rien de vous.
+> Il est rapide, mais oublie.
+> Il est créatif, mais naïf.
+> Il n’est pas fiable par défaut — il le devient par collaboration.
+
+---
+
+## 🎯 Les 5 gestes fondamentaux de la grammaire d’intention
+
+### 1. **Cadrer (toujours recontextualiser)**
+
+Un LLM ne possède ni mémoire longue ni connaissance de votre projet. Vous devez réinjecter le **contexte fonctionnel, technique, métier** dans chaque interaction.
+
+> *« Je travaille sur une application bancaire en Java, mon objectif est de sécuriser les appels à l’API de transaction. »*
+
+### 2. **Questionner (une chose à la fois)**
+
+Le LLM fonctionne mieux avec des demandes unitaires. Une seule intention par prompt. Si vous lui posez trois questions, il répondra à celle qu’il comprend le mieux… pas forcément la plus importante.
+
+> ✅ *« Peux-tu décomposer cette tâche en étapes techniques ? »*
+> ❌ *« Donne-moi du code + une doc + les cas limites. »*
+
+### 3. **Reformuler (valider et clarifier)**
+
+À chaque réponse du modèle, interrogez la cohérence. Reformulez ce que vous avez compris. Provoquez des justifications. Cela crée un dialogue itératif.
+
+> *« Si je comprends bien, tu proposes une architecture orientée services. Quels sont les points faibles de cette approche selon toi ? »*
+
+### 4. **Synthétiser (consolider les décisions)**
+
+Le LLM n’a pas de continuité implicite. Il ne garde pas en tête ce qui a été dit plus tôt, sauf si vous le reformulez. Résumez les décisions, les hypothèses, les orientations prises à chaque étape importante.
+
+> *« Résumons les contraintes du système que nous avons posées : performance, tolérance aux pannes, faible coût. Peux-tu revalider les choix d’architecture à l’aune de ces critères ? »*
+
+### 5. **Tester (mettre à l’épreuve la réponse)**
+
+Ne prenez pas la réponse du modèle pour une vérité. Demandez-lui d’envisager un contre-exemple, une limite, un cas extrême. Cela affine la solution… ou révèle ses failles.
+
+> *« Dans quel cas cette solution pourrait échouer ? »*
+> *« Et si le graphe contient des cycles négatifs ? »*
+
+---
+
+## 🔎 Cas d’usage : reformuler pour penser mieux
+
+Une équipe travaille sur un module de gestion de stock. Elle utilise un LLM pour choisir entre une architecture monolithique et des microservices. Le prompt initial — *« Quelle architecture choisir ? »* — génère une réponse générique.
+
+En injectant des contraintes spécifiques (taille de l’équipe, fréquence des déploiements, besoins d’évolutivité horizontale), la réponse s’affine. Le LLM devient alors un **simulateur d’options**, et le dialogue une façon d'explorer des possibles.
+
+---
+
+## 🛠 Grammaire active — exemple d’atelier
+
+Une autre équipe utilise un LLM comme **facilitateur d’idéation** lors d’un atelier. Chaque participant pose une question au modèle. La réponse est discutée collectivement, puis reformulée. Certains prompts deviennent des objets de travail communs. D'autres sont affinés en groupe. L’IA n’a pas remplacé la discussion : elle l’a catalysée.
+
+---
+
+## 🧭 Synthèse : les 5 réflexes d’une bonne interaction
+
+| Geste         | Question associée                        |
+| -------------- | ---------------------------------------- |
+| **Cadrer**     | Dans quel contexte suis-je ?             |
+| **Questionner** | Est-ce que je pose une seule question claire ? |
+| **Reformuler** | Est-ce que je vérifie ce que le modèle a compris ? |
+| **Synthétiser** | Est-ce que je stabilise ce qui a été décidé ? |
+| **Tester**     | Quelles limites n’ont pas été explorées ? |
 
 <p style="text-align: center;">
     <img src="../images/collaboration.png" width="50%" />
 </p>
 
-Exemple : dans un projet d’application de gestion de stock, une équipe a utilisé un LLM pour explorer les choix entre architecture en microservices ou en monolithe modulaire. Le prompt initial était vague. Le LLM a généré un comparatif généraliste. En affinant, en injectant des contraintes spécifiques (taille de l’équipe, fréquence des déploiements, besoin d’évolutivité horizontale), les réponses sont devenues beaucoup plus pertinentes. C’est cette capacité à dialoguer, à cadrer, à itérer, qui fait la qualité de la collaboration. Le LLM devient alors un partenaire de simulation, un interlocuteur technique, voire un copilote décisionnel.
+---
 
-Ce chapitre introduit ainsi les grands gestes de cette grammaire nouvelle : cadrer, questionner, reformuler, résumer, contrôler. Cela suppose également une posture d’écoute active et de vigilance critique : il ne suffit pas d’obtenir une réponse, encore faut-il en interroger la pertinence, la source, la cohérence avec le reste du projet. Une équipe travaillant sur une application bancaire a ainsi développé une habitude utile : chaque fois qu’un LLM proposait une solution, l’un des développeurs reformulait cette solution sous forme de diagramme ou de cas d’usage, puis la soumettait au modèle pour validation ou extension. Cette méthode, fondée sur la reformulation visuelle et le questionnement continu, s’est révélée très efficace pour détecter des erreurs subtiles ou des raccourcis dangereux. Elle invite à articuler langage technique et visualisation pour renforcer la robustesse des idées générées.
+> La grammaire de l’intention n’est pas une méthode figée. C’est un art d’interagir, d’ajuster, de construire du sens dans la nuance.
 
-Un autre exemple intéressant vient d’un atelier de conception participative, où un LLM était utilisé comme facilitateur d’idéation. Les participants posaient chacun leur tour une question au modèle, puis débattaient des propositions émises. Loin de figer la discussion, l’IA servait ici de catalyseur, rendant visibles des pistes implicites ou relançant la créativité collective. Certains motifs proposés par le LLM ont même été repris et raffinés collectivement, montrant une hybridation fertile entre intelligence humaine et intelligence artificielle. Cela montre bien que la grammaire de l’interaction n’est pas une technique froide, mais un art de l’ajustement : ajustement du langage, des intentions, des formats de réponse attendus, et surtout ajustement mutuel entre ce que l’on cherche et ce que l’outil peut offrir. Chaque motif à venir s’inscrit dans ce mouvement, avec une attention particulière à la manière dont le langage façonne l’outil, et inversement. Comprendre cette grammaire, c’est poser les fondations d’un partenariat fructueux avec les LLM.
+Comprendre cette grammaire, c’est poser les fondations d’un dialogue efficace. C’est apprendre à ne pas déléguer le raisonnement, mais à le distribuer. C’est, en somme, faire du LLM un **copilote intelligent**, et non un oracle à suivre aveuglément.

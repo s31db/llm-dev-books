@@ -1,7 +1,7 @@
 
 ---
 
-## Chapitre — Scénarios prospectifs : vers une ingénierie conversationnelle générative
+## 🔮 Chapitre 13 — Scénarios prospectifs : vers une ingénierie conversationnelle générative
 
 Et si demain, le développement logiciel n’était plus un processus centré sur le code, mais une série de dialogues, de validations progressives, de co-conceptions fluides entre humains et agents conversationnels ? Si certaines équipes n’étaient plus composées que de rôles de supervision, de validation et d’orchestration ? Ce chapitre explore plusieurs scénarios à la frontière du plausible, pour interroger les devenirs possibles du développement augmenté.
 
@@ -67,7 +67,7 @@ De plus en plus, le développement logiciel devient un dialogue : avec les utili
 
 Ce design n’est plus uniquement une UX de chatbot. Il devient le **noyau de l’interaction avec les systèmes**.
 
-> **Encadré : Atelier “Prompt-Design as Code”**
+> **Atelier “Prompt-Design as Code”**
 >
 > Dans certaines équipes, les prompts structurants sont versionnés, testés et revus comme du code. On y applique des patterns de lisibilité, de modularité et de robustesse. Le prompt devient un artefact central du projet, pas un simple outil temporaire.
 

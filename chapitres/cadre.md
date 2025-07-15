@@ -1,7 +1,7 @@
 
 ---
 
-## Chapitre — Cadres de mise en œuvre : ateliers, méthodes et rituels pour une pratique augmentée
+## 🔬 Chapitre 10 — Cadres de mise en œuvre : ateliers, méthodes et rituels pour une pratique augmentée
 
 > Voici le terrain d’expérimentation : des formats pour apprendre ensemble, explorer, tester, documenter et transmettre les usages de l’IA dans vos équipes.
 

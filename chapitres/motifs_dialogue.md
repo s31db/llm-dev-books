@@ -1,81 +1,99 @@
 
 ---
 
-## Chapitre — Les motifs du dialogue : construire un langage de conception avec les LLM
+## 🧰 Chapitre 3 — Les motifs du dialogue : construire un langage de conception avec les LLM
 
-> Comment capturer les meilleures pratiques d’interaction avec une IA ? Ce chapitre présente une collection de motifs issus du terrain, testés, réutilisables et adaptables.
+> Concevoir avec un LLM, c’est plus qu’écrire des prompts. C’est pratiquer un art du dialogue. Ce chapitre propose une bibliothèque de **motifs conversationnels** — des séquences typiques d’interaction, issues du terrain, à la fois réutilisables et adaptables.
 
-Dans ce chapitre, nous allons explorer les motifs fondamentaux qui émergent de l’interaction régulière entre un développeur et un LLM. Ces motifs sont les unités de base d’un nouveau langage de conception, façonné non plus uniquement par les frameworks ou les langages de programmation, mais par les récurrences d’usage entre l’humain et le modèle. Ils forment une bibliothèque de pratiques réutilisables, adaptables, que les équipes peuvent combiner, faire évoluer, et transmettre.
+---
 
-L’objectif est ici de mettre en lumière des structures de pensée récurrentes, des scénarios typiques, et des séquences d’interaction efficaces. Par exemple :
+### Pourquoi un langage de motifs ?
 
-* Comment amorcer un dialogue avec un LLM quand on part d’une idée floue ?
-* Comment affiner un besoin technique à travers plusieurs itérations ?
-* Comment structurer la co-écriture de code, de tests ou de documentation ?
-* Comment obtenir une aide sur une impasse ou une panne conceptuelle ?
+Dans le développement logiciel, certaines situations reviennent sans cesse : formuler un besoin flou, explorer des options techniques, comprendre un code hérité, choisir une architecture. Avec un LLM, ces situations prennent une nouvelle forme — mais les **récurrences d’usage demeurent**.
 
-Ces situations sont autant d’occasions de formaliser des motifs. Nous les présenterons à travers une fiche type comprenant : nom, contexte, problème, solution, conséquences, et exemples. Le tout vise à construire un langage partagé qui outille les praticiens, tout en renforçant leur posture critique.
+> Un motif, c’est une **forme récurrente d’interaction efficace** dans un contexte donné. Il ne dicte pas quoi faire, mais propose un **cadre pour bien faire**.
+
+---
+
+## 🔧 Structure d’un motif
+
+Chaque motif suit une structure claire :
+
+* **Nom** : une expression mémorable
+* **Contexte** : quand le motif s’active
+* **Problème** : ce qui empêche le progrès
+* **Solution** : la posture ou forme d’interaction recommandée
+* **Conséquences** : ce que cela permet
+* **Exemple** : cas réel ou inspiré du terrain
+* **Variantes (facultatif)** : déclinaisons utiles
+* **Outils associés (facultatif)** : IDE, plugin, canevas…
 
 <div style="page-break-after: always;"></div>
 
 ---
 
-### Motif 1 : « Question Socratique » — Reformuler pour comprendre
+## 📚 Bibliothèque de motifs
 
-**Contexte** : Vous êtes confronté à un besoin exprimé de manière floue ou partielle (ex. : "Je veux faire une API pour envoyer des alertes en cas d'erreur système"), ou vous devez explorer un domaine que vous maîtrisez peu.
+---
 
-**Problème** : Un prompt trop vague entraîne souvent une réponse générique, peu exploitable ou déconnectée du contexte réel. Or, les LLM brillent lorsqu’ils sont alimentés en contraintes, en contexte, et en objectifs précis.
+### 🔷 Motif 1 — *Question Socratique* : reformuler pour comprendre
 
-**Solution** : Engagez un dialogue progressif en reformulant la demande initiale sous forme de questions. Par exemple :
+**Contexte**
+Un besoin est exprimé de manière floue ou partielle, ou vous entrez dans un domaine que vous maîtrisez peu.
 
-* "Quels types d’erreurs souhaitez-vous capturer ?"
-* "Les alertes doivent-elles être transmises en temps réel ou agrégées ?"
-* "Quel canal de notification privilégier (email, Slack, webhook) ?"
+**Problème**
+Un prompt vague produit une réponse générique ou mal orientée.
 
-Cette technique, inspirée de la maïeutique socratique, pousse le demandeur (vous-même ou un collègue) à clarifier ses intentions, ce qui améliore la qualité du prompt et donc la pertinence de la réponse.
+**Solution**
+Amorcer un **dialogue par questions progressives** pour clarifier l’intention, comme un facilitateur ou un coach :
 
-**Conséquences** :
+> « Quels types d’erreurs souhaitez-vous capturer ? »
+> « Quel canal de notification ? Quelle fréquence ? »
 
-* Le besoin devient plus clair, même pour les humains impliqués.
-* Le prompt s’enrichit naturellement à chaque itération.
-* Le LLM agit comme un catalyseur de réflexion, pas simplement comme un moteur de complétion.
+**Conséquences**
+
+* Clarifie les besoins, même pour l’humain
+* Enrichit le prompt au fil du dialogue
+* Engage un raisonnement partagé
+
+**Exemple**
+Demander « Crée un script d’alerte » → réponse floue.
+Poser 3 questions ciblées → réponse précise, intégrée au projet réel.
 
 <p style="text-align: center;">
     <img src="../images/carte_mentale_motifs_dialogue.png" width="50%" />
 </p>
 
-**Exemple** : Dans un projet d'alerte météo automatisée, une équipe a d’abord demandé au LLM de "créer un script d’envoi d’alertes". La réponse obtenue ne convenait pas : elle reposait sur des hypothèses erronées (envoi par email, langage Python, etc.). En reformulant progressivement les besoins (fréquence, canal, gestion des seuils de gravité, intégration dans l’architecture existante), le LLM a fini par générer une solution beaucoup plus proche du besoin réel. Cette posture a ensuite été institutionnalisée dans l’équipe sous la forme d’un atelier régulier de co-design assisté par LLM.
-
 <div style="page-break-after: always;"></div>
 
 ---
 
-### Motif 2 : « Exploration Guidée » — Décomposer pour mieux avancer
+### 🔷 Motif 2 — *Exploration guidée* : découper pour mieux avancer
 
-**Contexte** : Vous devez concevoir une fonctionnalité complexe, découvrir un domaine technique inconnu, ou explorer une solution potentielle dont les tenants et aboutissants vous échappent encore.
+**Contexte**
+Vous devez explorer un domaine complexe ou inconnu.
 
-**Problème** : Lorsque vous posez une question large ou trop abstraite à un LLM (ex. : "Comment concevoir une API REST sécurisée ?"), la réponse obtenue peut être trop généraliste, peu exploitable, voire source de confusion. Le LLM donne l'impression de « savoir tout faire » mais sans guider efficacement le cheminement.
+**Problème**
+Les réponses sont trop généralistes. Trop de pistes, pas de structure.
 
-**Solution** : Adoptez une posture d’exploration progressive en demandant au LLM de découper la tâche ou le domaine en étapes claires. Utilisez des formulations comme :
+**Solution**
+Demander au LLM de proposer **une décomposition en étapes**.
 
-* "Peux-tu me décrire les grandes étapes pour… ?"
-* "Quelle serait une première version minimale (MVP) ?"
-* "Quels choix technologiques sont à envisager, et pourquoi ?"
-* "Propose un plan d’implémentation par étapes."
+> « Quelles grandes étapes pour sécuriser une API REST ? »
+> « Propose-moi un plan d’implémentation progressif. »
 
-Le but est de transformer une montagne confuse en une série de collines franchissables.
+**Conséquences**
 
-**Conséquences** :
+* Réduction de la charge cognitive
+* Planification par itération
+* Apprentissage ciblé sur chaque sous-partie
 
-* Le LLM joue un rôle de guide structurant, aidant à prioriser les étapes.
-* La charge cognitive est réduite, car vous avancez pas à pas.
-* Le dialogue devient un levier de formation continue : chaque étape est une occasion d’apprentissage ciblé.
-
-**Exemple** : Dans un projet de migration d’une application monolithique vers une architecture en microservices, une développeuse ne savait par où commencer. Plutôt que de demander "Comment faire la migration ?", elle a utilisé l’exploration guidée : "Peux-tu me proposer un plan en cinq grandes étapes pour migrer un monolithe vers des microservices, avec les pièges courants à éviter ?" Le LLM a alors proposé une approche itérative, incluant la cartographie des dépendances, la séparation des contextes métier, la mise en place d’une couche d’API Gateway, et des stratégies de test spécifiques. Chaque étape a ensuite été discutée plus en détail, facilitant la prise de décision et la coordination avec l’équipe.
+**Exemple**
+Migration monolithe → microservices : demander les étapes, puis explorer chaque étape une à une.
 
 ---
 
-> **Encadré : Une session de pairing augmentée**
+> **Une session de pairing augmentée**
 >
 > Lors d’une séance de co-développement, deux développeurs travaillent ensemble à concevoir un module de traitement de factures. L’un d’eux propose d’interroger le LLM pour structurer le travail. Le prompt initial : *"Comment concevoir un module de traitement de factures dans un ERP ?"* produit une réponse dense mais confuse.
 >
@@ -95,30 +113,38 @@ Le but est de transformer une montagne confuse en une série de collines franchi
 
 ---
 
-### Motif 3 : « Spécification Inversée » — Obtenir un plan à partir du code
+### 🔷 Motif 3 — *Spécification inversée* : remonter aux intentions à partir du code
 
-**Contexte** : Vous découvrez un morceau de code existant, hérité ou généré automatiquement, mais dont les intentions ne sont pas documentées ou pas comprises. Vous devez le maintenir, le refactorer ou le réécrire, mais vous manquez de vision sur sa finalité, ses contraintes ou sa logique métier.
+**Contexte**
+Vous devez comprendre ou refactorer un code sans doc, sans contexte.
 
-**Problème** : Lorsque le code précède la conception (cas fréquent avec les LLM), il devient difficile d’en déduire les intentions originales. Cela ralentit la compréhension, multiplie les erreurs et fragilise la maintenabilité. Le risque est de bricoler sans fond, ou de produire de la dette technique involontairement.
+**Problème**
+Le code précède la conception — impossible d’en déduire les intentions.
 
-**Solution** : Utilisez le LLM pour reconstituer les intentions implicites à partir du code : faites-lui "remonter" les spécifications à partir d’un extrait de code donné. C’est l’inverse du schéma habituel (besoin → code) : ici, on produit la documentation ou le plan de test *à partir* du code. Vous pouvez formuler des demandes comme :
+**Solution**
+Demander au LLM de **reconstituer la logique métier, les hypothèses, ou les user stories** à partir du code.
 
-* "Peux-tu me décrire ce que ce code est censé faire, étape par étape ?"
-* "Quelles règles métiers peux-tu déduire de ce traitement ?"
-* "Peux-tu générer une documentation technique à partir de ce fichier ?"
-* "Quelles hypothèses ce code semble-t-il faire sur les données ?"
+> « Quelles règles métier vois-tu dans ce code ? »
+> « Quelle user story ce bloc implémente-t-il ? »
 
-**Conséquences** :
+**Conséquences**
 
-* Le code devient un point d’entrée vers la compréhension métier.
-* Les équipes peuvent mieux documenter des systèmes anciens ou mal maintenus.
-* Cela permet de générer des cas de test à partir de l’implémentation existante.
+* Documentation rétroactive
+* Détection des biais ou trous logiques
+* Meilleure maintenabilité
 
-**Exemple** : Une développeuse reprend un ancien script Python d’analyse de logs réseau, sans documentation ni tests. Elle copie le code dans un prompt et demande au LLM : *"Explique-moi ligne par ligne ce que fait ce script et quelles règles d’analyse il applique."* Le LLM identifie plusieurs étapes (filtrage par IP, regroupement par heure, détection d’anomalies par seuil), qu’il reformule sous forme d’un pseudo-algorithme. La développeuse peut alors générer une série de tests unitaires, identifier une condition oubliée (filtres sur protocoles), et décider de refactorer le tout sous forme de classes. Le modèle a joué ici le rôle de traducteur et de cartographe inversé.
+**Exemple**
+Un script Python d’analyse réseau est soumis au LLM. Il reconstruit les intentions et génère les cas de test.
+
+**Variantes**
+
+* 3.1 : *Reconstruction d’User Story*
+* 3.2 : *Déduction des hypothèses implicites*
+* 3.3 : *Contrat d’interface implicite*
 
 ---
 
-> **Encadré : Un LLM comme auditeur de code**
+> **Un LLM comme auditeur de code**
 >
 > Lors d’un audit technique sur un système de facturation, une équipe se retrouve face à un module PHP de plus de 800 lignes, écrit il y a 8 ans, sans tests ni documentation. Plutôt que de l'analyser ligne par ligne, l’équipe décide de le soumettre au LLM par blocs successifs.
 >
@@ -131,6 +157,8 @@ Le but est de transformer une montagne confuse en une série de collines franchi
 > * Documenter rétroactivement un système critique,
 > * Réconcilier la logique métier et l’implémentation réelle,
 > * Planifier une refonte progressive sans repartir de zéro.
+
+<div style="page-break-after: always;"></div>
 
 ---
 
@@ -219,24 +247,24 @@ Voici une **routine de revue de code assistée** utilisant ce motif :
 
 ---
 
-### Motif 4 : « Modèle Miroir » — Comparer plusieurs versions pour éclairer un choix
+### 🔷 Motif 4 — *Modèle Miroir* : comparer pour éclairer un choix
 
-**Contexte** : Vous hésitez entre plusieurs implémentations possibles (par exemple, deux structures d’API, deux algorithmes, deux stratégies d’architecture), ou vous avez généré plusieurs variantes avec le LLM et souhaitez les évaluer de façon argumentée.
+**Contexte**
+Vous hésitez entre plusieurs implémentations possibles (par exemple, deux structures d’API, deux algorithmes, deux stratégies d’architecture), ou vous avez généré plusieurs variantes avec le LLM et souhaitez les évaluer de façon argumentée.
 
-**Problème** : Lorsqu’on explore des options seul ou en équipe, il est facile de se focaliser sur une solution "plausible" sans bien comprendre les différences, les conséquences ou les alternatives. Le LLM, sans guidance, tend à générer une seule réponse par défaut.
+**Problème**
+Lorsqu’on explore des options seul ou en équipe, il est facile de se focaliser sur une solution "plausible" sans bien comprendre les différences, les conséquences ou les alternatives. Le LLM, sans guidance, tend à générer une seule réponse par défaut.
 
-**Solution** : Exploitez le LLM comme un **miroir comparatif**. Demandez-lui explicitement de produire *plusieurs* versions d’une même solution, puis de **les comparer lui-même selon des critères définis**. C’est une mise en tension productive entre options, qui stimule l’analyse critique.
+**Solution**
+Exploitez le LLM comme un **miroir comparatif**. Demandez-lui explicitement de produire *plusieurs* versions d’une même solution, puis de **les comparer lui-même selon des critères définis**. C’est une mise en tension productive entre options, qui stimule l’analyse critique.
 
-#### Prompt-type :
+> « Propose trois structures possibles pour ce composant. Compare-les sur lisibilité, performance et maintenabilité. »
 
-* *« Propose-moi 3 variantes de cette fonction avec des styles ou des structures différentes. Puis compare-les sur lisibilité, performance, testabilité. »*
-* *« Voici deux options d’architecture microservices. Peux-tu me les comparer sur les plans de la résilience, de la scalabilité, et de la complexité opérationnelle ? »*
+**Conséquences**
 
-**Conséquences** :
-
-* On décentre le raisonnement : ce n’est plus "la bonne solution", mais "la plus adaptée au contexte".
-* Cela entraîne une meilleure explicitation des critères de choix.
-* Le LLM devient partenaire d’un raisonnement dialectique, pas seulement un fournisseur de contenu.
+* Analyse dialectique
+* Explicitation des critères de choix
+* Réduction du biais de confirmation
 
 ---
 
@@ -260,7 +288,7 @@ Cette analyse partagée permet à l’équipe de trancher plus sereinement, *en 
 
 ---
 
-> 🧭 **Encadré : Le LLM comme miroir d’équipe**
+> 🧭 **Le LLM comme miroir d’équipe**
 >
 > Dans une réunion de design technique, une équipe ne parvient pas à se mettre d’accord entre deux styles de validation de formulaire côté frontend : impératif (en JS pur) ou déclaratif (via une lib type Formik ou React Hook Form).
 >
@@ -284,7 +312,7 @@ Cette analyse partagée permet à l’équipe de trancher plus sereinement, *en 
 
 ---
 
-### Motif 5 : « Clarification par contre-exemple » — Explorer les limites d'une proposition
+### Motif 5 : *Clarification par contre-exemple* : Explorer les limites d'une proposition
 
 **Contexte** : Après avoir reçu une réponse satisfaisante d’un LLM, il arrive que des doutes subsistent : le code proposé est-il robuste ? La solution envisagée tient-elle dans tous les cas ? Les limites implicites du raisonnement sont-elles comprises ?
 
@@ -292,9 +320,8 @@ Cette analyse partagée permet à l’équipe de trancher plus sereinement, *en 
 
 **Solution** : Demander explicitement un contre-exemple ou une situation qui ferait échouer la solution proposée. Cette approche vise à forcer la mise en lumière de zones grises, d’angles morts ou de présupposés implicites. On peut formuler par exemple :
 
-* "Quel cas d’usage pourrait faire échouer cette architecture ?"
-* "Donne-moi un exemple où ce code produit un comportement inattendu."
-* "Y a-t-il un scénario qui rendrait ce modèle inefficace ?"
+> « Quelle situation rend cette solution inefficace ? »
+> « Et si les données sont mal formées ? »
 
 Cette manière de questionner pousse le modèle (et le praticien) à réfléchir en creux, par la négation ou l’invalidation.
 
@@ -308,23 +335,21 @@ Cette manière de questionner pousse le modèle (et le praticien) à réfléchir
 
 ---
 
-> 📌 **Encadré — Posture réflexive : oser douter du bon élève**
+> 📌 **Posture réflexive : oser douter du bon élève**
 >
 > L’une des illusions les plus tenaces dans l’usage des LLM est celle de la "réponse parfaite" dès la première itération. Un motif comme "Clarification par contre-exemple" invite à adopter une posture scientifique : tester, falsifier, chercher ce qui ne va pas, même quand tout semble aller bien. Cela s’apparente à une relecture interne du raisonnement — une forme de revue de code dialoguée — où le développeur devient enquêteur des failles possibles. C’est aussi une manière de former les plus jeunes à ne pas confondre autorité de l’outil et vérité absolue.
-
-Voici une **fiche de motif** associée au *Test-Driven Prompting*, conforme à la structure utilisée dans les chapitres précédents :
 
 <div style="page-break-after: always;"></div>
 
 ---
 
-### Motif 6 : « Prompt Piloté par les Tests » — Définir les attentes avant d’écrire
+### 🔷 Motif 6 — *Prompt piloté par les tests* : définir les attentes avant d’écrire
 
 **Contexte**
-Vous devez rédiger un prompt pour un usage récurrent (génération de code, reformulation de besoin, structuration de contenu…), mais vous obtenez des réponses fluctuantes, incomplètes ou peu adaptées. Vous voulez rendre votre prompt plus fiable, explicite et partageable.
+Vous créez un prompt pour un usage récurrent, mais les réponses sont fluctuantes.
 
 **Problème**
-Un prompt écrit "au feeling" donne des résultats aléatoires. Sans critères de qualité explicites, il est difficile de dire si la réponse du LLM est satisfaisante ou non. Cela rend les itérations peu reproductibles et l’apprentissage limité.
+Sans attentes explicites, le LLM improvise. Les résultats sont inconsistants.
 
 **Solution**
 Adoptez une démarche inspirée du Test-Driven Development : avant de rédiger le prompt, écrivez un ou plusieurs **tests d’intention** qui décrivent ce que vous attendez du LLM. Ce peuvent être :
@@ -355,3 +380,142 @@ Une équipe travaillant sur un assistant de support client voulait générer aut
     <img src="../images/tdp.png" width="50%" />
 </p>
 
+<div style="page-break-after: always;"></div>
+
+---
+
+## 🎯 Motif 7 — *Reformulation Visuelle* : clarifier par la représentation
+
+**Contexte**
+
+Vous utilisez un LLM pour concevoir un système, une fonctionnalité ou un processus. Le modèle vous fournit une solution textuelle relativement structurée (architecture, algorithme, flux d’information, découpage de responsabilités). Mais l'ambiguïté ou la complexité du texte rendent difficile une validation ou une mise en œuvre immédiate. Vous soupçonnez que des incohérences ou des zones d’ombre subsistent.
+
+**Problème**
+
+Le langage naturel (ou pseudo-code) peut masquer des raccourcis logiques, des oublis d’interfaces, des incompatibilités ou des malentendus. Les solutions proposées par le LLM semblent correctes, mais manquent parfois de précision dans la structure ou les interactions.
+
+**Solution**
+
+Transformez la réponse du LLM en **schéma explicite**, puis reformulez ce schéma en **langage naturel structuré**, que vous soumettez de nouveau au modèle. Ce processus permet de :
+
+1. Détecter les zones ambiguës ou incohérentes,
+2. Valider l’adéquation du modèle à l’intention initiale,
+3. Enrichir ou compléter la proposition grâce au dialogue.
+
+Le schéma peut être un diagramme de composants, de classes, de séquence, un cas d’usage, une carte mentale, ou un simple tableau structuré.
+
+**Structure du dialogue**
+
+```plaintext
+1. Prompt initial → Réponse LLM (textuelle)
+2. Schéma du développeur (hors modèle)
+3. Reformulation du schéma en langage naturel
+4. Prompt de validation ou d’extension au LLM
+5. Réponse LLM (corrections, suggestions, alternatives)
+```
+
+**Conséquences**
+
+* Permet de faire émerger des incohérences logiques plus tôt.
+* Clarifie les échanges au sein de l’équipe (support visuel commun).
+* Favorise l’appropriation de la solution par les humains.
+* Renforce la capacité du LLM à produire des propositions robustes (en l’exposant à des feedbacks explicites).
+* Développe des compétences de modélisation chez les développeurs.
+
+**Exemple**
+
+Dans un projet de refonte d’un système de notifications multi-canaux, le LLM propose une architecture textuelle décrivant un service de gestion d’alerte, un module de priorisation, une file d’attente et un mécanisme de diffusion. Un développeur modélise cette proposition dans un diagramme de composants avec draw\.io, puis reformule :
+
+> "J’ai interprété ta proposition ainsi : les alertes arrivent dans un gestionnaire, qui les classe, les stocke si besoin, et les transmet par webhook ou email. Redis sert de cache entre les modules. Ce schéma est-il cohérent ? Y a-t-il des points à améliorer ?"
+
+Le LLM identifie une faiblesse : l’absence de gestion des échecs d’envoi. Il propose un mécanisme de retry avec journalisation, enrichissant la solution.
+
+**Variantes**
+
+* Reformulation par **tableau à double entrée** (utile en cas de rôles et responsabilités).
+* Utilisation d’**outils de modélisation UML**.
+* Croisement avec des **cas d’usage rédigés** (user stories).
+* Passage par **schéma manuscrit** + transcription.
+
+**Anti-pattern**
+
+Ne pas reformuler visuellement des propositions complexes peut conduire à :
+
+* une adhésion aveugle à des solutions incomplètes,
+* une surconfiance dans les capacités du LLM,
+* des malentendus entre co-concepteurs humains.
+
+<p style="text-align: center;">
+    <img src="../images/reformulation_visuelle.png" width="50%" />
+</p>
+
+<div style="page-break-after: always;"></div>
+
+---
+
+### 🔷 Motif 8 — *Soin systémique* : investiguer les causes profondes d’un problème
+
+**Contexte**
+Un comportement inattendu, un problème récurrent ou une tension d’équipe émerge sans cause évidente. La solution technique semble insuffisante ou incomplète. L’équipe cherche à comprendre "ce qui se joue vraiment" pour éviter de traiter seulement les symptômes.
+
+**Problème**
+Les LLM sont souvent utilisés pour résoudre un problème exprimé, sans remettre en question la formulation du problème lui-même. Cela peut conduire à des solutions locales, sans impact durable, ou à des réponses rapides qui contournent les vraies causes. L’intention initiale est rarement interrogée en profondeur.
+
+**Solution**
+Utiliser le LLM comme **partenaire d’investigation systémique**. Mobiliser un cadre comme le Neuf Pourquoi (Nine Whys) ou autre méthode d’analyse causale, en formulant des prompts qui explorent les hypothèses implicites, les causes possibles, les interactions systémiques. Demander ensuite au modèle de proposer **des pistes d’action ciblées** en lien avec les causes identifiées.
+
+**Prompt-type**
+
+> « Voici un problème récurrent dans notre équipe : \[décrire la situation]. Peux-tu m’aider à explorer les raisons profondes en utilisant la méthode des 5 ou 9 Pourquoi ? »
+>
+> « Pour chaque cause possible, quelles actions concrètes pourrions-nous envisager ? »
+>
+> « Quelles causes sont techniques, relationnelles, organisationnelles ? »
+
+**Conséquences**
+
+* Favorise une compréhension plus fine des tensions et blocages.
+* Permet d’identifier des leviers d’action non évidents.
+* Soutient une posture réflexive, systémique, non réactive.
+* Offre un espace de délibération partagée avec l’IA comme catalyseur de recul.
+
+**Exemple**
+Une équipe constate une perte de motivation chez les développeurs autour d’un module complexe. Le LLM est d’abord interrogé sur comment "remotiver" — mais les réponses sont superficielles. Le Scrum Master reformule avec :
+
+> *« Pourquoi cette démotivation selon toi ? Peux-tu explorer plusieurs causes possibles en t’appuyant sur les interactions humaines, les choix d’architecture, le rythme de livraison ? »*
+
+Le modèle identifie alors :
+
+* un manque de clarté dans les critères de qualité,
+* une dette technique anxiogène,
+* une absence de célébration des petits succès.
+
+À partir de là, l’équipe définit plusieurs actions ciblées : des temps d’alignement sur les critères, des rituels de reconnaissance, un refactoring progressif. La cause systémique devient alors un levier d’action partagé.
+
+**Variantes**
+
+* **8.1 — Arbre des causes** : demander au LLM de générer un arbre logique des causes et sous-causes.
+* **8.2 — Croisement de points de vue** : demander au modèle de formuler les causes vues par différents rôles (PO, dev, ops, client…).
+* **8.3 — Hypothèses multiples** : inciter le modèle à produire des hypothèses contradictoires pour enrichir la réflexion.
+
+---
+
+## 🧭 En résumé : la carte des motifs
+
+| Motif                       | Utilité principale                     |
+|-----------------------------|----------------------------------------|
+| **Question socratique**     | Clarification, cadrage                 |
+| **Exploration guidée**      | Décomposition, apprentissage           |
+| **Spécification inversée**  | Compréhension, documentation           |
+| **Modèle miroir**           | Choix argumenté, design                |
+| **Contre-exemple**          | Robustesse, critique                   |
+| **Prompt piloté par les tests** | Prompt stable et reproductible         |
+| **Reformulation visuelle**  | Langage commun, validation collective  |
+| **Soin systémique**         | Analyse causale, investigation en profondeur |
+
+---
+
+> Chaque motif est une brique. Ensemble, ils forment un langage.
+> Ce langage n’est pas figé — il est fait pour évoluer avec vous.
+
+---

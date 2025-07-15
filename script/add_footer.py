@@ -1,0 +1,45 @@
+import fitz  # PyMuPDF
+from pathlib import Path
+from typing import Union
+
+# === Configuration ===
+INPUT_PDF: Union[str, Path] = "document.pdf"
+OUTPUT_PDF: Union[str, Path] = "document_avec_footer.pdf"
+FONT_NAME: str = "helv"
+FONT_SIZE: int = 9
+FOOTER_COLOR: tuple = (0, 0, 0)  # Noir
+MARGIN_BOTTOM: float = 20.0  # Distance du bas de page en points
+
+
+def ajouter_footer(
+    doc: fitz.Document, texte_footer: str, start_page_index: int
+) -> None:
+    """Ajoute un footer à chaque page à partir de start_page_index."""
+    for page_index in range(start_page_index, len(doc)):
+        page = doc[page_index]
+        largeur = page.rect.width - 25
+        hauteur = page.rect.height
+
+        # Position centrée en bas
+        position = fitz.Point(largeur / 2, hauteur - MARGIN_BOTTOM)
+        texte = texte_footer.format(page_number=page_index + 1)
+
+        page.insert_text(
+            position,
+            texte,
+            fontsize=FONT_SIZE,
+            fontname=FONT_NAME,
+            color=FOOTER_COLOR,
+            # align=1,  # Centré
+        )
+
+
+def ajouter_footer_pdf(
+    entree: Union[str, Path], sortie: Union[str, Path], start_page_index: int
+) -> None:
+    """Charge un PDF, ajoute les footers, puis sauvegarde."""
+    with fitz.open(entree) as doc:
+        ajouter_footer(
+            doc, texte_footer="Page {page_number}", start_page_index=start_page_index
+        )
+        doc.save(sortie)

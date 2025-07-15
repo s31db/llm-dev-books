@@ -1,7 +1,7 @@
 
 ---
 
-## Chapitre — Conclusion : vers un manifeste du développement augmenté
+## 🧵 Conclusion : vers un manifeste du développement augmenté
 
 > Et maintenant ? Ce dernier chapitre trace les contours d’un manifeste pour un développement logiciel augmentant l’humain, et non le remplaçant.
 
