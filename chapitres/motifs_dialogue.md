@@ -464,6 +464,27 @@ Les LLM sont souvent utilisés pour résoudre un problème exprimé, sans remett
 **Solution**
 Utiliser le LLM comme **partenaire d’investigation systémique**. Mobiliser un cadre comme le Neuf Pourquoi (Nine Whys) ou autre méthode d’analyse causale, en formulant des prompts qui explorent les hypothèses implicites, les causes possibles, les interactions systémiques. Demander ensuite au modèle de proposer **des pistes d’action ciblées** en lien avec les causes identifiées.
 
+> 🧭 **Les Neuf Pourquoi : creuser le sens pour mieux agir**
+>
+> Inspiré des **Liberating Structures**, le canevas des *Nine Whys* propose un rituel simple, mais puissant : poser neuf fois de suite la question **« Pourquoi est-ce important pour toi ? »** à partir d’un sujet donné.
+>
+> Loin d’être un interrogatoire, c’est un **chemin de clarification progressive**, où chaque réponse devient la base de la question suivante. On ne cherche pas une cause unique, mais une **profondeur de sens** : ce qui motive vraiment l’action, ce qui fonde les choix, ce qui compte profondément.
+>
+> Dans le cadre du développement logiciel, cet outil devient précieux quand :
+>
+> * une décision semble évidente mais suscite du flou ou de la résistance,
+> * un problème technique récurrent cache des tensions humaines ou systémiques,
+> * une équipe veut aligner ses efforts sur ce qui a du sens.
+>
+> 👉 Le LLM peut ici jouer un rôle de **facilitateur de questionnement** : en proposant des formulations de relance, en structurant les réponses, ou en révélant des contradictions implicites.
+>
+> > Exemples de prompts :
+> >
+> > *« Peux-tu m’aider à simuler une session de Nine Whys sur ce problème : \[décrire la situation] ? »*
+> > *« À chaque réponse, propose une reformulation de "Pourquoi est-ce important ?" en changeant légèrement l’angle (valeurs, impact, émotion, système…). »*
+>
+> En sollicitant un LLM avec ce cadre, on transforme une simple séance d’analyse en un **exercice de lucidité collective**, capable de reconnecter la technique au sens.
+
 **Prompt-type**
 
 > « Voici un problème récurrent dans notre équipe : \[décrire la situation]. Peux-tu m’aider à explorer les raisons profondes en utilisant la méthode des 5 ou 9 Pourquoi ? »

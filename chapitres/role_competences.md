@@ -117,7 +117,7 @@ Dans un projet de refonte d’application, un développeur junior et un dévelop
 
 ## 🧪 Cas concret : une rétrospective augmentée
 
-Dans une équipe de développement, le Scrum Master a proposé d’utiliser un LLM comme co-facilitateur de la rétrospective. Les membres de l’équipe formulaient les irritants ou les réussites du sprint, et le modèle proposait des regroupements, des axes de réflexion, voire des pistes d’action. Le rôle du Scrum Master a évolué : il ne centralisait plus les idées, mais orchestrai\*t une interaction triangulaire entre les voix humaines et la synthèse IA. Cette expérimentation a révélé de nouvelles compétences nécessaires : relecture critique, adaptation en direct, design de flux de dialogue.
+Dans une équipe de développement, le Scrum Master a proposé d’utiliser un LLM comme co-facilitateur de la rétrospective. Les membres de l’équipe formulaient les irritants ou les réussites du sprint, et le modèle proposait des regroupements, des axes de réflexion, voire des pistes d’action. Le rôle du Scrum Master a évolué : il ne centralisait plus les idées, mais orchestrait une interaction triangulaire entre les voix humaines et la synthèse IA. Cette expérimentation a révélé de nouvelles compétences nécessaires : relecture critique, adaptation en direct, design de flux de dialogue.
 
 ---
 

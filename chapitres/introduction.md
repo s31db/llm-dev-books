@@ -33,7 +33,7 @@ L’objectif n’est pas de figer des méthodes, mais d’**outiller des pratiqu
 
 À toi, Product Owner, qui cherches à clarifier des besoins flous, à explorer des options sans tout cadrer seul, et à transformer un LLM en partenaire de co-conception plutôt qu’en simple générateur de user stories.
 
-À toi, Soigneur holistique, qui refuses de t’arrêter aux symptômes, et interroges en profondeur les causes d’un problème : en posant toutes les questions du *Nine Whys*, en cartographiant les hypothèses, en croisant les points de vue, en identifiant les racines systémiques avant de proposer des actions durables et partagées — avec l’aide attentive d’un LLM devenu miroir critique autant que soutien analytique.
+À toi, Soigneur holistique, qui refuses de t’arrêter aux symptômes, et interroges en profondeur les causes d’un problème, en cartographiant les hypothèses, en croisant les points de vue, en identifiant les racines systémiques avant de proposer des actions durables et partagées — avec l’aide attentive d’un LLM devenu miroir critique autant que soutien analytique.
 
 Et peut-être à toi, qui n’utilises pas encore de LLM au quotidien — mais pressens qu’il y a là plus qu’une simple aide à l’autocomplétion.
 
