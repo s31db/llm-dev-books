@@ -7,9 +7,9 @@
 
 ---
 
-## 🔹 Pratique individuelle : un dialogue au long cours
+### 🔹 Pratique individuelle : un dialogue au long cours
 
-### 🧑‍💻 1. Travailler avec un LLM comme partenaire personnel
+#### 🧑‍💻 1. Travailler avec un LLM comme partenaire personnel
 
 Un LLM peut devenir :
 
@@ -20,7 +20,7 @@ Un LLM peut devenir :
 
 > Il ne remplace pas votre expertise. Il l’amplifie — si vous savez poser les bonnes questions.
 
-### 🌱 2. Développer ses motifs personnels
+#### 🌱 2. Développer ses motifs personnels
 
 En expérimentant, vous allez découvrir vos propres séquences efficaces. Par exemple :
 
@@ -32,7 +32,7 @@ Documentez-les. Donnez-leur un nom. Partagez-les.
 
 > Un bon motif est souvent **né d’une frustration** bien surmontée.
 
-### 📘 3. Capitaliser avec une “bibliothèque personnelle de prompts”
+#### 📘 3. Capitaliser avec une “bibliothèque personnelle de prompts”
 
 Gardez trace de vos meilleures interactions :
 
@@ -44,9 +44,9 @@ Utilisez une note, un outil de gestion du savoir (ex. Obsidian, Notion), ou un s
 
 ---
 
-## 🤝 Pratiques d’équipe : un langage commun qui se construit
+### 🤝 Pratiques d’équipe : un langage commun qui se construit
 
-### 👥 1. Partager les motifs vécus
+#### 👥 1. Partager les motifs vécus
 
 Lors d’un stand-up, d’une revue, ou d’un débrief :
 
@@ -56,7 +56,7 @@ Lors d’un stand-up, d’une revue, ou d’un débrief :
 
 Ces questions rendent **visible** la pratique conversationnelle avec l’IA.
 
-### 🧩 2. Revue augmentée par motifs
+#### 🧩 2. Revue augmentée par motifs
 
 En code review, ajoutez une dimension “dialogue avec le LLM” :
 
@@ -66,7 +66,7 @@ En code review, ajoutez une dimension “dialogue avec le LLM” :
 
 > Ce n’est plus seulement le code qu’on révise : c’est **le chemin de pensée** qui y mène.
 
-### ✨ 3. Design dialogué en binôme
+#### ✨ 3. Design dialogué en binôme
 
 Un binôme travaille avec un LLM :
 🧑‍💻 1 pose les questions,
@@ -79,7 +79,7 @@ Ce rituel peut faire émerger des **motifs d’équipe** :
 
 ---
 
-## 🛠 Ateliers possibles
+### 🛠 Ateliers possibles
 
 | Atelier | Objectif | Durée | Format |
 |--------|----------|-----------|-----------|
@@ -90,7 +90,7 @@ Ce rituel peut faire émerger des **motifs d’équipe** :
 | **Création de motifs d’équipe** | Formaliser un motif vécu par l’équipe | 60 min | Atelier collaboratif |
 ---
 
-## 📚 Cas d’usage : l’équipe qui se dote de son propre langage
+### 📚 Cas d’usage : l’équipe qui se dote de son propre langage
 
 Une équipe agile décide de créer son “dialecte” d’interaction avec les LLM. À chaque sprint, elle :
 
@@ -108,7 +108,7 @@ Au fil du temps, ces éléments deviennent :
 >
 > Dans une équipe toulousaine, chaque vendredi matin est consacré à un "Atelier IA". Chaque membre partage une interaction marquante avec un LLM durant la semaine. Un tableau Kanban en ligne recense les motifs utilisés, les prompts testés et les résultats obtenus. Cela a permis à l’équipe non seulement d’améliorer la qualité de ses prompts, mais aussi de créer un référentiel commun vivant, nourri par les expériences de chacun.
 
-### Créer un environnement favorable
+#### Créer un environnement favorable
 
 Certains prérequis culturels et organisationnels facilitent grandement l’intégration des motifs :
 
@@ -116,7 +116,7 @@ Certains prérequis culturels et organisationnels facilitent grandement l’int�
 * **Une confiance dans l'autonomie** : laisser aux équipes la liberté de choisir quand et comment interagir avec les LLM.
 * **Une reconnaissance du temps réflexif** : ne pas valoriser uniquement la production immédiate, mais aussi les temps de dialogue et de reformulation.
 
-### Outils et supports
+#### Outils et supports
 
 Pour faciliter l’usage des motifs dans les contextes professionnels, plusieurs outils peuvent être mobilisés :
 
@@ -126,7 +126,7 @@ Pour faciliter l’usage des motifs dans les contextes professionnels, plusieurs
 
 ---
 
-## ✏️ En résumé
+### ✏️ En résumé
 
 * Les motifs deviennent puissants **quand ils sont partagés et incarnés.**
 * Travailler avec un LLM est une pratique vivante, **qui gagne à être racontée.**

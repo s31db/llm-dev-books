@@ -11,7 +11,7 @@
 
 ### *[Idée originale](https://contretemps.azeau.com/post/LLM-assisted-software-design-pattern-language/)*  d’Olivier Azeau
 
-### Bêta-lecteurs Gowen Pottiez, Guillaume Saint-Etienne
+### *Bêta-lecteurs* Gowen Pottiez, Guillaume Saint-Etienne, Cindy Schlaufmann, Philippe Charrière
 
 ---
 

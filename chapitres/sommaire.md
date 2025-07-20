@@ -43,7 +43,7 @@ Accédez à une bibliothèque de motifs concrets : pour clarifier, explorer, com
 
 ---
 
-### 👥 **Chapitre 4 — Nouveaux rôles, nouvelles compétences : l’évolution des équipes augmentées**
+### 👥 **Chapitre 4 — Nouveaux rôles, nouvelles compétences : l’évolution des équipes augmentées**
 
 *Et si le développeur devenait chef d’orchestre du raisonnement ?*
 Explorez comment les rôles techniques évoluent avec les LLM, et découvrez les postures clés de demain.
@@ -120,6 +120,20 @@ Ce chapitre aborde sans détour les doutes, les résistances et les jugements au
 
 ---
 
+### 🏠 **Chapitre 15 — Repenser les design patterns à l’ère des LLM**
+
+*Quand la conception devient conversationnelle.*
+Ce chapitre revisite les design patterns classiques à la lumière des interactions avec les LLM. Et si les motifs du code devenaient des motifs de dialogue ? Une invitation à repenser la conception logicielle non plus comme une architecture figée, mais comme un langage vivant centré sur les intentions.
+
+---
+
+### 🤖 **Chapitre 16 — Nouveaux design patterns émergents à l’ère des LLM et des agents IA**
+
+*De la génération au pilotage conversationnel.*
+Découvrez les motifs émergents nés de la collaboration entre humains, LLM et agents spécialisés : Copilote explorateur, Spécifieur génératif, Réviseur sémantique… Une nouvelle grammaire de design où l’orchestration, la réflexivité et l’hybridation deviennent des compétences clés.
+
+---
+
 ### 🧵 **Conclusion : vers un manifeste du développement augmenté**
 
 *Et maintenant, que faisons-nous de ce nouveau langage ?*
@@ -134,7 +148,35 @@ Cette annexe regroupe les outils concrets mobilisables au quotidien : fiches de 
 
 ---
 
-### 🧭 **Annexe 2 — PO augmenté : pratiquer son rôle avec l’appui d’un LLM**
+### 🧪 **Annexe 2 — TDP : Test-Driven Prompting**
+
+*Écrire des prompts comme on écrit du code testable.*
+Découvrez une méthode rigoureuse pour stabiliser et fiabiliser vos interactions avec les LLM, en définissant les attentes avant même de rédiger le prompt. Une approche inspirée du TDD, pour passer d’un prompt « qui marche une fois » à un artefact robuste, maintenable et partageable.
+
+---
+
+### 🧭 **Annexe 3 — PO augmenté : pratiquer son rôle avec l’appui d’un LLM**
 
 *Clarifier sans déléguer. Explorer sans s’effacer.*
 Cette annexe propose un ensemble d’outils, motifs, prompts et bonnes pratiques pour aider les Product Owners à intégrer l’usage des LLM dans leur quotidien, tout en gardant la maîtrise de leur posture et de leur responsabilité.
+
+---
+
+### 💻 **Annexe 4 — Développeur augmenté : étendre ses gestes avec l’appui d’un LLM**
+
+*Du code à la conversation structurée.*
+Cette annexe explore les gestes, postures et routines qui transforment le quotidien du développeur au contact des LLM : concevoir, explorer, reformuler, documenter… avec plus de clarté et de réflexivité. Un guide pour devenir éditeur de sens autant que producteur de code.
+
+---
+
+### 🎯 **Annexe 5 — Coach agile augmenté : enrichir ses accompagnements avec un LLM**
+
+*L’IA comme partenaire de facilitation.*
+Comment un coach agile peut-il intégrer un LLM dans ses rituels, ses observations et ses accompagnements ? Cette annexe propose des motifs adaptés, des exemples de prompts et des usages concrets pour renforcer l’intelligence collective sans jamais la court-circuiter.
+
+---
+
+### 🧭 **Annexe 6 — Manager 3.0 augmenté : soutenir les dynamiques collectives avec un LLM**
+
+*Pilotage, clarté, alignement : l’IA comme boussole conversationnelle.*
+Cette annexe s’adresse aux managers qui veulent explorer les apports d’un LLM dans leur posture : prise de recul, alignement stratégique, soutien à la décision, ou facilitation d’équipe. Des usages concrets pour renforcer la lucidité, sans abdiquer la responsabilité.

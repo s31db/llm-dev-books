@@ -3,16 +3,42 @@
 
 ## **Et si coder ne signifiait plus écrire du code, mais converser pour concevoir ?**
 
-L’avènement des modèles de langage (LLM) transforme radicalement la manière de penser, d’écrire et de faire vivre le logiciel. Développeur, architecte, enseignant ou coach : chacun voit son rôle évoluer vers une nouvelle forme d’artisanat, mêlant langage naturel, intelligence artificielle et design itératif.
+L’avènement des modèles de langage (LLM) ne se limite pas à une révolution technique : il redéfinit en profondeur nos façons de penser, de créer, de collaborer.
+Développeur, architecte, enseignant, coach ou manager : chacun voit son rôle évoluer vers une nouvelle forme d’artisanat — à la croisée du langage naturel, de l’intelligence artificielle et du design itératif.
 
-**Ce livre propose un langage de motifs** — inspiré des travaux de Christopher Alexander — pour structurer ces nouvelles pratiques. Chaque motif décrit une situation courante, un problème typique, une solution éprouvée et ses conséquences. On y découvre comment formuler un prompt efficace, dialoguer avec un LLM pour concevoir une architecture, affiner une intention métier, évaluer la qualité d’un code généré ou encore co-écrire des tests avec précision.
+**Ce livre propose un langage de motifs conversationnels**, inspiré de l’approche de Christopher Alexander, pour structurer ces nouvelles pratiques.
+Chaque motif décrit une situation typique, une tension récurrente, une solution praticable et ses effets. Vous apprendrez à :
 
-### Concret, structuré, et profondément humain, cet ouvrage est à la fois :
+* formuler des prompts clairs et robustes,
+* co-concevoir avec un LLM dans des contextes variés,
+* affiner des architectures, des tests ou des idées métier,
+* renforcer vos postures de facilitateur, de curateur, d’explorateur…
+
+---
+
+### 📘 Un ouvrage hybride, comme nos métiers
+
+Concret, structuré, et profondément humain, cet ouvrage est à la fois :
 
 * un **guide pratique** pour les professionnels du développement logiciel,
 * un **manifeste** pour une collaboration responsable entre humains et IA,
-* un **outil d’apprentissage** pour celles et ceux qui souhaitent anticiper les mutations en cours.
+* un **outil d’apprentissage** pour celles et ceux qui explorent déjà, ou veulent oser demain.
 
-Issu d’un dialogue entre un praticien chevronné et une IA de génération de texte, ce livre est aussi un exemple vivant de ce qu’il explore : une écriture augmentée, collective, en mouvement.
+---
 
-**Une invitation à repenser la conception logicielle comme une conversation enrichie.**
+### ✍️ Écrit à deux voix : un humain, une IA
+
+Né d’un dialogue constant entre **Samuel Bastiat**, praticien aguerri de l’agilité, du développement logiciel et de l’intelligence collective, et un modèle de langage de nouvelle génération, cet ouvrage est aussi un témoignage vivant de ce qu’il propose : une **écriture augmentée**, réflexive, itérative, parfois surprenante… toujours habitée par le souci du sens.
+
+---
+
+### 💬 Une invitation à changer de posture
+
+> Et si concevoir du logiciel devenait un art de la conversation ?
+> Et si dialoguer avec une IA devenait un levier pour penser mieux, ensemble ?
+> Et si nos métiers devenaient plus humains… à mesure que nos outils deviennent plus puissants ?
+
+---
+
+**Bienvenue dans l’ère de la conception logicielle augmentée.**
+**Bienvenue dans un livre qui vous parle — au sens propre.**

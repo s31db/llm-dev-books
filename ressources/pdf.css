@@ -44,8 +44,12 @@ hr {
   margin: 50pt;
 }
 
+
 blockquote {
-  border: 2px solid #444;
+  border-right: 0.5px solid #444;
+  border-bottom: 0.5px solid #444;
+  border-top: 0.5px solid #444;
+  border-left: 1.5px solid #444;
   background: #fef6e4;
   padding: 4px;
   border-radius: 1px;
@@ -62,4 +66,8 @@ th, td {
   border: 0.75px solid black;
   border-collapse: collapse;
   padding: 3px;
+}
+
+li {
+  list-style-type: disc;
 }

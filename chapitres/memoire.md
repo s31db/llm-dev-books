@@ -8,17 +8,27 @@
 
 ---
 
-## 🧭 Pourquoi ce chapitre ?
+### 🧭 Pourquoi ce chapitre ?
 
 Les motifs que nous avons explorés naissent de situations concrètes. Mais pour les faire vivre dans le temps, ils doivent être **documentés, archivés, capitalisés**.
 
-Ce chapitre vous propose des façons de construire une **mémoire augmentée**, individuelle ou collective, au service de la qualité, de l’apprentissage et de la transmission.
+À l’ère des IA génératives, nos interactions avec les LLM produisent une nouvelle forme de matière grise : des explorations, des hypothèses, des pistes, des erreurs fertiles. Trop souvent, ces dialogues disparaissent aussitôt après usage.
+
+Ce chapitre propose de transformer ces échanges en **actifs informationnels durables**, en intégrant les prompts, les réponses, les ajustements et les apprentissages dans la mémoire vivante des projets.
+
+Il ne s’agit pas de “faire de la doc” au sens classique, mais de **construire une mémoire augmentée**, au service :
+
+* de la qualité des livrables,
+* de l’apprentissage individuel et collectif,
+* de la transmission entre humains et entre générations d’équipe.
+
+C’est une invitation à penser la documentation comme une **extension réflexive de notre pratique**, soutenue par l’IA mais façonnée par les besoins du terrain.
 
 ---
 
-## 🗂️ Trois niveaux de mémoire augmentée
+### 🗂️ Trois niveaux de mémoire augmentée
 
-### 1. 🧠 Mémoire d’interaction
+#### 1. 🧠 Mémoire d’interaction
 
 Conserve les traces d’un échange précis avec un LLM.
 Utilité : rejouer, relire, apprendre de l’expérience.
@@ -36,7 +46,7 @@ Utilité : rejouer, relire, apprendre de l’expérience.
 
 ---
 
-### 2. 📁 Mémoire projet
+#### 2. 📁 Mémoire projet
 
 Intègre les productions IA dans les artefacts projet.
 Utilité : compréhension future, relecture, audits.
@@ -53,7 +63,7 @@ Utilité : compréhension future, relecture, audits.
 
 ---
 
-### 3. 🏛️ Mémoire collective
+#### 3. 🏛️ Mémoire collective
 
 Formalise les motifs, bonnes pratiques, prompt canvas et tests d’intention utiles à l’équipe ou à la communauté.
 
@@ -69,7 +79,7 @@ Formalise les motifs, bonnes pratiques, prompt canvas et tests d’intention uti
 
 ---
 
-## 🧪 Exemple de mémoire vivante : un dossier “/prompts/”
+### 🧪 Exemple de mémoire vivante : un dossier “/prompts/”
 
 ```
 /prompts/
@@ -91,7 +101,7 @@ Ce dossier peut être synchronisé avec Git, intégré dans les revues ou prése
 
 ---
 
-## 🧭 Vers une architecture de la mémoire conversationnelle
+### 🧭 Vers une architecture de la mémoire conversationnelle
 
 Une “mémoire augmentée” n’est pas un répertoire figé. C’est :
 
@@ -108,7 +118,7 @@ Elle peut être **personnelle, d’équipe, ou collective**, mais elle doit touj
 
 ---
 
-## ✏️ En résumé
+### ✏️ En résumé
 
 * Documenter les échanges avec les LLM, ce n’est pas du formalisme. C’est de **l’architecture cognitive**.
 * Trois niveaux à envisager : **interaction, projet, collectif**.
@@ -117,5 +127,3 @@ Elle peut être **personnelle, d’équipe, ou collective**, mais elle doit touj
 
 > Une mémoire augmentée, ce n’est pas une archive.
 > C’est une **trace vivante d’un dialogue de conception.**
-
----

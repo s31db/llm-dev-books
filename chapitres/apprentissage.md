@@ -8,7 +8,7 @@
 
 ---
 
-## 🎯 Pourquoi ce chapitre ?
+### 🎯 Pourquoi ce chapitre ?
 
 Un langage de motifs ne vaut que s’il est :
 
@@ -25,9 +25,9 @@ Ce chapitre répond à une question clé : **comment faire vivre les motifs dans
 
 ---
 
-## 🧑‍🏫 Formation initiale : apprendre par la pratique
+### 🧑‍🏫 Formation initiale : apprendre par la pratique
 
-### 🧪 1. Ateliers d’initiation
+#### 🧪 1. Ateliers d’initiation
 
 | Atelier                           | Objectif                                   | Durée  | Format                   |
 |-----------------------------------|--------------------------------------------|--------|--------------------------|
@@ -39,9 +39,9 @@ Ce chapitre répond à une question clé : **comment faire vivre les motifs dans
 
 ---
 
-## 🤝 Transmission continue : faire vivre les motifs dans l’équipe
+### 🤝 Transmission continue : faire vivre les motifs dans l’équipe
 
-### 📚 2. Partage de motifs vécus
+#### 📚 2. Partage de motifs vécus
 
 Exemples de pratiques :
 
@@ -53,7 +53,7 @@ Exemples de pratiques :
 
 ---
 
-### 🧩 3. Création de motifs d’équipe
+#### 🧩 3. Création de motifs d’équipe
 
 Une équipe peut créer ses propres motifs :
 
@@ -66,7 +66,7 @@ Une équipe peut créer ses propres motifs :
 
 ---
 
-### 💬 4. Témoignage augmenté : le retex conversationnel
+#### 💬 4. Témoignage augmenté : le retex conversationnel
 
 Lors d’un atelier métier, un membre présente une interaction LLM réussie (ou non) :
 
@@ -79,7 +79,7 @@ Ce format court (10–15 min) favorise la **démocratisation du langage de motif
 
 ---
 
-## 🌍 Partage élargi : au-delà de l’équipe
+### 🌍 Partage élargi : au-delà de l’équipe
 
 * Dans une communauté interne (guilde tech, slack d’entreprise) : canal `#prompt-examples`
 * Dans une communauté ouverte (dev.to, conférences, forums) : billet “3 motifs qui m’aident au quotidien”
@@ -87,7 +87,7 @@ Ce format court (10–15 min) favorise la **démocratisation du langage de motif
 
 ---
 
-## 🧠 Une posture à transmettre
+### 🧠 Une posture à transmettre
 
 > Transmettre un motif, ce n’est pas donner une solution.
 > C’est inviter à l’expérimentation, à l’ajustement, à la création de sens.
@@ -100,7 +100,7 @@ Le langage de motifs est vivant. Il appelle à :
 
 ---
 
-## ✏️ En résumé
+### ✏️ En résumé
 
 * Les motifs sont des outils d’apprentissage **par et pour la pratique**.
 * Leur transmission passe par **des formats simples, incarnés, reproductibles**.

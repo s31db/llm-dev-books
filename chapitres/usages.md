@@ -3,7 +3,7 @@
 
 ## 🎓 Chapitre 11 — Usages de l’IA dans l’apprentissage
 
-## L’IA comme tuteur et partenaire pédagogique
+### L’IA comme tuteur et partenaire pédagogique
 
 L’un des usages les plus immédiats des LLM est **l’auto-formation guidée**. Le développeur ou la développeuse peut interroger le modèle comme un mentor disponible à tout moment : pour demander une explication, une analogie, un exemple de code, ou une reformulation.
 

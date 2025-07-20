@@ -29,34 +29,34 @@ C’est cela, travailler avec un LLM. Il faut donc créer les conditions d’un 
 
 ---
 
-## 🎯 Les 5 gestes fondamentaux de la grammaire d’intention
+### 🎯 Les 5 gestes fondamentaux de la grammaire d’intention
 
-### 1. **Cadrer (toujours recontextualiser)**
+#### 1. **Cadrer (toujours recontextualiser)**
 
 Un LLM ne possède ni mémoire longue ni connaissance de votre projet. Vous devez réinjecter le **contexte fonctionnel, technique, métier** dans chaque interaction.
 
 > *« Je travaille sur une application bancaire en Java, mon objectif est de sécuriser les appels à l’API de transaction. »*
 
-### 2. **Questionner (une chose à la fois)**
+#### 2. **Questionner (une chose à la fois)**
 
 Le LLM fonctionne mieux avec des demandes unitaires. Une seule intention par prompt. Si vous lui posez trois questions, il répondra à celle qu’il comprend le mieux… pas forcément la plus importante.
 
 > ✅ *« Peux-tu décomposer cette tâche en étapes techniques ? »*
 > ❌ *« Donne-moi du code + une doc + les cas limites. »*
 
-### 3. **Reformuler (valider et clarifier)**
+#### 3. **Reformuler (valider et clarifier)**
 
 À chaque réponse du modèle, interrogez la cohérence. Reformulez ce que vous avez compris. Provoquez des justifications. Cela crée un dialogue itératif.
 
 > *« Si je comprends bien, tu proposes une architecture orientée services. Quels sont les points faibles de cette approche selon toi ? »*
 
-### 4. **Synthétiser (consolider les décisions)**
+#### 4. **Synthétiser (consolider les décisions)**
 
 Le LLM n’a pas de continuité implicite. Il ne garde pas en tête ce qui a été dit plus tôt, sauf si vous le reformulez. Résumez les décisions, les hypothèses, les orientations prises à chaque étape importante.
 
 > *« Résumons les contraintes du système que nous avons posées : performance, tolérance aux pannes, faible coût. Peux-tu revalider les choix d’architecture à l’aune de ces critères ? »*
 
-### 5. **Tester (mettre à l’épreuve la réponse)**
+#### 5. **Tester (mettre à l’épreuve la réponse)**
 
 Ne prenez pas la réponse du modèle pour une vérité. Demandez-lui d’envisager un contre-exemple, une limite, un cas extrême. Cela affine la solution… ou révèle ses failles.
 
@@ -65,7 +65,7 @@ Ne prenez pas la réponse du modèle pour une vérité. Demandez-lui d’envisag
 
 ---
 
-## 🔎 Cas d’usage : reformuler pour penser mieux
+### 🔎 Cas d’usage : reformuler pour penser mieux
 
 Une équipe travaille sur un module de gestion de stock. Elle utilise un LLM pour choisir entre une architecture monolithique et des microservices. Le prompt initial — *« Quelle architecture choisir ? »* — génère une réponse générique.
 
@@ -73,13 +73,13 @@ En injectant des contraintes spécifiques (taille de l’équipe, fréquence des
 
 ---
 
-## 🛠 Grammaire active — exemple d’atelier
+### 🛠 Grammaire active — exemple d’atelier
 
 Une autre équipe utilise un LLM comme **facilitateur d’idéation** lors d’un atelier. Chaque participant pose une question au modèle. La réponse est discutée collectivement, puis reformulée. Certains prompts deviennent des objets de travail communs. D'autres sont affinés en groupe. L’IA n’a pas remplacé la discussion : elle l’a catalysée.
 
 ---
 
-## 🧭 Synthèse : les 5 réflexes d’une bonne interaction
+### 🧭 Synthèse : les 5 réflexes d’une bonne interaction
 
 | Geste         | Question associée                        |
 | -------------- | ---------------------------------------- |

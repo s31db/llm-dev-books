@@ -19,7 +19,7 @@ Dans ce chapitre, nous proposons une grille simple mais robuste pour concevoir d
 
 Un prompt vague produit une réponse vague.
 
-> ❌ *« Donne-moi un code de trie. »*
+> ❌ *« Donne-moi un code de trie. »*<br/>
 > ✅ *« Écris une fonction Python qui trie une liste de dictionnaires par la clé ‘date’, en ordre décroissant. »*
 
 Soyez explicite. Précisez la tâche, le niveau de détail, le langage. Définissez les frontières de la réponse attendue.
@@ -48,7 +48,7 @@ Il est utile de voir le prompt non comme une requête, mais comme la **première
 
 ---
 
-## 🧭 Typologie des formes de prompts
+### 🧭 Typologie des formes de prompts
 
 Voici quelques formats fréquents que vous retrouverez dans la bibliothèque de motifs (chapitre 4) :
 
@@ -98,7 +98,7 @@ Voici quelques formats fréquents que vous retrouverez dans la bibliothèque de 
 
 ---
 
-## 🛠 Fiche-outil — Structure d’un bon prompt
+### 🛠 Fiche-outil — Structure d’un bon prompt
 
 | Élément            | Exemple                                                                  |
 |--------------------|--------------------------------------------------------------------------|
@@ -110,7 +110,7 @@ Voici quelques formats fréquents que vous retrouverez dans la bibliothèque de 
 
 ---
 
-## ✏️ En résumé
+### ✏️ En résumé
 
 Un bon prompt, c’est :
 

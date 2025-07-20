@@ -1,13 +1,13 @@
 
 ---
 
-## 🤔 Chapitre — Dois-je avoir honte d'utiliser l'IA dans mon métier de développeur informatique ?
+## 🤔 Chapitre 14 — Dois-je avoir honte d'utiliser l'IA dans mon métier de développeur informatique ?
 
 > Ce n’est pas la machine qui est honteuse. C’est le regard que l’on porte sur ce que l’on en fait.
 
 ---
 
-## 🙋 Une question qui revient souvent
+### 🙋 Une question qui revient souvent
 
 « Tu fais faire ton boulot par une IA maintenant ? »
 « Tu codes ou tu copies/colles ce que ChatGPT te dit ? »
@@ -17,7 +17,7 @@ Si vous avez déjà utilisé un LLM dans votre activité de développeur, il est
 
 ---
 
-## 🧠 Travailler avec une IA, ce n’est pas déléguer son métier
+### 🧠 Travailler avec une IA, ce n’est pas déléguer son métier
 
 Utiliser un LLM ne signifie pas « sous-traiter son cerveau ». Cela signifie **articuler son expertise avec un outil génératif**. Et cela demande des compétences spécifiques :
 
@@ -32,7 +32,7 @@ Utiliser un LLM ne signifie pas « sous-traiter son cerveau ». Cela signifie **
 
 ---
 
-## ⚖️ Ce qui pose problème, ce n’est pas l’outil — c’est l’usage
+### ⚖️ Ce qui pose problème, ce n’est pas l’outil — c’est l’usage
 
 Vous ne devriez pas avoir honte d’utiliser une IA.
 Mais vous devriez peut-être avoir honte de :
@@ -46,7 +46,7 @@ Mais vous devriez peut-être avoir honte de :
 
 ---
 
-## 💬 Réhabiliter le droit à l’outillage
+### 💬 Réhabiliter le droit à l’outillage
 
 A-t-on eu honte d’utiliser un IDE ?
 A-t-on eu honte d’utiliser des bibliothèques ?
@@ -56,7 +56,7 @@ Le LLM est un nouvel outil dans cette longue chaîne d’augmentation du dévelo
 
 ---
 
-## ✊ Affirmer une nouvelle fierté professionnelle
+### ✊ Affirmer une nouvelle fierté professionnelle
 
 La fierté n’est pas dans le « tout fait main ».
 Elle est dans la capacité à :

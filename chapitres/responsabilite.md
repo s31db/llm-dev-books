@@ -8,7 +8,7 @@
 
 ---
 
-## 🧭 Pourquoi ce chapitre ?
+### 🧭 Pourquoi ce chapitre ?
 
 Dans un contexte où :
 
@@ -20,9 +20,9 @@ la **documentation des interactions avec les LLM** devient un enjeu majeur. Non 
 
 ---
 
-## 📘 Partie 1 — Documenter l’usage des LLM
+### 📘 Partie 1 — Documenter l’usage des LLM
 
-### 1.1 Pourquoi documenter ?
+#### 1.1 Pourquoi documenter ?
 
 * Pour garder une trace des choix faits avec l’aide de l’IA.
 * Pour éviter la **dette générative** : du code produit trop vite, sans explication.
@@ -33,7 +33,7 @@ la **documentation des interactions avec les LLM** devient un enjeu majeur. Non 
 
 ---
 
-### 1.2 Que documenter ?
+#### 1.2 Que documenter ?
 
 | Élément                         | Objectif                                                      |
 | ------------------------------- | ------------------------------------------------------------- |
@@ -45,7 +45,7 @@ la **documentation des interactions avec les LLM** devient un enjeu majeur. Non 
 
 ---
 
-### 1.3 Formats possibles
+#### 1.3 Formats possibles
 
 * Annotation en commentaire dans le code
 * Historique dans l’outil LLM (chat, snapshot, fichier `.prompt.md`)
@@ -54,7 +54,7 @@ la **documentation des interactions avec les LLM** devient un enjeu majeur. Non 
 
 ---
 
-### 1.4 Exemple concret
+#### 1.4 Exemple concret
 
 ```js
 // Fonction générée à partir d’un prompt GPT-4 le 12/04/2025
@@ -66,9 +66,9 @@ la **documentation des interactions avec les LLM** devient un enjeu majeur. Non 
 
 ---
 
-## ⚖️ Partie 2 — Enjeux éthiques et responsabilité
+### ⚖️ Partie 2 — Enjeux éthiques et responsabilité
 
-### 2.1 LLM = responsabilité partagée
+#### 2.1 LLM = responsabilité partagée
 
 > Ce n’est pas parce qu’un LLM a proposé un code que vous en êtes moins responsable.
 > Vous êtes responsable **de ce que vous comprenez, validez, intégrez**.
@@ -86,7 +86,7 @@ Les modèles sont puissants, mais :
 
 ---
 
-### 2.2 Risques fréquents
+#### 2.2 Risques fréquents
 
 | Risque                        | Exemple                                                                  |
 |-------------------------------|--------------------------------------------------------------------------|
@@ -98,7 +98,7 @@ Les modèles sont puissants, mais :
 
 ---
 
-### 2.3 Questions à se poser (checklist éthique)
+#### 2.3 Questions à se poser (checklist éthique)
 
 1. Ai-je compris ce que le modèle a produit ?
 2. Puis-je expliquer à quelqu’un pourquoi cette solution est valable ?
@@ -112,7 +112,7 @@ Les modèles sont puissants, mais :
 
 ---
 
-## 🔍 Vers une culture de la transparence
+### 🔍 Vers une culture de la transparence
 
 * Rendre visible l’usage des LLM n’est pas une contrainte. C’est **un levier de confiance collective.**
 * Cela permet de relire, de corriger, de transmettre.
@@ -128,7 +128,7 @@ Les modèles sont puissants, mais :
 ---
 
 
-## 🔐 Protéger les données, même dans le dialogue
+### 🔐 Protéger les données, même dans le dialogue
 
 > *Tout ce que vous envoyez à un LLM n’est pas neutre — ni invisible.*
 
@@ -149,7 +149,7 @@ Enfin, se poser une question simple avant chaque envoi :
 
 Ce souci de **protection des données** s’inscrit dans une éthique plus large : celle d’un développement **responsable, traçable et conscient de ses impacts** — techniques, sociaux et légaux.
 
-## ✏️ En résumé
+### ✏️ En résumé
 
 * La documentation des prompts et des interactions est une **bonne pratique technique** et un **geste éthique.**
 * Les LLM déplacent la responsabilité, mais ne la dissolvent pas.

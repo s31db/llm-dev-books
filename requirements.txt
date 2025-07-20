@@ -3,3 +3,5 @@ markdown-pdf>=1.7
 pypandoc>=1.15
 pypandoc_binary>=1.15
 pdflatex>=0.1.3
+pilmoji>=2.0.4
+pillow>=11.3.0

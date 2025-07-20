@@ -1,7 +1,7 @@
 
 ---
 
-## 🧭 Annexe 2 — **PO augmenté : pratiquer son rôle avec l’appui d’un LLM**
+## 🧭 Annexe 3 — **PO augmenté : pratiquer son rôle avec l’appui d’un LLM**
 
 > 🎯 *Le LLM est un partenaire d’exploration, pas un pilote produit.*
 > Cette fiche s’adresse aux Product Owners qui souhaitent intégrer l’usage des LLM dans leur quotidien, sans déléguer leur responsabilité ni brouiller leur posture.
