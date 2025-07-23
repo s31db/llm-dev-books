@@ -37,6 +37,8 @@ Un LLM ne possède ni mémoire longue ni connaissance de votre projet. Vous deve
 
 > *« Je travaille sur une application bancaire en Java, mon objectif est de sécuriser les appels à l’API de transaction. »*
 
+<div class="pb-A4"></div>
+
 #### 2. **Questionner (une chose à la fois)**
 
 Le LLM fonctionne mieux avec des demandes unitaires. Une seule intention par prompt. Si vous lui posez trois questions, il répondra à celle qu’il comprend le mieux… pas forcément la plus importante.

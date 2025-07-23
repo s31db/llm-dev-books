@@ -3,6 +3,10 @@
 
 ### 🟣 Motif 7 — **Reformulation visuelle** : *Clarifier par la représentation*
 
+<p style="text-align: center;">
+    <img src="../images/reformulation_visuelle.png" width="50%" />
+</p>
+
 **🎯 Contexte**
 Le LLM propose une solution textuelle : une architecture, un algorithme, un processus, une organisation de code. La réponse est intéressante, mais dense ou ambiguë. Vous soupçonnez qu’il manque des liens, que des parties sont floues ou que des incohérences se cachent dans la linéarité du texte.
 
@@ -65,8 +69,3 @@ Ne restez pas dans le flou textuel. Passez par la **visualisation pour clarifier
 **💬 Prompt-type à mémoriser**
 
 > *« Voici une reformulation textuelle de mon schéma. Peux-tu vérifier si elle est cohérente avec ta proposition initiale, et proposer des améliorations ? »*
-
-
-<p style="text-align: center;">
-    <img src="../images/reformulation_visuelle.png" width="50%" />
-</p>

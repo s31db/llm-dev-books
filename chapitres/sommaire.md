@@ -50,21 +50,21 @@ Explorez comment les rôles techniques évoluent avec les LLM, et découvrez les
 
 ---
 
-### 🗺️ **Chapitre 5 — Cartographier les usages : typologie des situations et des rôles**
+### 🗺️ **Chapitre 5 — Cartographier les usages : typologie des situations et des rôles**
 
 *Identifier sa situation pour choisir la bonne approche.*
 Une typologie claire des situations fréquentes pour savoir quel motif ou posture activer à chaque étape.
 
 ---
 
-### 🛠️ **Chapitre 6 — Intégrer les motifs au quotidien : entre travail individuel et pratiques d’équipe**
+### 🛠️ **Chapitre 6 — Intégrer les motifs au quotidien : entre travail individuel et pratiques d’équipe**
 
 *Les motifs prennent vie quand on les incarne.*
 Des pratiques individuelles aux rituels d’équipe, découvrez comment rendre ces idées utiles, vivantes, partagées.
 
 ---
 
-### ⚖️ **Chapitre 7 — Responsabilité, transparence et limites : une éthique du développement augmenté**
+### ⚖️ **Chapitre 7 — Responsabilité, transparence et limites : une éthique du développement augmenté**
 
 *Ce que vous validez avec l’IA vous engage.*
 Une réflexion essentielle sur la manière de documenter, fiabiliser et assumer les décisions prises avec l’IA.
@@ -78,7 +78,7 @@ Comment les LLM s’intègrent dans les rituels agiles : planning, revue, rétro
 
 ---
 
-### 🔬 **Chapitre 9 — Cadres de mise en œuvre : ateliers, méthodes et rituels pour une pratique augmentée**
+### 🔬 **Chapitre 9 — Cadres de mise en œuvre : ateliers, méthodes et rituels pour une pratique augmentée**
 
 *Faire vivre les motifs, ensemble et dans la durée.*
 Découvrez comment intégrer les motifs dans la réalité de vos pratiques : ateliers structurés, formats d’animation, rituels d’équipe. Un chapitre-outil pour transformer l’expérimentation individuelle en dynamique collective.
@@ -99,14 +99,14 @@ Ce chapitre explore les façons dont les LLM transforment les pratiques d’appr
 
 ---
 
-### 🗂️ **Chapitre 12 — Documenter, archiver, capitaliser : vers une mémoire augmentée**
+### 🗂️ **Chapitre 12 — Documenter, archiver, capitaliser : vers une mémoire augmentée**
 
 *Et si les prompts devenaient un patrimoine vivant ?*
 Ce chapitre propose des méthodes pour structurer, conserver et partager les interactions avec les LLM : comment documenter les prompts utiles, créer une mémoire collective d’équipe, et faire émerger des pratiques durables autour de la capitalisation assistée par IA.
 
 ---
 
-### 🔮 **Chapitre 13 — Scénarios prospectifs : vers une ingénierie conversationnelle générative**
+### 🔮 **Chapitre 13 — Scénarios prospectifs : vers une ingénierie conversationnelle générative**
 
 *Quand la conversation devient le cœur du système.*
 Explorez plusieurs visions du futur : équipes augmentées par des boucles de dialogue, infrastructures guidées par l’intention, ingénierie pilotée par le langage. Ce chapitre esquisse les contours émergents d’une discipline en devenir : l’ingénierie conversationnelle générative.
@@ -141,7 +141,9 @@ Ce chapitre conclut le livre en ouvrant un horizon : celui d’un développement
 
 ---
 
-### 📋 Annexes — Fiches d’outils
+<div class="pb-A4"></div>
+
+### 📋 Annexe 1 — Fiches d’outils
 
 *Des formes légères pour ancrer les pratiques.*
 Cette annexe regroupe les outils concrets mobilisables au quotidien : fiches de motifs, canevas d’interaction, structures de prompt, grilles d’atelier. À adapter, détourner, enrichir selon vos contextes.
@@ -162,21 +164,21 @@ Cette annexe propose un ensemble d’outils, motifs, prompts et bonnes pratiques
 
 ---
 
-### 💻 **Annexe 4 — Développeur augmenté : étendre ses gestes avec l’appui d’un LLM**
+### 💻 **Annexe 4 — Développeur augmenté : étendre ses gestes avec l’appui d’un LLM**
 
 *Du code à la conversation structurée.*
 Cette annexe explore les gestes, postures et routines qui transforment le quotidien du développeur au contact des LLM : concevoir, explorer, reformuler, documenter… avec plus de clarté et de réflexivité. Un guide pour devenir éditeur de sens autant que producteur de code.
 
 ---
 
-### 🎯 **Annexe 5 — Coach agile augmenté : enrichir ses accompagnements avec un LLM**
+### 🎯 **Annexe 5 — Coach agile augmenté :: enrichir ses accompagnements avec un LLM**
 
 *L’IA comme partenaire de facilitation.*
 Comment un coach agile peut-il intégrer un LLM dans ses rituels, ses observations et ses accompagnements ? Cette annexe propose des motifs adaptés, des exemples de prompts et des usages concrets pour renforcer l’intelligence collective sans jamais la court-circuiter.
 
 ---
 
-### 🧭 **Annexe 6 — Manager 3.0 augmenté : soutenir les dynamiques collectives avec un LLM**
+### 👩‍💼 **Annexe 6 — Manager 3.0 augmenté : soutenir les dynamiques collectives avec un LLM**
 
 *Pilotage, clarté, alignement : l’IA comme boussole conversationnelle.*
 Cette annexe s’adresse aux managers qui veulent explorer les apports d’un LLM dans leur posture : prise de recul, alignement stratégique, soutien à la décision, ou facilitation d’équipe. Des usages concrets pour renforcer la lucidité, sans abdiquer la responsabilité.

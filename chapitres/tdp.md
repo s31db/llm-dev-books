@@ -35,26 +35,28 @@ Structurer les interactions avec un LLM **de manière rigoureuse et vérifiable*
 
 ---
 
+<div class="pb-A4"></div>
+
 ### 🧪 Exemple de TDP
 
-> **Intent** : Générer une API REST Node.js basique avec Express
-> **Critères de succès** :
+> **Intention** : Générer une API REST Node.js basique avec Express
+>
+> **Critères de succès** :<br/>
 >
 > * Doit contenir au moins deux routes
 > * Utiliser `express.json()`
 > * Inclure une structure de dossier propre
 >
-> **Prompt initial** :
+> **Prompt initial** :<br/>
 > « Crée une API REST Express avec deux routes (GET/POST), utilisant express.json() et une structure propre. »
 >
-> **Cas de test** :
->
+> **Cas de test** :<br/>
 > * Présence d’un fichier `index.js` avec routes claires ✅
 > * Utilisation de `express.json()` ✅
 > * Structure MVC ❌ → à préciser
 >
-> **Boucle d’ajustement** :
-> ➔ Ajouter au prompt : « Organise le code en respectant un modèle MVC simple. »
+> **Boucle d’ajustement** :<br/>
+> → Ajouter au prompt : « Organise le code en respectant un modèle MVC simple. »
 
 ---
 
@@ -78,6 +80,8 @@ Structurer les interactions avec un LLM **de manière rigoureuse et vérifiable*
 | **Curateur rigoureux**    | Capitalise les prompts testés et efficaces                    |
 
 ---
+
+<div class="pb-A4"></div>
 
 ### ⚠️ Points de vigilance
 

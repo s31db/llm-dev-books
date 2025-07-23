@@ -28,7 +28,7 @@ C’est une invitation à penser la documentation comme une **extension réflexi
 
 ### 🗂️ Trois niveaux de mémoire augmentée
 
-#### 1. 🧠 Mémoire d’interaction
+#### 🧠 Mémoire d’interaction
 
 Conserve les traces d’un échange précis avec un LLM.
 Utilité : rejouer, relire, apprendre de l’expérience.
@@ -40,13 +40,14 @@ Utilité : rejouer, relire, apprendre de l’expérience.
 | Modifications humaines | Ce qui a été gardé, rejeté, modifié        |
 | Tags ou motif associé | “exploration guidée”, “miroir technique”   |
 
+<div class="pb-A4"></div>
 
-👉 **Format proposé** : Fiche `.prompt.md` ou entrée Obsidian/Notion
+👉 **Format proposé** : Fiche `.prompt.md` ou entrée Obsidian/Notion<br/>
 👉 Exemple de nommage : `2025-05-05_motif-miroir_auth-service.md`
 
 ---
 
-#### 2. 📁 Mémoire projet
+#### 📁 Mémoire projet
 
 Intègre les productions IA dans les artefacts projet.
 Utilité : compréhension future, relecture, audits.
@@ -58,12 +59,12 @@ Utilité : compréhension future, relecture, audits.
 | Architecture | Synthèse IA comparant 2 options d’implémentation             |
 | Tests       | Origine du jeu de test (généré, adapté, validé par l’équipe) |
 
-👉 **Format proposé** : Dossier `/doc/ai_interactions/`, avec `prompt + réponse + retex`
+👉 **Format proposé** : Dossier `/doc/ai_interactions/`, avec `prompt + réponse + retex`<br/>
 👉 Bonus : créer une **PR augmentée**, qui explique comment l’IA a contribué
 
 ---
 
-#### 3. 🏛️ Mémoire collective
+#### 🏛️ Mémoire collective
 
 Formalise les motifs, bonnes pratiques, prompt canvas et tests d’intention utiles à l’équipe ou à la communauté.
 
@@ -74,7 +75,7 @@ Formalise les motifs, bonnes pratiques, prompt canvas et tests d’intention uti
 | Journal d’équipe génératif   | Historique d’usage, discussion, évolution |
 | Grammaire maison             | Guide de formulation interne              |
 
-👉 **Outils associés** : Miro / Notion / Gitbook / Docusaurus…
+👉 **Outils associés** : Miro / Notion / Gitbook / Docusaurus…<br/>
 👉 Conseil : commencez petit. Une page “Motifs de la semaine” suffit à démarrer.
 
 ---

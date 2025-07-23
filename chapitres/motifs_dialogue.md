@@ -28,30 +28,8 @@ Chaque motif suit une structure claire :
 * **Variantes (facultatif)** : déclinaisons utiles
 * **Outils associés (facultatif)** : IDE, plugin, canevas…
 
-<div style="page-break-after: always;"></div>
-
 ---
 
 ### 📚 Bibliothèque de motifs
 
 > Cette bibliothèque de motifs est un outil utile pour **construire un langage de conception** avec un LLM.
-
-### 🧭 En résumé : la carte des motifs
-
-| Motif                       | Utilité principale                     |
-|-----------------------------|----------------------------------------|
-| **Question socratique**     | Clarification, cadrage                 |
-| **Exploration guidée**      | Décomposition, apprentissage           |
-| **Spécification inversée**  | Compréhension, documentation           |
-| **Modèle miroir**           | Choix argumenté, design                |
-| **Contre-exemple**          | Robustesse, critique                   |
-| **Prompt piloté par les tests** | Prompt stable et reproductible         |
-| **Reformulation visuelle**  | Langage commun, validation collective  |
-| **Soin systémique**         | Analyse causale, investigation en profondeur |
-
----
-
-> Chaque motif est une brique. Ensemble, ils forment un langage.
-> Ce langage n’est pas figé — il est fait pour évoluer avec vous.
-
----

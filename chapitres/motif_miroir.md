@@ -3,6 +3,10 @@
 
 ### 🟣 Motif 4 — **Modèle miroir** : *Comparer pour éclairer un choix*
 
+<p style="text-align: center;">
+    <img src="../images/motif_miroir.png" width="50%" />
+</p>
+
 **🎯 Contexte**
 Vous hésitez entre plusieurs solutions possibles : deux architectures, deux approches algorithmiques, deux styles de code, deux outils. L’équipe discute, mais le débat reste flou ou biaisé. Vous avez besoin de prendre du recul pour décider *en conscience*, et pas par réflexe ou préférence personnelle.
 
@@ -17,6 +21,8 @@ Utiliser le LLM comme **miroir comparatif** : lui demander explicitement de prod
 > * « Propose deux implémentations de cette fonction : l’une impérative, l’autre fonctionnelle. Compare-les. »
 > * « Donne trois options d’architecture et leurs avantages/inconvénients selon nos contraintes. »
 > * « Compare React et Svelte pour ce type de projet. »
+
+<div class="pb-A4"></div>
 
 **📌 Conséquences**
 

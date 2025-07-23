@@ -44,8 +44,8 @@ Pas de mention de l’IA. Même pas un commentaire dans le code.
 
 Le lendemain, au daily, Adrien jette un œil à la PR :
 
-> — Joli ! C’est toi qui as trouvé ce pattern ?
-> Maxime hoche la tête :
+> — Joli ! C’est toi qui as trouvé ce pattern ?<br/>
+> Maxime hoche la tête :<br/>
 > — J’ai… fait des recherches.
 
 Personne ne dit rien. Il passe la parole au suivant.
@@ -79,22 +79,19 @@ Sarah ouvre son éditeur, puis un fichier `.md` à part.
 
 Léo hésite.
 
-> — On ne va pas coder directement ?
-> 
+> — On ne va pas coder directement ?<br/> 
 > — Si, mais regarde. Ça nous évite de rester enfermés dans une seule approche.
 
 Elle tape :
 
-> Contexte : On doit faire cohabiter deux systèmes de login (LDAP et OAuth) dans une même appli backend.
->
+> Contexte : On doit faire cohabiter deux systèmes de login (LDAP et OAuth) dans une même appli backend.<br/>
 > Prompt : Donne 3 stratégies possibles avec avantages/inconvénients pour ce scénario.
 
 ChatGPT propose trois options, bien structurées.
 
 Ils lisent ensemble. Sarah ne choisit pas pour Léo. Elle demande :
 
-> — Laquelle tu trouves la plus simple à tester ?
-> 
+> — Laquelle tu trouves la plus simple à tester ?<br/> 
 > — La deuxième. Mais faudrait éviter que ça devienne spaghetti.
 
 Ils modifient le prompt. Demandent un exemple. Puis un autre avec un twist de sécurité. Ils discutent, rigolent parfois — quand l’IA propose des choses absurdes.

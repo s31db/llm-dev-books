@@ -23,6 +23,8 @@ L’objectif n’est pas de figer des méthodes, mais d’**outiller des pratiqu
 
 ---
 
+<div class="pb-A4"></div>
+
 ### 🧭 À qui s’adresse ce livre ?
 
 À toi, développeur ou développeuse, qui ressens que tes outils évoluent plus vite que tes repères.

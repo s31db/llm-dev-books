@@ -1,9 +1,11 @@
 from pilmoji import Pilmoji
 from PIL import Image, ImageDraw, ImageFont
+from pathlib import Path
 from os import path
 
 
 def emoji_to_image(emoji_char) -> str:
+    Path("../emoji").mkdir(parents=False, exist_ok=True)
     emoji_label = "-".join(f"{ord(c):X}" for c in emoji_char)
     filename = f"../emoji/{emoji_label}.png"
     if path.exists(filename):

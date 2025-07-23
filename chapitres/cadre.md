@@ -161,6 +161,8 @@ Après avoir exploré les motifs, les principes et les scénarios du développem
 
 ---
 
+<div class="pb-A4"></div>
+
 ##### 3. Clôture et captation (1 à 2 min)
 
 * L’équipe choisit un ou deux points à **retenir ou capitaliser** :

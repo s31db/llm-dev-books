@@ -1,7 +1,7 @@
 
 ---
 
-## 🧭 Annexe 6 — **Manager 3.0 augmenté : soutenir les dynamiques collectives avec un LLM**
+## 👩‍💼 Annexe 6 — **Manager 3.0 augmenté : soutenir les dynamiques collectives avec un LLM**
 
 > Le management 3.0 repose sur la confiance, la transparence, la délégation, la culture du feedback. Intégrer un LLM dans cette posture, c’est **ouvrir un espace de dialogue élargi**, pour mieux questionner, clarifier, décider… et parfois sortir de ses angles morts.
 
@@ -38,6 +38,8 @@ Explorer comment un manager 3.0 peut **mobiliser un LLM comme partenaire de réf
 | **Sparring partner réflexif** | Utilise le LLM comme miroir pour mieux se positionner           |
 
 ---
+
+<div class="pb-A4"></div>
 
 ### 🔄 Exemples de situations courantes
 

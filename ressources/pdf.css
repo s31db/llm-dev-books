@@ -7,6 +7,23 @@ body, h1, h2, h3, h4, h5, h6, p {
   overflow-wrap: break-word;
 }
 
+body {
+  background-color: #fef6e4;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.pb-A4 {
+  page-break-before: always;
+}
+
+.pb-A5 {
+  display: none;
+}
+
+@page {
+  margin: 50pt;
+}
+
 /* Améliore l'espacement des paragraphes */
 p {
   line-height: 1.5;
@@ -24,12 +41,6 @@ img {
   margin-bottom: 20px;
 }
 
-
-body {
-  background-color: #fef6e4;
-  font-family: 'Helvetica Neue', sans-serif;
-}
-
 h1, h2 {
   font-weight: bold;
   letter-spacing: 1px;
@@ -40,10 +51,6 @@ hr {
   border-top: 3px dotted #8bd3dd;
 }
 
-@page {
-  margin: 50pt;
-}
-
 
 blockquote {
   border-right: 0.5px solid #444;
@@ -51,10 +58,11 @@ blockquote {
   border-top: 0.5px solid #444;
   border-left: 1.5px solid #444;
   background: #fef6e4;
-  padding: 4px;
+  padding: 3px;
   border-radius: 1px;
   page-break-after: avoid;
   page-break-inside: avoid;
+  margin: 8px;
 }
 
 table {

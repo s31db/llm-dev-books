@@ -7,7 +7,7 @@ Et si demain, le développement logiciel n’était plus un processus centré su
 
 ---
 
-### 1. L’équipe “full-LLM” : un opérateur humain pour 5 agents spécialisés
+### L’équipe “full-LLM” : un opérateur humain pour 5 agents spécialisés
 
 Dans cette configuration, un humain ne code plus lui-même, mais orchestre un ensemble d’agents conversationnels spécialisés :
 
@@ -41,7 +41,7 @@ Ce type de scénario reste prospectif, mais les briques technologiques sont en v
 
 ---
 
-### 2. Architecture générative pilotée par dialogue
+### Architecture générative pilotée par dialogue
 
 Dans les approches classiques, l’architecture logicielle est figée en amont ou modifiée à coût élevé. Dans une approche augmentée, elle devient **évolutive, exploratoire, dialogique**.
 
@@ -57,7 +57,7 @@ Le rôle de l’architecte devient alors **scénariste de trajectoires technique
 
 ---
 
-### 3. Le design conversationnel comme forme de développement
+### Le design conversationnel comme forme de développement
 
 De plus en plus, le développement logiciel devient un dialogue : avec les utilisateurs, avec les autres membres de l’équipe, avec les IA. Le **design conversationnel** devient une compétence centrale :
 
@@ -72,6 +72,8 @@ Ce design n’est plus uniquement une UX de chatbot. Il devient le **noyau de l�
 > Dans certaines équipes, les prompts structurants sont versionnés, testés et revus comme du code. On y applique des patterns de lisibilité, de modularité et de robustesse. Le prompt devient un artefact central du projet, pas un simple outil temporaire.
 
 ---
+
+<div class="pb-A4"></div>
 
 ### Vers une nouvelle ingénierie : augmentée, exploratoire, réflexive
 

@@ -87,6 +87,8 @@ Ce format court (10–15 min) favorise la **démocratisation du langage de motif
 
 ---
 
+<div class="pb-A4"></div>
+
 ### 🧠 Une posture à transmettre
 
 > Transmettre un motif, ce n’est pas donner une solution.

@@ -21,7 +21,7 @@ Ils reflètent une évolution des architectures logicielles vers plus de réflex
 
 ---
 
-### 🧪 1. Qu’est-ce qu’un pattern émergent ?
+### 🧪 Qu’est-ce qu’un pattern émergent ?
 
 Un *pattern émergent* est :
 
@@ -34,7 +34,7 @@ Ce chapitre se fonde sur l’observation de prototypes, d’outils open source e
 
 ---
 
-### 🔭 2. Exemples de nouveaux patterns avec les LLM
+### 🔭 Nouveaux patterns avec les LLM
 
 #### 🧠 Pattern “Agent Collaboratif”
 
@@ -147,7 +147,7 @@ Ce chapitre se fonde sur l’observation de prototypes, d’outils open source e
 
 ---
 
-### 🧰 3. Représenter ces nouveaux patterns
+### 🧰 Représenter ces nouveaux patterns
 
 Ces motifs exigent de nouveaux outils de représentation :
 
@@ -160,7 +160,7 @@ Des outils comme Mermaid, D2, ou tldraw peuvent être détournés pour représen
 
 ---
 
-### 🎮 4. Ateliers pour explorer ces patterns émergents
+### 🎮 Ateliers pour explorer ces patterns émergents
 
 #### 🧪 Atelier “Pattern Invention”
 
@@ -180,7 +180,7 @@ Des outils comme Mermaid, D2, ou tldraw peuvent être détournés pour représen
 
 ---
 
-### ⚠️ 5. Limites et vigilance
+### ⚠️ Limites et vigilance
 
 * ⚖️ Un pattern ne devient utile que s’il répond à une situation réelle.
 * 🔍 Il faut **valider expérimentalement** ce que propose l’IA comme motif.

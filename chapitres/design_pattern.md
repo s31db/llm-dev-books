@@ -15,7 +15,7 @@ Ce chapitre propose une nouvelle manière d'explorer les patterns, non comme des
 
 ---
 
-### 📈 1. Les patterns classiques : force, limite, défi
+### 📈 Les patterns classiques : force, limite, défi
 
 Les *design patterns* (GoF, GRASP, DDD, EIP...) apportent un vocabulaire commun. Mais dans la pratique :
 
@@ -32,9 +32,9 @@ Les LLM permettent de :
 
 ---
 
-### 🖊️ 2. Trois patterns classiques revisites avec l’IA
+### 🖊️ Patterns classiques revisites avec l’IA
 
-#### ✨ Exemple 1 : Le pattern “Strategy”
+#### ✨ Le pattern “Strategy”
 
 **But** : encapsuler des algorithmes interchangeables.
 
@@ -52,7 +52,7 @@ Les LLM permettent de :
 
 ---
 
-#### ✨ Exemple 2 : Le pattern “Observer”
+#### ✨ Le pattern “Observer”
 
 **But** : notifie des composants dépendants lorsqu’un événement se produit.
 
@@ -70,7 +70,7 @@ Les LLM permettent de :
 
 ---
 
-#### ✨ Exemple 3 : Le pattern “Factory”
+#### ✨ Le pattern “Factory”
 
 **But** : déléguer la création d’objets à une fonction/fabrique.
 
@@ -86,10 +86,11 @@ Les LLM permettent de :
 
 **→ Réflexion induite** : quel est le degré de configurabilité nécessaire ? quel impact sur les tests ?
 
-
 ---
 
-#### ✨ Exemple 4 : Le pattern “Decorator”
+<div class="pb-A4"></div>
+
+#### ✨ Le pattern “Decorator”
 
 **But** : ajouter dynamiquement des comportements à un objet.
 
@@ -107,7 +108,7 @@ Les LLM permettent de :
 
 ---
 
-#### ✨ Exemple 5 : Le pattern “Command”
+#### ✨ Le pattern “Command”
 
 **But** : encapsuler une action sous forme d’objet.
 
@@ -125,7 +126,7 @@ Les LLM permettent de :
 
 ---
 
-#### ✨ Exemple 6 : Le pattern “Adapter”
+#### ✨ Le pattern “Adapter”
 
 **But** : faire correspondre une interface attendue avec une implémentation existante.
 
@@ -143,7 +144,7 @@ Les LLM permettent de :
 
 ---
 
-#### ✨ Exemple 7 : Le pattern “Proxy”
+#### ✨ Le pattern “Proxy”
 
 **But** : contrôler l'accès à un objet (paresse, sécurité, journalisation).
 
@@ -161,7 +162,7 @@ Les LLM permettent de :
 
 ---
 
-#### ✨ Exemple 8 : Le pattern “Composite”
+#### ✨ Le pattern “Composite”
 
 **But** : permettre de traiter une hiérarchie d’objets comme une seule entité.
 
@@ -179,7 +180,7 @@ Les LLM permettent de :
 
 ---
 
-#### ✨ Exemple 9 : Le pattern “Builder”
+#### ✨ Le pattern “Builder”
 
 **But** : construire progressivement des objets complexes.
 
@@ -197,7 +198,7 @@ Les LLM permettent de :
 
 ---
 
-#### ✨ Exemple 10 : Le pattern “Event Sourcing”
+#### ✨ Le pattern “Event Sourcing”
 
 **But** : conserver l’historique complet des changements d’état sous forme d’événements.
 
@@ -215,7 +216,7 @@ Les LLM permettent de :
 
 ---
 
-#### ✨ Exemple 11 : Le pattern “CQRS” (Command Query Responsibility Segregation)
+#### ✨ Le pattern “CQRS” (Command Query Responsibility Segregation)
 
 **But** : séparer les modèles de lecture et d’écriture pour optimiser chacun.
 
@@ -233,7 +234,7 @@ Les LLM permettent de :
 
 ---
 
-#### ✨ Exemple 12 : Le pattern “Circuit Breaker”
+#### ✨ Le pattern “Circuit Breaker”
 
 **But** : éviter qu’un système défaillant ne surcharge le reste de l’application.
 
@@ -251,7 +252,7 @@ Les LLM permettent de :
 
 ---
 
-### 🎮 3. Nouveaux motifs de dialogue architectural
+### 🎮 Nouveaux motifs de dialogue architectural
 
 | Motif | Intention | Prompt-type | Risque |
 |-------|-----------|-------------|--------|
@@ -263,7 +264,7 @@ Les LLM permettent de :
 
 ---
 
-### 🎓 4. Atelier : le dilemme architectural augmenté
+### 🎓 Atelier : le dilemme architectural augmenté
 
 #### Objectif :
 

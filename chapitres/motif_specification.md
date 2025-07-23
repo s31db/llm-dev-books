@@ -3,6 +3,10 @@
 
 ### 🟣 Motif 3 — **Spécification inversée** : *Remonter aux intentions à partir du code*
 
+<p style="text-align: center;">
+    <img src="../images/motif_specification.png" width="50%" />
+</p>
+
 **🎯 Contexte**
 Vous devez comprendre un code existant, souvent ancien, mal documenté, ou écrit par quelqu’un d’autre. Vous arrivez *après* la conception. Il n’y a pas de user stories, de documentation claire, ni d’intention explicite. Vous devez pourtant refactorer, auditer, tester, ou réexpliquer ce code.
 
@@ -23,6 +27,8 @@ Utiliser le LLM comme **détecteur d’intention rétroactif**. Lui soumettre de
 > * « Quelles règles métier cela semble-t-il implémenter ? »
 > * « Quelle user story pourrait correspondre à ce bloc de code ? »
 > * « Quelles hypothèses implicites sur les données ou le contexte ce code semble-t-il faire ? »
+
+<div class="pb-A4"></div>
 
 **📌 Conséquences**
 
@@ -49,7 +55,7 @@ Ce travail itératif permet de reconstruire les intentions d’origine, de docum
 
 #### **🌀 Variantes utiles**
 
-* **3.1 — Reconstruction d’User Stories**
+* **Reconstruction d’User Stories**
 
 Au lieu de demander uniquement *ce que fait le code*, on pousse le LLM à reformuler les intentions en *termes fonctionnels utilisateur*. Exemple de prompt :
 
@@ -57,7 +63,7 @@ Au lieu de demander uniquement *ce que fait le code*, on pousse le LLM à reform
 
 **Usage** : utile dans des projets où le code a été produit avant la formalisation des besoins (souvent le cas dans des prototypes ou des phases de hackathon).
 
-* **3.2 — Déduction d’hypothèses implicites**
+* **Déduction d’hypothèses implicites**
 
 Demandez au LLM :
 
@@ -65,7 +71,9 @@ Demandez au LLM :
 
 **Usage** : précieux pour détecter des biais implicites, des présupposés sur les inputs, ou des angles morts en sécurité.
 
-* **3.3 — Contrat d’interface implicite**
+<div class="pb-A4"></div>
+
+* **Contrat d’interface implicite**
 
 Demandez au LLM :
 

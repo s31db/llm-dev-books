@@ -39,6 +39,8 @@ Développer un **rapport conscient, stratégique et évolutif** à l’usage des
 
 ---
 
+<div class="pb-A4"></div>
+
 ### 🔄 Exemples de situations courantes
 
 | Situation                      | Prompt-type | Motifs activés |

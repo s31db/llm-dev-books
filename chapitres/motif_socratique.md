@@ -3,6 +3,10 @@
 
 ### 🟣 Motif 1 — **Question Socratique** : *Reformuler pour comprendre*
 
+<p style="text-align: center;">
+    <img src="../images/motif_socratique.png" width="50%" />
+</p>
+
 **🎯 Contexte**
 Un besoin est exprimé de façon floue, incomplète, ou imprécise — que ce soit par vous-même, un collègue, un client ou un utilisateur. Vous entrez dans une zone d'incertitude : la formulation initiale du prompt est insuffisante pour guider une réponse utile. Cela peut se produire au début d’un projet, dans une phase d’exploration, ou lors d’un échange interdisciplinaire.
 
@@ -18,6 +22,8 @@ Adopter une posture de **questionnement socratique** : poser des **questions cib
 > * « À qui est destinée l’alerte ? »
 > * « Quelles sont les conséquences attendues de cette action ? »
 > * « À quel moment dans le processus intervient ce script ? »
+
+<div class="pb-A4"></div>
 
 **📌 Conséquences**
 
@@ -60,6 +66,8 @@ Cette démarche transforme un prompt vague en **spécification dialoguée**.
 
   > « Imagine que je ne suis pas sûr de ce que je veux. Aide-moi à explorer les options à partir de mes contraintes. »
 
+<div class="pb-A4"></div>
+
 **🛠️ Outils associés**
 
 * Mode *roleplay* : demander au LLM d’agir comme un UX designer, un coach agile ou un product manager.
@@ -71,7 +79,3 @@ Ne cherchez pas une réponse immédiate. Cherchez la **bonne question suivante**
 **💬 Prompt-type à mémoriser**
 
 > *« Aide-moi à clarifier ma demande en me posant des questions. Ne propose pas encore de solution. »*
-
-<p style="text-align: center;">
-    <img src="../images/carte_mentale_motifs_dialogue.png" width="50%" />
-</p>

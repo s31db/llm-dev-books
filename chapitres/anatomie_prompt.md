@@ -32,6 +32,8 @@ Un LLM ne connaît pas l'ensemble de votre projet, ni vos contraintes. C’est �
 
 Fournir le bon contexte, c’est permettre une réponse plus ciblée, plus pertinente, plus réaliste.
 
+<div class="pb-A4"></div>
+
 #### 3. **Intention : dire pourquoi vous posez la question**
 
 La qualité de l’échange dépend de la clarté du but visé.
@@ -62,12 +64,13 @@ Voici quelques formats fréquents que vous retrouverez dans la bibliothèque de 
 
 ---
 
+<div class="pb-A4"></div>
+
 ### ✅ Bonnes pratiques
 
 * Formatez vos prompts avec des **puces, blocs de code ou titres** pour structurer la pensée.
 * Ajoutez des **exemples** : ils guident le modèle et clarifient vos attentes.
 * Soyez explicite sur :
-
   * le langage et la version utilisés ;
   * le style ou niveau attendu ;
   * les contraintes spécifiques (techniques, fonctionnelles, organisationnelles).
@@ -100,15 +103,17 @@ Voici quelques formats fréquents que vous retrouverez dans la bibliothèque de 
 
 ### 🛠 Fiche-outil — Structure d’un bon prompt
 
-| Élément            | Exemple                                                                  |
-|--------------------|--------------------------------------------------------------------------|
-| **Contexte**       | « Je travaille sur une API FastAPI en Python déployée sur AWS Lambda… »  |
-| **Tâche claire**   | « …je veux une fonction qui valide un token JWT dans les headers HTTP. » |
-| **Contraintes**    | « Sans ORM, logs clairs en cas d’échec, Python 3.10. »                   |
-| **Intention**      | « Le but est que ce soit compréhensible pour un développeur junior. »    |
-| **Format attendu** | « Exemple commenté + tests unitaires. »                                  |
+| Élément            | Exemple                                                                 |
+|--------------------|-------------------------------------------------------------------------|
+| **Contexte**       | « Je travaille sur une API FastAPI en Python déployée sur AWS Lambda… » |
+| **Tâche claire**   | « Je veux une fonction qui valide un token JWT dans les headers HTTP. » |
+| **Contraintes**    | « Sans ORM, logs clairs en cas d’échec, Python 3.10. »                  |
+| **Intention**      | « Le but est que ce soit compréhensible pour un développeur junior. »   |
+| **Format attendu** | « Exemple commenté + tests unitaires. »                                 |
 
 ---
+
+<div class="pb-A4"></div>
 
 ### ✏️ En résumé
 
@@ -122,5 +127,3 @@ Un bon prompt, c’est :
 C’est la base de toute collaboration fructueuse avec un LLM.
 
 > « Ce n’est pas l’IA qui est floue. C’est souvent notre manière de lui parler. » *ChatGPT*
-
----

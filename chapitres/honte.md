@@ -3,6 +3,12 @@
 
 ## 🤔 Chapitre 14 — Dois-je avoir honte d'utiliser l'IA dans mon métier de développeur informatique ?
 
+<p style="text-align: center;">
+    <img src="../images/honte_h.png" width="25%" />
+    <img src="../images/honte_f.png" width="25%" />
+</p>
+
+
 > Ce n’est pas la machine qui est honteuse. C’est le regard que l’on porte sur ce que l’on en fait.
 
 ---

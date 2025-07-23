@@ -1,9 +1,57 @@
 from pathlib import Path
+import os
+import hashlib
+import shelve
+
+# import argparse
 from re import findall, UNICODE, compile as re_compile, MULTILINE
+from functools import wraps
+from time import time
+from typing import Dict, List, Callable
+
+# Import du module de profilage
+# from profiler import profile, Profiler
 
 from emoji_img import emoji_to_image
-
 from base64 import b64encode
+from add_footer import ajouter_footer_pdf
+from publish_pdf import export_pdf
+
+from cProfile import Profile
+from functools import wraps
+from pstats import Stats
+from io import StringIO
+
+
+def profile0(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        profiler = Profile()
+        # profiler.enable()
+        result = func(*args, **kwargs)
+        profiler.disable()
+        profiler.print_stats(sort="time")
+        return result
+
+    return wrapper
+
+
+def profile(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        pr = Profile()
+        pr.enable()
+        result = func(*args, **kwargs)
+        pr.disable()
+        s = StringIO()
+        ps = Stats(pr, stream=s).sort_stats("time")
+        ps.print_stats(10)
+        print("📊 Top 10 des appels les plus longs :")
+        print(s.getvalue())
+        return result
+
+    return wrapper
+
 
 PAGES = [
     "../chapitres/page_garde.md",
@@ -47,13 +95,69 @@ PAGES = [
     "../chapitres/manager.md",
     "../chapitres/quatrieme_couverture.md",
 ]
+# PAGES = PAGES[:4]
 
 
+def get_cache_path() -> Path:
+    """Retourne le chemin du fichier de cache."""
+    # cache_dir = Path.home() / ".llm-dev-books-cache"
+    cache_dir = Path("../build/.llm-dev-books-cache")
+    cache_dir.mkdir(exist_ok=True)
+    return cache_dir / "image_cache.db"
+
+
+def clear_image_cache() -> None:
+    """Vide le cache des images encodées."""
+    cache_file = get_cache_path()
+    if cache_file.exists():
+        os.remove(cache_file)
+
+
+# @profile
 def img64(image_path: str) -> str:
-    with open(image_path, "rb") as image_file:
-        return b64encode(image_file.read()).decode("utf-8")
+    """
+    Encode une image en base64 avec mise en cache des résultats.
+
+    Args:
+        image_path: Chemin vers le fichier image
+
+    Returns:
+        Chaîne encodée en base64 de l'image
+    """
+    # Obtenir le chemin absolu normalisé pour la clé de cache
+    abs_path = str(Path(image_path).resolve())
+
+    # Créer une empreinte du chemin pour la clé de cache
+    key = hashlib.sha256(abs_path.encode("utf-8")).hexdigest()
+
+    # Vérifier la date de modification du fichier pour l'invalidation du cache
+    file_mtime = os.path.getmtime(abs_path)
+
+    with shelve.open(str(get_cache_path())) as cache:
+        cache_key = f"{key}_{file_mtime}"
+
+        # Vérifier si le résultat est en cache
+        if cache_key in cache:
+            return cache[cache_key]
+
+        print(f"image non en cache : {image_path}")
+
+        # Si non en cache, lire et encoder l'image
+        with open(abs_path, "rb") as image_file:
+            encoded = b64encode(image_file.read()).decode("utf-8")
+
+            # Mettre en cache le résultat
+            cache[cache_key] = encoded
+
+            # Nettoyer les entrées obsolètes pour ce fichier
+            for k in list(cache.keys()):
+                if k.startswith(key + "_") and k != cache_key:
+                    del cache[k]
+
+            return encoded
 
 
+# @profile
 def unique_md(
     cover: bool = True,
     images64: bool = True,
@@ -133,39 +237,46 @@ def unique_md(
                     f.write('<div style="page-break-after: always;"></div>\n')
 
 
+# @profile
 def pdf():
     unique_md(True, True, True, True, True)
-    from publish_pdf import export_pdf
+    pdf_A4()
+    # PDF pour impression format de poche
+    # pdf_A5()
 
+
+def pdf_A5():
+    print("A5")
+    tmp_pdf = "../build/llm_assisted_software_design_a5.pdf"
+    export_pdf(
+        [
+            "../build/llm_assisted_software_design.md",
+        ],
+        tmp_pdf,
+        "../ressources/print.css",
+        paper_size="A5",
+    )
+    print("Ajout du footer")
+    ajouter_footer_pdf(
+        tmp_pdf, "../pdf/llm_assisted_software_design_a5.pdf", 8, fontsize=9
+    )
+
+
+def pdf_A4():
     print("A4")
     export_pdf(
         [
             "../build/llm_assisted_software_design.md",
         ],
-        "../pdf/llm_assisted_software_design.pdf",
+        "../build/llm_assisted_software_design.pdf",
         "../ressources/pdf.css",
     )
-
-    # print("A5")
-    #
-    # tmp_pdf = "../build/llm_assisted_software_design_a5.pdf"
-    #
-    # export_pdf(
-    #     [
-    #         "../build/llm_assisted_software_design.md",
-    #     ],
-    #     tmp_pdf,
-    #     "../ressources/print.css",
-    #     paper_size="A5",
-    # )
-    # print("Ajout du footer")
-    # from add_footer import ajouter_footer_pdf
-    #
-    # ajouter_footer_pdf(
-    #     tmp_pdf,
-    #     "../pdf/llm_assisted_software_design_a5.pdf",
-    #     8,
-    # )
+    ajouter_footer_pdf(
+        "../build/llm_assisted_software_design.pdf",
+        "../pdf/llm_assisted_software_design.pdf",
+        8,
+        fontsize=11,
+    )
 
 
 def epub():
@@ -239,8 +350,12 @@ if __name__ == "__main__":
     # check_pages()
     # check_chapters_sommaire()
     # To send file to LLM
+    # main()
     # unique_md(cover=False, images64=False, images=False, emoji=True, emoji_image=False)
+
     pdf()
+    # cProfile.run("pdf()")
     # Test pandoc
     # pdf_pandoc()
     epub()
+    print("Done")

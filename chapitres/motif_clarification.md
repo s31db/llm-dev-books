@@ -3,6 +3,10 @@
 
 ### 🟣 Motif 5 — **Clarification par contre-exemple** : *Explorer les limites d’une proposition*
 
+<p style="text-align: center;">
+    <img src="../images/motif_clarification.png" width="50%" />
+</p>
+
 **🎯 Contexte**
 Le LLM a produit une réponse satisfaisante — un code, une solution technique, une recommandation. Tout semble correct… mais une forme de doute persiste. Est-ce vraiment robuste ? La réponse couvre-t-elle tous les cas ? Le raisonnement tient-il dans les cas extrêmes ?
 
@@ -26,6 +30,8 @@ Interroger la réponse **par la négation** : demander un **contre-exemple**, un
 * Formation d’une posture critique chez le développeur.
 * Réduction des effets de bord ou des surprises en production.
 * Enrichissement du prompt initial si besoin (cf. motif 6).
+
+<div class="pb-A4"></div>
 
 **💡 Exemple d’usage**
 Un étudiant demande au LLM d’implémenter l’algorithme de Dijkstra en JavaScript.

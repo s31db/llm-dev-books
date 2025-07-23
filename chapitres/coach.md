@@ -39,6 +39,8 @@ Explorer comment un coach, facilitateur ou Scrum Master peut **intégrer les LLM
 
 ---
 
+<div class="pb-A4"></div>
+
 ### 🔄 Exemples de situations courantes
 
 | Situation                           | Prompt-type                                                          | Motifs activés                                  |
@@ -69,6 +71,8 @@ Explorer comment un coach, facilitateur ou Scrum Master peut **intégrer les LLM
 * Il ne remplace jamais **la présence, l’écoute active, le discernement humain**.
 
 ---
+
+<div class="pb-A4"></div>
 
 ### 🛠 Pour aller plus loin
 

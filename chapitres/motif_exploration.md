@@ -3,6 +3,10 @@
 
 ### 🟣 Motif 2 — **Exploration guidée** : *Découper pour mieux avancer*
 
+<p style="text-align: center;">
+    <img src="../images/motif_exploration.png" width="50%" />
+</p>
+
 **🎯 Contexte**
 Vous abordez un sujet complexe, nouveau ou flou — une architecture, un algorithme, une fonctionnalité transversale, un domaine métier inconnu. La tâche paraît vaste ou informe. Vous sentez que vous avez besoin d’un **plan d’attaque** pour avancer étape par étape.
 

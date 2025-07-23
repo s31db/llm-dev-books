@@ -17,7 +17,7 @@ De nombreuses équipes encouragent déjà cet usage comme un réflexe naturel : 
 
 ---
 
-### 2. Génération assistée de documentation
+### Génération assistée de documentation
 
 La production de documentation est souvent négligée ou reportée. Avec l’IA, il devient possible de la générer **de manière incrémentale et contextuelle**, à partir :
 
@@ -35,7 +35,9 @@ Ce type de documentation “sur demande” réduit la friction cognitive, et per
 
 ---
 
-### 3. Prompts comme artefacts à versionner
+<div class="pb-A4"></div>
+
+### Prompts comme artefacts à versionner
 
 Un des concepts les plus innovants dans ce nouveau paradigme est celui de **prompt comme artefact documentaire**. Autrement dit : un prompt bien formulé peut devenir une *ressource à part entière*, au même titre qu’un test unitaire ou qu’un ticket Jira.
 
@@ -52,7 +54,7 @@ Certains outils émergent déjà autour de cette idée : *prompt repositories*, 
 
 ---
 
-### 4. Ateliers d’équipe, learning loops et coaching augmenté
+### Ateliers d’équipe, learning loops et coaching augmenté
 
 L’IA peut aussi enrichir les dynamiques d’équipe, en nourrissant des **rituels collectifs d’apprentissage**. Voici quelques formats efficaces :
 

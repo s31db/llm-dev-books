@@ -3,6 +3,10 @@
 
 ## 👥 Chapitre 4 — Nouveaux rôles, nouvelles compétences : l’évolution des équipes augmentées
 
+<p style="text-align: center;">
+    <img src="../images/role_competences.png" width="50%" />
+</p>
+
 > Concevoir avec un LLM, ce n’est peut-être pas seulement une question d’outillage. Cela pourrait représenter un changement plus profond dans la manière dont les rôles s’exercent, se redéfinissent… ou s’adaptent en continu.
 
 ---
@@ -23,11 +27,13 @@ Ces questions ne visent pas à produire une réponse définitive, mais à **ouvr
 
 ### 🧭 Deux grilles de lecture
 
-#### 1. **Les rôles fonctionnels**
+#### **Les rôles fonctionnels**
 
 Ce sont les rôles formels dans une équipe : développeur·euse, PO, tech lead, coach, etc. Ils s’inscrivent dans une organisation explicite, observable.
 
-#### 2. **Les postures conversationnelles**
+<div class="pb-A4"></div>
+
+#### **Les postures conversationnelles**
 
 Ce sont les manières d’interagir avec le LLM : poser des questions, filtrer, reformuler, explorer… Elles sont plus diffuses, mais tout aussi déterminantes dans un environnement augmenté.
 
@@ -144,6 +150,8 @@ Dans un projet de refonte d’application, un développeur junior et un dévelop
 Dans une équipe de développement, le Scrum Master a proposé d’utiliser un LLM comme co-facilitateur de la rétrospective. Les membres de l’équipe formulaient les irritants ou les réussites du sprint, et le modèle proposait des regroupements, des axes de réflexion, voire des pistes d’action. Le rôle du Scrum Master a évolué : il ne centralisait plus les idées, mais orchestrait une interaction triangulaire entre les voix humaines et la synthèse IA. Cette expérimentation a révélé de nouvelles compétences nécessaires : relecture critique, adaptation en direct, design de flux de dialogue.
 
 ---
+
+<div class="pb-A4"></div>
 
 ### 🎓 Vers de nouveaux rôles ?
 

@@ -1,7 +1,7 @@
 
 ---
 
-## 🗺️ Chapitre 5 — Cartographier les usages : typologie des situations et des rôles
+## 🗺️ Chapitre 5 — Cartographier les usages : typologie des situations et des rôles
 
 > Concevoir avec un LLM, ce n’est pas appliquer une méthode linéaire. C’est **naviguer dans un espace d’interactions possibles**, qui varie selon le contexte, l’intention, et le niveau de maturité. Ce chapitre propose une **carte de ces usages**, à la fois pour mieux s’orienter et pour enrichir sa pratique.
 
@@ -75,6 +75,8 @@ Voici une première **typologie de six situations-types** fréquemment rencontr�
 
 ---
 
+<div class="pb-A4"></div>
+
 ### 🧭 Situation-type 3 — Refactorisation guidée
 
 > *Contexte :* une fonction ancienne, non testée ni commentée, doit être réécrite sans en casser la logique.
@@ -97,12 +99,13 @@ Voici une première **typologie de six situations-types** fréquemment rencontr�
 > *Contexte :* deux devs imaginent ensemble l’architecture d’un nouveau module, en dialogue avec un LLM.
 
 **Posture** : facilitateur, co-concepteur
-**Prompts enchaînés** :
-« Quels sont les patterns possibles pour ce type de traitement ? » →
-« Compare event-driven et pub/sub dans ce cas précis. » →
-« Aide-nous à rédiger un plan d’implémentation en trois étapes. »
-**Motifs activés** :
 
+**Prompts enchaînés** :
+* « Quels sont les patterns possibles pour ce type de traitement ? » →
+* « Compare event-driven et pub/sub dans ce cas précis. » →
+* « Aide-nous à rédiger un plan d’implémentation en trois étapes. »
+
+**Motifs activés** :
 * *Exploration guidée*
 * *Modèle miroir*
 * *Clarification progressive*
@@ -144,6 +147,10 @@ Le LLM devient ici un **partenaire modulable** : il s’adapte au niveau de clar
 * Les **situations-types** sont des repères, pas des cases : elles aident à **s’orienter dans la pratique**.
 * Les **postures et motifs** associés sont des leviers de progression, de réflexivité, d’apprentissage.
 * **Cartographier ses usages**, seul ou en équipe, c’est une manière de **gagner en conscience, en fluidité, en maturité**.
+
+<p style="text-align: center;">
+    <img src="../images/cartographie_prompt.png" width="50%" />
+</p>
 
 > Ce que vous faites avec un LLM dépend moins de l’outil… que de votre intention, votre posture, et votre capacité à choisir le bon geste au bon moment.
 > Comme dans tout art du dialogue.

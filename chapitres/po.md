@@ -39,6 +39,8 @@
 
 ---
 
+<div class="pb-A4"></div>
+
 ### 🛠 Exemples de prompts utiles
 
 > **Exploration de formulation**

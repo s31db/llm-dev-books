@@ -20,9 +20,9 @@ la **documentation des interactions avec les LLM** devient un enjeu majeur. Non 
 
 ---
 
-### 📘 Partie 1 — Documenter l’usage des LLM
+### 📘 Documenter l’usage des LLM
 
-#### 1.1 Pourquoi documenter ?
+#### Pourquoi documenter ?
 
 * Pour garder une trace des choix faits avec l’aide de l’IA.
 * Pour éviter la **dette générative** : du code produit trop vite, sans explication.
@@ -33,7 +33,7 @@ la **documentation des interactions avec les LLM** devient un enjeu majeur. Non 
 
 ---
 
-#### 1.2 Que documenter ?
+#### Que documenter ?
 
 | Élément                         | Objectif                                                      |
 | ------------------------------- | ------------------------------------------------------------- |
@@ -45,7 +45,7 @@ la **documentation des interactions avec les LLM** devient un enjeu majeur. Non 
 
 ---
 
-#### 1.3 Formats possibles
+#### Formats possibles
 
 * Annotation en commentaire dans le code
 * Historique dans l’outil LLM (chat, snapshot, fichier `.prompt.md`)
@@ -54,21 +54,22 @@ la **documentation des interactions avec les LLM** devient un enjeu majeur. Non 
 
 ---
 
-#### 1.4 Exemple concret
+#### Exemple concret
 
-```js
-// Fonction générée à partir d’un prompt GPT-4 le 12/04/2025
-// Prompt : “Écris une fonction en JavaScript qui valide une adresse mail avec une RegExp simple”
-// Réponse modifiée pour :
-  // - Ajouter la gestion des caractères spéciaux
-  // - Remplacer l'alerte par une exception explicite
-```
+> **Fonction générée à partir d’un prompt GPT-4 le 12/04/2025**
+> 
+> Prompt : “Écris une fonction en JavaScript qui valide une adresse mail avec une RegExp simple”
+> 
+> Réponse modifiée pour :
+> - Ajouter la gestion des caractères spéciaux
+> - Remplacer l'alerte par une exception explicite
+
 
 ---
 
-### ⚖️ Partie 2 — Enjeux éthiques et responsabilité
+### ⚖️ Enjeux éthiques et responsabilité
 
-#### 2.1 LLM = responsabilité partagée
+#### LLM = responsabilité partagée
 
 > Ce n’est pas parce qu’un LLM a proposé un code que vous en êtes moins responsable.
 > Vous êtes responsable **de ce que vous comprenez, validez, intégrez**.
@@ -86,7 +87,9 @@ Les modèles sont puissants, mais :
 
 ---
 
-#### 2.2 Risques fréquents
+<div class="pb-A4"></div>
+
+#### Risques fréquents
 
 | Risque                        | Exemple                                                                  |
 |-------------------------------|--------------------------------------------------------------------------|
@@ -98,7 +101,7 @@ Les modèles sont puissants, mais :
 
 ---
 
-#### 2.3 Questions à se poser (checklist éthique)
+#### Questions à se poser (checklist éthique)
 
 1. Ai-je compris ce que le modèle a produit ?
 2. Puis-je expliquer à quelqu’un pourquoi cette solution est valable ?
@@ -127,6 +130,7 @@ Les modèles sont puissants, mais :
 
 ---
 
+<div class="pb-A4"></div>
 
 ### 🔐 Protéger les données, même dans le dialogue
 

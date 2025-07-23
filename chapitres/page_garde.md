@@ -7,7 +7,7 @@
     “Design is intelligence made visible.” – Alina Wheeler
 </h2>
 
-### Samuel Bastiat *avec la forte collaboration d’un LLM (GPT-4.5)*
+### Samuel Bastiat *avec la forte collaboration d’un LLM (GPT-4.5) et le soutien de Gemini et Copilot*
 
 ### *[Idée originale](https://contretemps.azeau.com/post/LLM-assisted-software-design-pattern-language/)*  d’Olivier Azeau
 

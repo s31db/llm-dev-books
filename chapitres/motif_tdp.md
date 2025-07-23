@@ -3,6 +3,10 @@
 
 ### 🟣 Motif 6 — **Prompt piloté par les tests** *TDP* : *Définir les attentes avant d’écrire*
 
+<p style="text-align: center;">
+    <img src="../images/tdp2.png" width="50%" />
+</p>
+
 **🎯 Contexte**
 Vous voulez concevoir un prompt que vous pourrez réutiliser, partager ou intégrer dans un outil. Mais les résultats du LLM sont trop variables, parfois hors sujet, parfois très bons… sans que vous compreniez pourquoi. Il devient difficile de stabiliser l’usage.
 
@@ -70,7 +74,3 @@ Concevez vos prompts **comme du code** : testables, maintenables, évolutifs. Ne
 **💬 Prompt-type à mémoriser**
 
 > *« Voici un exemple de réponse attendue. Peux-tu formuler un prompt qui produise ce type de sortie de façon cohérente ? »*
-
-<p style="text-align: center;">
-    <img src="../images/tdp2.png" width="50%" />
-</p>

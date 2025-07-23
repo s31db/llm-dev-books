@@ -3,6 +3,10 @@
 
 ### 🟣 Motif 8 — **Soin systémique** : *Investiguer les causes profondes d’un problème*
 
+<p style="text-align: center;">
+    <img src="../images/motif_soin_systemique.png" width="50%" />
+</p>
+
 **🎯 Contexte**
 Un problème persiste dans un projet ou une équipe. Il peut s’agir d’un bug récurrent, d’une démotivation latente, d’un retard accumulé, ou d’une tension interpersonnelle. Ce n’est pas simplement un défaut technique ou organisationnel isolé : **quelque chose coince en profondeur**, mais sans cause évidente.
 
@@ -21,6 +25,8 @@ Mobiliser le LLM comme **partenaire d’investigation systémique**. Ne pas lui 
 > * « Voici un problème récurrent dans l’équipe. Quelles causes possibles vois-tu, côté technique, relationnel, process ? »
 > * « Peux-tu me guider dans une session de type 5 Pourquoi / 9 Pourquoi pour en explorer la racine ? »
 > * « Propose un arbre logique des causes et sous-causes. »
+
+<div class="pb-A4"></div>
 
 > 🧭 **Les Neuf Pourquoi : creuser le sens pour mieux agir**
 >
@@ -48,6 +54,8 @@ Mobiliser le LLM comme **partenaire d’investigation systémique**. Ne pas lui 
 * Favorise l’intelligence collective et la réflexivité.
 * Crée des solutions mieux ancrées dans le réel.
 * Apporte de la lucidité là où règne parfois l’agitation.
+
+<div class="pb-A4"></div>
 
 **💡 Exemple d’usage**
 Une équipe ressent une **démotivation diffuse** autour d’un module critique.

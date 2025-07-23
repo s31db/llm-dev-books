@@ -1,7 +1,7 @@
 
 ---
 
-## 📋 Annexes — Fiches d’outils
+## 📋 Annexe 1 — Fiches d’outils
 
 > Après l’exploration des idées et des motifs, place à la mise en œuvre. Voici les outils que vous pouvez mobiliser, adapter et faire vivre dans vos projets dès aujourd’hui.
 
@@ -35,7 +35,6 @@
 | **Tâche demandée**               | Action ou production attendue                                |
 | **Intentions spécifiques**       | Pourquoi ce prompt est important, quel but il sert           |
 | **Format souhaité de réponse**   | Code, texte, tableau, résumé, diagramme…                     |
-| **Exemple de prompt**            |                                                              |
 | **Tests d’attente (facultatif)** | Exemples de sortie valide ou critères de succès (→ TDP)      |
 | **Variantes à tester**           | Reformulations possibles, précisions à ajouter               |
 | **Retours d’expérience**         | Ce qui a bien/mal fonctionné                                 |
