@@ -38,7 +38,7 @@ Ce chapitre explore **comment l’agilité peut être augmentée par les LLM**, 
 
 #### L’IA comme pair silencieux dans la planification
 
-Durant les *sprint plannings*, un LLM peut être utilisé pour clarifier des user stories, en générer des variantes, ou estimer des scénarios alternatifs. Par exemple, une équipe produit peut demander :
+Durant les *sprint plannings*, un LLM peut être utilisé pour clarifier des user stories, en générer des variantes, ou estimer des scénarios alternatifs. Par exemple, une équipe produit peut demander :
 
 > *“Quels cas limites devrions-nous prendre en compte pour cette user story ?”*
 
@@ -98,7 +98,7 @@ Cela n’exclut pas l’intelligence collective humaine, mais permet de **poser 
 
 > **« L’IA est-elle un membre de l’équipe ? »**
 >
->C’est une question qui revient souvent. Un LLM peut-il être considéré comme un *membre virtuel* de l’équipe ? Pour certains, cela aide à le personnifier et à structurer les interactions (ex. : "notre assistant d’équipe"). Pour d’autres, cela dilue la responsabilité collective. Une position intermédiaire consiste à le voir comme **un outil de facilitation intelligente**, à la fois accessible à tous et gouverné par des règles d’usage partagées.
+>C’est une question qui revient souvent. Un LLM peut-il être considéré comme un *membre virtuel* de l’équipe ? Pour certains, cela aide à le personnifier et à structurer les interactions (ex. : "notre assistant d’équipe"). Pour d’autres, cela dilue la responsabilité collective. Une position intermédiaire consiste à le voir comme **un outil de facilitation intelligente**, à la fois accessible à tous et gouverné par des règles d’usage partagées.
 
 ### 🚩 Risques et vigilance
 

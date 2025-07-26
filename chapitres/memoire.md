@@ -42,7 +42,7 @@ Utilité : rejouer, relire, apprendre de l’expérience.
 
 <div class="pb-A4"></div>
 
-👉 **Format proposé** : Fiche `.prompt.md` ou entrée Obsidian/Notion<br/>
+👉 **Format proposé** : Fiche `.prompt.md` ou entrée Obsidian/Notion  
 👉 Exemple de nommage : `2025-05-05_motif-miroir_auth-service.md`
 
 ---
@@ -59,7 +59,7 @@ Utilité : compréhension future, relecture, audits.
 | Architecture | Synthèse IA comparant 2 options d’implémentation             |
 | Tests       | Origine du jeu de test (généré, adapté, validé par l’équipe) |
 
-👉 **Format proposé** : Dossier `/doc/ai_interactions/`, avec `prompt + réponse + retex`<br/>
+👉 **Format proposé** : Dossier `/doc/ai_interactions/`, avec `prompt + réponse + retex`  
 👉 Bonus : créer une **PR augmentée**, qui explique comment l’IA a contribué
 
 ---
@@ -75,7 +75,7 @@ Formalise les motifs, bonnes pratiques, prompt canvas et tests d’intention uti
 | Journal d’équipe génératif   | Historique d’usage, discussion, évolution |
 | Grammaire maison             | Guide de formulation interne              |
 
-👉 **Outils associés** : Miro / Notion / Gitbook / Docusaurus…<br/>
+👉 **Outils associés** : Miro / Notion / Gitbook / Docusaurus…  
 👉 Conseil : commencez petit. Une page “Motifs de la semaine” suffit à démarrer.
 
 ---

@@ -56,7 +56,7 @@ Tu y trouveras :
 
 ### 🎤 Et maintenant ?
 
-Ce livre ne prétend pas détenir les réponses. Mais il propose un langage pour poser de meilleures questions — avec, et parfois contre, le modèle. Car c’est bien là que réside l’enjeu : non dans l’exactitude des réponses générées, mais dans la **qualité du dialogue que nous sommes capables de construire avec cette nouvelle forme d’intelligence**.
+Ce livre ne prétend pas détenir les réponses. Mais il propose un langage pour poser de meilleures questions — avec, et parfois contre, le modèle. Car c’est bien là que réside l’enjeu : non dans l’exactitude des réponses générées, mais dans la **qualité du dialogue que nous sommes capables de construire avec cette nouvelle forme d’intelligence**.
 
 Bienvenue dans cette grammaire émergente. Elle t’appartient autant qu’à nous.
 

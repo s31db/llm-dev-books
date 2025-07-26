@@ -1,7 +1,7 @@
 
 ---
 
-## 🔬 Chapitre 9 — Cadres de mise en œuvre : ateliers, méthodes et rituels pour une pratique augmentée
+## 🔬 Chapitre 9 — Cadres de mise en œuvre : ateliers, méthodes et rituels pour une pratique augmentée
 
 > Voici le terrain d’expérimentation : des formats pour apprendre ensemble, explorer, tester, documenter et transmettre les usages de l’IA dans vos équipes.
 
@@ -15,89 +15,96 @@ Après avoir exploré les motifs, les principes et les scénarios du développem
 
 ---
 
-#### 🕒 Durée : 1h30 à 2h
+**🕒 Durée :** 1h30 à 2h
 
-#### 👥 Participants : 3 à 6 personnes (développeur·ses, PO, UX, QA, facilitateur·ice…)
+**👥 Participants :** 3 à 6 personnes (développeur·ses, PO, UX, QA, facilitateur·ice…)
 
-#### 🧰 Matériel : accès à un LLM, canevas de prompt (papier ou Miro), espace de visualisation des réponses
+**🧰 Matériel :** accès à un LLM, canevas de prompt (papier ou Miro), espace de visualisation des réponses
 
 ---
 
-#### 🔁 Déroulé type
+**🔁 Déroulé type**
 
-##### 1. Introduction et cadrage (10 min)
+#### Introduction et cadrage (10 min)
 
-* Présentation de l’objectif de l’atelier :
+Présentation de l’objectif de l’atelier :
   *“Explorer collectivement comment mieux formuler nos prompts pour un cas concret.”*
-* Brève explication des postures attendues : ouverture, itération, non-jugement
-* Choix collectif du sujet ou cas réel :
 
-  * découpage de module
-  * formulation d’un test
-  * choix technique
-  * reformulation d’un besoin utilisateur
+Brève explication des postures attendues : ouverture, itération, non-jugement  
 
----
+Choix collectif du sujet ou cas réel :
 
-##### 2. Prompt initial (15 min)
-
-* Écriture d’un **premier prompt naïf**, ensemble :
-  “Que demanderait-on à un LLM dans ce contexte ?”
-* Lecture de la réponse générée
-* Identification des problèmes potentiels :
-
-  * flous, ambiguïtés, imprécisions
-  * termes trop techniques ou mal définis
-  * intention implicite non dite
+* découpage de module
+* formulation d’un test
+* choix technique
+* reformulation d’un besoin utilisateur
 
 ---
 
-##### 3. Itérations et reformulations (30 à 40 min)
+#### Prompt initial (15 min)
 
-* Reformulation du prompt selon différents angles ou stratégies :
+Écriture d’un **premier prompt naïf**, ensemble : “Que demanderait-on à un LLM dans ce contexte ?”  
 
-  * rôle explicite (ex. “Tu es un architecte logiciel…”)
-  * pas à pas
-  * version structurée / bullet points
-  * version critique / exploratoire / générative
+Lecture de la réponse générée
 
-* Pour chaque version :
+<div class="pb-A4"></div>
 
-  * LLM génère une réponse
-  * Discussion rapide : en quoi est-elle différente ? plus utile ? biaisée ?
+Identification des problèmes potentiels :
 
-* Si utile : comparaison directe de plusieurs formulations avec un même modèle.
+* flous, ambiguïtés, imprécisions
+* termes trop techniques ou mal définis
+ * intention implicite non dite
 
 ---
 
-##### 4. Extraction d’un patron de prompt (15 à 20 min)
+#### Itérations et reformulations (30 à 40 min)
 
-* À partir des versions testées, formaliser ensemble un **patron de prompt réutilisable** :
+Reformulation du prompt selon différents angles ou stratégies :
 
-  * structure de base
-  * variantes ou modules facultatifs
-  * conditions d’usage
-  * erreurs à éviter
+* rôle explicite (ex. “Tu es un architecte logiciel…”)
+* pas à pas
+* version structurée / bullet points
+* version critique / exploratoire / générative
 
-* Documenter le tout dans un canevas ou bibliothèque de l’équipe.
+Pour chaque version :
+
+* LLM génère une réponse
+* Discussion rapide : en quoi est-elle différente ? plus utile ? biaisée ?
+
+Si utile : comparaison directe de plusieurs formulations avec un même modèle.
+
+---
+
+#### Extraction d’un patron de prompt (15 à 20 min)
+
+À partir des versions testées, formaliser ensemble un **patron de prompt réutilisable** :
+
+* structure de base
+* variantes ou modules facultatifs
+* conditions d’usage
+* erreurs à éviter
+
+Documenter le tout dans un canevas ou bibliothèque de l’équipe.
 
 ---
 
-##### 5. Rétrospective et apprentissages (10 à 15 min)
+#### Rétrospective et apprentissages (10 à 15 min)
 
-* Tour de table rapide :
+Tour de table rapide :
 
-  * Ce que j’ai appris
-  * Ce que je réutiliserai demain
-  * Ce que j’aimerais encore tester
+* Ce que j’ai appris
+* Ce que je réutiliserai demain
+* Ce que j’aimerais encore tester
 
-* Décision éventuelle :
+Décision éventuelle :
 
-  * publier une version nettoyée du prompt
-  * tester ce prompt sur d’autres cas similaires
-  * faire émerger un **motif d’interaction** à ajouter au pattern language
+* publier une version nettoyée du prompt
+* tester ce prompt sur d’autres cas similaires
+* faire émerger un **motif d’interaction** à ajouter au pattern language
 
 ---
+
+<div class="pb-A4"></div>
 
 > **🧠 Résumé :**
 >
@@ -114,68 +121,66 @@ Après avoir exploré les motifs, les principes et les scénarios du développem
 
 ---
 
-#### 🗣️ 2. Rituel “Daily du dialogue”
+### 🗣️ 2. Rituel “Daily du dialogue”
 
 > **Objectif :** Instaurer un rituel court, informel et régulier où chaque membre d’équipe partage ses interactions marquantes avec un LLM. Favorise l’apprentissage collectif, la vigilance et l’inspiration.
 
 ---
 
-##### 🕒 Durée : 5 à 10 minutes
+**🕒 Durée :** 5 à 10 minutes
 
-##### 👥 Participants : toute l’équipe (dev, PO, UX, QA, facilitateur·ice…)
+**👥 Participants :** toute l’équipe (dev, PO, UX, QA, facilitateur·ice…)
 
-##### 📆 Fréquence : quotidienne ou bi-hebdomadaire (à adapter selon rythme et usages)
+**📆 Fréquence :** quotidienne ou bi-hebdomadaire (à adapter selon rythme et usages)
 
-##### 🧰 Support (optionnel) : mur des prompts, Slack dédié, tableau partagé
+**🧰 Support (optionnel) :** mur des prompts, Slack dédié, tableau partagé
 
 ---
 
-#### 🔁 Déroulé type (par séance)
+**🔁 Déroulé type (par séance)**
 
-##### 1. Introduction (1 min)
+#### Introduction (1 min)
 
-* Petit mot d’ouverture (facilitateur·ice ou volontaire) :
+Petit mot d’ouverture (facilitateur·ice ou volontaire) :
   “Qu’est-ce que l’IA nous a appris aujourd’hui ?”
 
-* Rappel des **3 questions guides** (affichées ou rappelées) :
+Rappel des **3 questions guides** (affichées ou rappelées) :
 
-  * **🧪 Qu’ai-je tenté avec un LLM ?**
-  * **😲 Qu’est-ce qui m’a surpris, aidé, déçu ?**
-  * **📌 Qu’est-ce que j’en retiens ou que je voudrais essayer ?**
+* **🧪 Qu’ai-je tenté avec un LLM ?**
+* **😲 Qu’est-ce qui m’a surpris, aidé, déçu ?**
+* **📌 Qu’est-ce que j’en retiens ou que je voudrais essayer ?**
 
 ---
 
-##### 2. Partages spontanés ou tournants (5 à 8 min)
+#### Partages spontanés ou tournants (5 à 8 min)
 
-* Une à trois personnes partagent brièvement une interaction notable :
+Une à trois personnes partagent brièvement une interaction notable :
 
-  * succès ou échec
-  * prompt intéressant
-  * biais observé
-  * réponse étrange ou brillante
-  * usage détourné du LLM
+* succès ou échec
+* prompt intéressant
+* biais observé
+* réponse étrange ou brillante
+* usage détourné du LLM
 
-* Les autres peuvent rebondir, questionner ou ajouter une anecdote.
+Les autres peuvent rebondir, questionner ou ajouter une anecdote.
 
 > 📍 *Si personne ne partage spontanément, tirer au sort un motif ou une carte “prompt du jour” pour inspirer.*
 
 ---
 
-<div class="pb-A4"></div>
+#### Clôture et captation (1 à 2 min)
 
-##### 3. Clôture et captation (1 à 2 min)
+L’équipe choisit un ou deux points à **retenir ou capitaliser** :
 
-* L’équipe choisit un ou deux points à **retenir ou capitaliser** :
+* Ajouter une carte au “grimoire des prompts”
+* Noter une erreur fréquente ou une bonne pratique
+* Proposer un test pour le prochain sprint
 
-  * Ajouter une carte au “grimoire des prompts”
-  * Noter une erreur fréquente ou une bonne pratique
-  * Proposer un test pour le prochain sprint
+Mise à jour éventuelle du support partagé :
 
-* Mise à jour éventuelle du support partagé :
-
-  * Tableau de bord des expérimentations
-  * Fil Slack “#daily-llm”
-  * Carnet de bord Miro / Notion
+* Tableau de bord des expérimentations
+* Fil Slack “#daily-llm”
+* Carnet de bord Miro / Notion
 
 ---
 
@@ -201,11 +206,11 @@ Après avoir exploré les motifs, les principes et les scénarios du développem
 
 ---
 
-#### 🕒 Durée : 1h30 à 2h
+**🕒 Durée :** 1h30 à 2h
 
-#### 👥 Participants : 4 à 8 personnes (développeur·ses, PO, UX, test, facilitateur·ices…)
+**👥 Participants :** 4 à 8 personnes (développeur·ses, PO, UX, test, facilitateur·ices…)
 
-#### 🧰 Matériel :
+**🧰 Matériel :**
 
 * Cartes ou fiches de motifs (issus du livre ou des pratiques locales)
 * Tableau à double entrée (fréquence / utilité)
@@ -213,70 +218,73 @@ Après avoir exploré les motifs, les principes et les scénarios du développem
 
 ---
 
-#### 🔁 Déroulé de l’atelier
+<div class="pb-A4"></div>
 
-##### 1. Introduction & cadrage (10 min)
+**🔁 Déroulé de l’atelier**
 
-* Rappel de ce qu’est un **motif d’interaction LLM** : une forme récurrente d’usage avec intention, structure et effet.
-* Pourquoi les cartographier ?
-  → *Pour mieux se repérer, s’inspirer, transmettre, progresser.*
-* Présentation du support de cartographie : une matrice à double entrée
-  *(axe X : fréquence d’usage ; axe Y : utilité perçue)*
+#### Introduction & cadrage (10 min)
+
+Rappel de ce qu’est un **motif d’interaction LLM** : une forme récurrente d’usage avec intention, structure et effet.  
+Pourquoi les cartographier ? *Pour mieux se repérer, s’inspirer, transmettre, progresser.*  
+Présentation du support de cartographie : une matrice à double entrée *(axe X : fréquence d’usage ; axe Y : utilité perçue)*
 
 ---
 
-##### 2. Réactivation des motifs connus (15 min)
+#### Réactivation des motifs connus (15 min)
 
-* Lecture rapide ou présentation visuelle de 6 à 10 motifs existants.
-* Pour chaque motif :
+Lecture rapide ou présentation visuelle de 6 à 10 motifs existants.  
+Pour chaque motif :
 
-  * L’équipe dit si elle le connaît
-  * Si elle l’a déjà utilisé, et dans quel contexte
+* L’équipe dit si elle le connaît
+* Si elle l’a déjà utilisé, et dans quel contexte
 
 **Exemples de motifs :**
 
-* Reformulation d’une idée floue
-* Génération de cas de tests
-* Exploration d’alternatives d’architecture
-* Traduction d’un besoin métier en user story
-* Explication pas à pas d’un comportement
+Reformulation d’une idée floue  
+Génération de cas de tests  
+Exploration d’alternatives d’architecture  
+Traduction d’un besoin métier en user story  
+Explication pas à pas d’un comportement
 
 ---
 
-##### 3. Cartographie collective (30 min)
+#### Cartographie collective (30 min)
 
 > Placer les motifs sur la matrice en deux temps
 
-1. **Travail individuel ou binôme (10 min)**
+**Travail individuel ou binôme (10 min)**
    Chaque participant place les motifs sur la matrice selon :
 
-   * Fréquence dans son quotidien
-   * Utilité ressentie
+* Fréquence dans son quotidien
+* Utilité ressentie
 
-2. **Discussion de groupe (20 min)**
+**Discussion de groupe (20 min)**
 
-   * Confrontation des positions
-   * Consensus ou dispersion : où y a-t-il accord ou divergence ?
-   * Noter les questions ouvertes ou motifs sous-exploités
-
----
-
-##### 4. Génération de nouveaux motifs (20 min)
-
-* À partir des usages récents, ou de “trous” dans la matrice :
-
-  * Quels types d’interaction manquent à la cartographie ?
-  * Qu’avons-nous vu fonctionner sans encore le formaliser ?
-* Chaque participant ou sous-groupe esquisse un **nouveau motif** sur une fiche vierge :
-
-  * Intention
-  * Structure de prompt
-  * Exemples
-  * Limites ou pièges
+* Confrontation des positions
+* Consensus ou dispersion : où y a-t-il accord ou divergence ?
+* Noter les questions ouvertes ou motifs sous-exploités
 
 ---
 
-##### 5. Consolidation et capitalisation (15 min)
+<div class="pb-A4"></div>
+
+#### Génération de nouveaux motifs (20 min)
+
+À partir des usages récents, ou de “trous” dans la matrice :
+
+* Quels types d’interaction manquent à la cartographie ?
+* Qu’avons-nous vu fonctionner sans encore le formaliser ?
+
+Chaque participant ou sous-groupe esquisse un **nouveau motif** sur une fiche vierge :
+
+* Intention
+* Structure de prompt
+* Exemples
+* Limites ou pièges
+
+---
+
+#### Consolidation et capitalisation (15 min)
 
 * Recueil de toutes les cartes/motifs sur un support commun (mur, board numérique)
 * Proposition de tri ou regroupement par famille : *exploration*, *réduction*, *contrôle*, *création*, etc.
@@ -284,7 +292,7 @@ Après avoir exploré les motifs, les principes et les scénarios du développem
 
 ---
 
-##### Bonus (optionnel)
+#### Bonus (optionnel)
 
 * Donner un nom original à chaque motif (« Le pédagogue socratique », « Le contre-exemple malin », etc.)
 * Voter pour les motifs à formaliser dans la bibliothèque de l’équipe ou le référentiel
@@ -306,23 +314,25 @@ Après avoir exploré les motifs, les principes et les scénarios du développem
 
 ---
 
+<div class="pb-A4"></div>
+
 ### 🎲 4. Le jeu des prompts absurdes
 
 > **Objectif :** Expérimenter les limites, les paradoxes, les hallucinations et les biais des modèles de langage — avec humour et esprit critique.
 
 ---
 
-#### 🕒 Durée : 1h à 1h30
+**🕒 Durée :** 1h à 1h30
 
-#### 👥 Participants : 4 à 10 personnes
+**👥 Participants :** 4 à 10 personnes
 
-#### 🧰 Matériel : Accès à un LLM, post-its ou tableau partagé, outil de capture (Miro, Notion, paperboard…)
+**🧰 Matériel :** Accès à un LLM, post-its ou tableau partagé, outil de capture (Miro, Notion, paperboard…)
 
 ---
 
-#### 🔁 Déroulé type
+**🔁 Déroulé type**
 
-##### 1. Introduction (10 min)
+#### Introduction (10 min)
 
 * Présenter l’objectif de l’atelier : *“Jouer avec les limites pour mieux les comprendre.”*
 * Expliquer les règles : on crée des prompts absurdes, le LLM répond sérieusement, puis on analyse.
@@ -330,7 +340,7 @@ Après avoir exploré les motifs, les principes et les scénarios du développem
 
 ---
 
-##### 2. Échauffement collectif (10 min)
+#### Échauffement collectif (10 min)
 
 * Chaque participant invente un **prompt absurde, contradictoire ou flou** (ex. : “Écris une poésie sur un langage de programmation qui n’existe pas mais qui a des bugs.”)
 * Lecture à haute voix de quelques exemples.
@@ -338,61 +348,63 @@ Après avoir exploré les motifs, les principes et les scénarios du développem
 
 ---
 
-##### 3. Création et sélection des prompts (15 à 20 min)
+#### Création et sélection des prompts (15 à 20 min)
 
-* Chaque personne écrit 2 prompts :
+Chaque personne écrit 2 prompts :
 
-  * un volontairement paradoxal ou fallacieux
-  * un inspiré d’une erreur ou mauvaise formulation déjà rencontrée
+* un volontairement paradoxal ou fallacieux
+* un inspiré d’une erreur ou mauvaise formulation déjà rencontrée
 
-* Mise en commun : les participants lisent leurs propositions à voix haute.
+Mise en commun : les participants lisent leurs propositions à voix haute.
 
-* Le groupe sélectionne 3 à 5 prompts à tester, selon :
+Le groupe sélectionne 3 à 5 prompts à tester, selon :
 
-  * leur potentiel de dérapage ou de surprise
-  * leur lien avec des situations professionnelles réalistes
-
----
-
-##### 4. Dialogue avec le LLM (20 à 30 min)
-
-* Soumettre les prompts un par un au LLM.
-* À chaque réponse :
-
-  * Lecture collective
-  * Débrief guidé :
-
-    * *Qu’a tenté de faire le modèle ?*
-    * *Qu’est-ce que cela révèle de son fonctionnement ?*
-    * *Est-ce un bug ou une logique trop obéissante ?*
-    * *Quels risques si ce type de réponse était pris au sérieux ?*
+* leur potentiel de dérapage ou de surprise
+* leur lien avec des situations professionnelles réalistes
 
 ---
 
-##### 5. Synthèse collective (15 min)
+<div class="pb-A4"></div>
 
-* En groupe ou en binômes : quels types d’erreurs avons-nous observé ?
+#### Dialogue avec le LLM (20 à 30 min)
 
-  * Hallucinations ?
-  * Réponses absurdes mais crédibles ?
-  * Obéissance aveugle à des ordres incohérents ?
-  * Manque de filtre éthique ou logique ?
+Soumettre les prompts un par un au LLM.  
+À chaque réponse :
 
-* Capitalisation sur un tableau partagé :
+* Lecture collective
+* Débrief guidé :
 
-  * « Ce que cela m’apprend sur les LLM »
-  * « Ce que cela m’apprend sur ma manière de formuler »
+  * Qu’a tenté de faire le modèle ?  
+  * Qu’est-ce que cela révèle de son fonctionnement ?  
+  * Est-ce un bug ou une logique trop obéissante ?  
+  * Quels risques si ce type de réponse était pris au sérieux ?
 
 ---
 
-##### 6. (Optionnel) Variante pédagogique
+#### Synthèse collective (15 min)
 
-* Créer une fiche “Erreur fictive mais plausible” :
+En groupe ou en binômes : quels types d’erreurs avons-nous observé ?
 
-  * Prompt initial
-  * Réponse absurde
-  * Risque si pris au sérieux
-  * Bon réflexe de relecture ou reformulation
+* Hallucinations ?
+* Réponses absurdes mais crédibles ?
+* Obéissance aveugle à des ordres incohérents ?
+* Manque de filtre éthique ou logique ?
+
+Capitalisation sur un tableau partagé :
+
+* « Ce que cela m’apprend sur les LLM »
+* « Ce que cela m’apprend sur ma manière de formuler »
+
+---
+
+#### (Optionnel) Variante pédagogique
+
+Créer une fiche “Erreur fictive mais plausible” :
+
+* Prompt initial
+* Réponse absurde
+* Risque si pris au sérieux
+* Bon réflexe de relecture ou reformulation
 
 
 > **🧠 Résumé :**
@@ -400,15 +412,16 @@ Après avoir exploré les motifs, les principes et les scénarios du développem
 > * Atelier ludique pour aiguiser son regard critique
 > * Permet de discuter des failles des LLM sans pression
 > * Crée une culture du doute et de la reformulation dans l’équipe
->
+
 > ⚠️ **Pièges à éviter :**
 >
 > * Rire des erreurs des collègues au lieu d’analyser les formulations
 > * Croire que ce jeu remplace une pratique sérieuse de test
 > * Oublier d’en tirer des leçons applicables dans les contextes réels
 
-
 ---
+
+<div class="pb-A4"></div>
 
 ### 📘 5. Référentiel d’équipe “LLM Ready”
 
@@ -416,11 +429,11 @@ Après avoir exploré les motifs, les principes et les scénarios du développem
 
 ---
 
-#### 🕒 Durée : 2h (fractionnable en 2 sessions d’1h)
+**🕒 Durée :** 2h (fractionnable en 2 sessions d’1h)
 
-#### 👥 Participants : toute l’équipe ou un sous-groupe volontaire (4 à 8 personnes)
+**👥 Participants :** toute l’équipe ou un sous-groupe volontaire (4 à 8 personnes)
 
-#### 🧰 Matériel :
+**🧰 Matériel :**
 
 * Miro / paperboard ou mur physique
 * Accès à un historique d’interactions LLM (si disponible)
@@ -428,90 +441,90 @@ Après avoir exploré les motifs, les principes et les scénarios du développem
 
 ---
 
-#### 🔁 Déroulé de l’atelier
+**🔁 Déroulé de l’atelier**
 
-##### 1. Introduction et objectifs (10 min)
+#### Introduction et objectifs (10 min)
 
-* Pourquoi faire un référentiel ?
-  → *Capitaliser, transmettre, sécuriser, gagner du temps*
-* Rappel de la posture : ce n’est **pas une norme figée**, mais un **support évolutif**
-* Présentation rapide des sections possibles : prompts types, règles, pièges, niveaux de validation…
-
----
-
-##### 2. Partage d’usages concrets (20 min)
-
-> « Quelles interactions LLM vous ont été vraiment utiles, ou au contraire problématiques ? »
-
-* Chaque personne partage **1 à 2 exemples marquants** (réussites ou échecs)
-
-* Écriture rapide en binôme ou post-its :
-
-  * Contexte
-  * Prompt
-  * Résultat
-  * Enseignement
-
-* Classement collectif en 3 colonnes :
-
-  * 🔁 À reproduire
-  * ⚠️ À adapter
-  * 🛑 À éviter
+Pourquoi faire un référentiel ? *Capitaliser, transmettre, sécuriser, gagner du temps*  
+Rappel de la posture : ce n’est **pas une norme figée**, mais un **support évolutif**  
+Présentation rapide des sections possibles : prompts types, règles, pièges, niveaux de validation…
 
 ---
 
-##### 3. Construction du référentiel (45 min)
+#### Partage d’usages concrets (20 min)
+
+> Quelles interactions LLM vous ont été vraiment utiles, ou au contraire problématiques ?
+
+Chaque personne partage **1 à 2 exemples marquants** (réussites ou échecs)  
+Écriture rapide en binôme ou post-its :
+
+* Contexte
+* Prompt
+* Résultat
+* Enseignement
+
+Classement collectif en 3 colonnes :
+
+* 🔁 À reproduire
+* ⚠️ À adapter
+* 🛑 À éviter
+
+---
+
+<div class="pb-A4"></div>
+
+#### Construction du référentiel (45 min)
 
 > Constitution des sections à partir des récits réels.
 
-###### a. **Prompts types**
+##### **Prompts types**
 
-* Extraire les formulations efficaces réutilisables
-* Organiser par usage : rédaction, analyse de code, transformation, exploration…
+Extraire les formulations efficaces réutilisables  
+Organiser par usage : rédaction, analyse de code, transformation, exploration…
 
-###### b. **Critères de qualité des réponses**
+##### **Critères de qualité des réponses**
 
-* Proposer une **grille commune** :
+Proposer une **grille commune** :
 
-  * Pertinence
-  * Robustesse
-  * Transparence
-  * Sécurité
-  * Cohérence avec les standards de l’équipe
+* Pertinence
+* Robustesse
+* Transparence
+* Sécurité
+* Cohérence avec les standards de l’équipe
 
-###### c. **Règles d’usage**
+##### **Règles d’usage**
 
-* Définir ensemble des règles claires et simples :
+Définir ensemble des règles claires et simples :
 
-  * Quand utiliser un LLM
-  * Quand valider avec un humain
-  * Quand documenter la réponse
+* Quand utiliser un LLM
+* Quand valider avec un humain
+* Quand documenter la réponse
 
-###### d. **Liste noire / pièges fréquents**
+##### **Liste noire / pièges fréquents**
 
-* Capitaliser les erreurs rencontrées : prompts flous, hallucinations crédibles, surconfiance, etc.
-
----
-
-##### 4. Mise en forme et diffusion (15 min)
-
-* Choix du format de publication : Notion, README, Miro, page Confluence…
-* Attribution de rôles :
-
-  * 1 référent·e du vivant du référentiel
-  * 1 ou 2 gardiens de l’évolution (ex : sprint review, retro)
+Capitaliser les erreurs rencontrées : prompts flous, hallucinations crédibles, surconfiance, etc.
 
 ---
 
-##### 5. Rétrospective & engagement (10 min)
+#### Mise en forme et diffusion (15 min)
 
-* Tour de table :
+Choix du format de publication : Notion, README, Miro, page Confluence…  
+Attribution de rôles :
 
-  * “Ce que j’ai appris”
-  * “Ce que je veux tester maintenant”
-  * “Ce que j’aimerais retrouver dans la prochaine version”
+* 1 référent·e du vivant du référentiel
+* 1 ou 2 gardiens de l’évolution (ex : sprint review, retro)
 
-* Rappel : un référentiel n’est **jamais terminé**, il est **en co-évolution** avec l’équipe.
+---
+
+#### Rétrospective & engagement (10 min)
+
+Tour de table :
+
+* “Ce que j’ai appris”
+* “Ce que je veux tester maintenant”
+* “Ce que j’aimerais retrouver dans la prochaine version”
+
+Rappel : un référentiel n’est **jamais terminé**, il est **en co-évolution** avec l’équipe.
 
 
 > **🧠 Résumé :**

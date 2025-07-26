@@ -14,14 +14,15 @@ def ajouter_footer(
     doc: fitz.Document, texte_footer: str, start_page_index: int, fontsize: int = 9
 ) -> None:
     """Ajoute un footer à chaque page à partir de start_page_index."""
-    for page_index in range(start_page_index, len(doc) - 1):
+    for page_index in range(start_page_index, len(doc)):
         page = doc[page_index]
         largeur = page.rect.width - 25
         hauteur = page.rect.height
 
         # Position centrée en bas
         position = fitz.Point(largeur / 2, hauteur - MARGIN_BOTTOM)
-        texte = texte_footer.format(page_number=page_index + 1)
+        # Pour lecture, pour impression revoir la mise en forme et la numérotation.
+        texte = texte_footer.format(page_number=page_index + 2)
 
         page.insert_text(
             position,

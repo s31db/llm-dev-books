@@ -234,6 +234,8 @@ Les LLM permettent de :
 
 ---
 
+<div class="pb-A4"></div>
+
 #### ✨ Le pattern “Circuit Breaker”
 
 **But** : éviter qu’un système défaillant ne surcharge le reste de l’application.

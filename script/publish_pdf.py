@@ -8,14 +8,16 @@ def export_pdf(files, outputfile: str, css_file: str, paper_size: str = "A4"):
     pdf = MarkdownPdf(toc_level=3, optimize=True)
     pdf.borders = (50, 50, 50, 50)
 
+    borders = (36, 36, -36, -36)
+
     for file in files:
         with open(file, "r", encoding="utf-8") as f:
             markdown_text = f.read()
         markdown_text = markdown_text.replace("---", "")
-        markdown_text = markdown_text.replace(" **Encadré : ", " **")
-        markdown_text = markdown_text.replace(" **Encadré — ", " **")
 
-        pdf.add_section(Section(markdown_text, paper_size=paper_size), user_css=css)
+        pdf.add_section(
+            Section(markdown_text, paper_size=paper_size, borders=borders), user_css=css
+        )
 
     pdf.meta["title"] = (
         "LLM-Assisted Software Design, a Pattern Language of New Development Practices"

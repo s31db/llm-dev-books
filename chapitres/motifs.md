@@ -44,6 +44,8 @@ Utilisez une note, un outil de gestion du savoir (ex. Obsidian, Notion), ou un s
 
 ---
 
+<div class="pb-A4"></div>
+
 ### 🤝 Pratiques d’équipe : un langage commun qui se construit
 
 #### 👥 1. Partager les motifs vécus
@@ -88,7 +90,10 @@ Ce rituel peut faire émerger des **motifs d’équipe** :
 | **Cartographie d’usage** | Identifier les motifs utilisés par l’équipe | 45 min | Atelier mural ou Miro |
 | **Retex de conversation** | Partager une interaction réussie ou ratée | 15 min | Stand-up ou rétrospective |
 | **Création de motifs d’équipe** | Formaliser un motif vécu par l’équipe | 60 min | Atelier collaboratif |
+
 ---
+
+<div class="pb-A4"></div>
 
 ### 📚 Cas d’usage : l’équipe qui se dote de son propre langage
 
@@ -125,6 +130,8 @@ Pour faciliter l’usage des motifs dans les contextes professionnels, plusieurs
 * **Des extensions d’IDE** intégrant les motifs les plus fréquents comme raccourcis ou assistants intégrés.
 
 ---
+
+<div class="pb-A4"></div>
 
 ### ✏️ En résumé
 

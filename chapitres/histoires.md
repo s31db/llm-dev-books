@@ -44,8 +44,8 @@ Pas de mention de l’IA. Même pas un commentaire dans le code.
 
 Le lendemain, au daily, Adrien jette un œil à la PR :
 
-> — Joli ! C’est toi qui as trouvé ce pattern ?<br/>
-> Maxime hoche la tête :<br/>
+> — Joli ! C’est toi qui as trouvé ce pattern ?  
+> Maxime hoche la tête :  
 > — J’ai… fait des recherches.
 
 Personne ne dit rien. Il passe la parole au suivant.
@@ -79,19 +79,19 @@ Sarah ouvre son éditeur, puis un fichier `.md` à part.
 
 Léo hésite.
 
-> — On ne va pas coder directement ?<br/> 
+> — On ne va pas coder directement ?  
 > — Si, mais regarde. Ça nous évite de rester enfermés dans une seule approche.
 
 Elle tape :
 
-> Contexte : On doit faire cohabiter deux systèmes de login (LDAP et OAuth) dans une même appli backend.<br/>
+> Contexte : On doit faire cohabiter deux systèmes de login (LDAP et OAuth) dans une même appli backend.  
 > Prompt : Donne 3 stratégies possibles avec avantages/inconvénients pour ce scénario.
 
 ChatGPT propose trois options, bien structurées.
 
 Ils lisent ensemble. Sarah ne choisit pas pour Léo. Elle demande :
 
-> — Laquelle tu trouves la plus simple à tester ?<br/> 
+> — Laquelle tu trouves la plus simple à tester ?  
 > — La deuxième. Mais faudrait éviter que ça devienne spaghetti.
 
 Ils modifient le prompt. Demandent un exemple. Puis un autre avec un twist de sécurité. Ils discutent, rigolent parfois — quand l’IA propose des choses absurdes.
@@ -102,9 +102,9 @@ Dans la PR, Sarah ajoute un encart en bas du `README.md` de la fonctionnalité :
 
 > 🧠 **Exploration IA**
 > 
-> Prompt utilisé : comparaison stratégies login<br/>
-> Réponse retenue : option 2 (adaptée)<br/>
-> Discussion en binôme : Léo + Sarah<br/>
+> Prompt utilisé : comparaison stratégies login  
+> Réponse retenue : option 2 (adaptée)  
+> Discussion en binôme : Léo + Sarah  
 > Leçon : le prompt nous a aidés à expliciter les besoins de sécurité avant de coder.
 
 

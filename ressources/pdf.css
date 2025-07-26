@@ -31,9 +31,21 @@ p {
 }
 
 /* Évite les sauts de page après les titres */
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   page-break-after: avoid;
   page-break-inside: avoid;
+}
+
+h4 {
+  font-size: 1.05em;
+}
+
+h5 {
+  font-size: 1.025em;
+}
+
+h6 {
+  font-size: 1.012em;
 }
 
 img {
@@ -78,4 +90,38 @@ th, td {
 
 li {
   list-style-type: disc;
+}
+
+ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.vertical_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 12480px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #f9f9f9;
+}
+
+.vertical_center > * {
+  flex: 1;
+  margin: 0;
+}
+
+.titre_garde{
+  margin-top: 100px;
+}
+
+.citation_garde {
+  margin-top: 40px;
+  margin-bottom: 140px;
+}
+
+.version_licence_garde{
+  margin-top: 30px;
+  margin-bottom: 20px;
 }

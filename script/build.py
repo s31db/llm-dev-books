@@ -15,6 +15,7 @@ from typing import Dict, List, Callable
 from emoji_img import emoji_to_image
 from base64 import b64encode
 from add_footer import ajouter_footer_pdf
+from add_covers import ajouter_couverture_pdf
 from publish_pdf import export_pdf
 
 from cProfile import Profile
@@ -93,9 +94,9 @@ PAGES = [
     "../chapitres/dev.md",
     "../chapitres/coach.md",
     "../chapitres/manager.md",
-    "../chapitres/quatrieme_couverture.md",
+    # "../chapitres/quatrieme_couverture.md",
 ]
-# PAGES = PAGES[:4]
+# PAGES = PAGES[:2]
 
 
 def get_cache_path() -> Path:
@@ -172,7 +173,7 @@ def unique_md(
     Path("../build").mkdir(parents=False, exist_ok=True)
 
     with open("../build/llm_assisted_software_design.md", "w", encoding="utf-8") as f:
-        for i, file in enumerate(files):
+        for file in files:
             with open(file, "r", encoding="utf-8") as f2:
                 content = f2.read()
 
@@ -233,13 +234,15 @@ def unique_md(
                 else:
                     content = content.replace("../images/", "")
                 f.write(f"{content}\n")
-                if "quatrieme_couverture" not in file:
+                # if "quatrieme_couverture" not in file:
+                if file != files[-1]:
                     f.write('<div style="page-break-after: always;"></div>\n')
 
 
 # @profile
 def pdf():
-    unique_md(True, True, True, True, True)
+    # unique_md(True, True, True, True, True)
+    unique_md(False, True, True, True, True)
     pdf_A4()
     # PDF pour impression format de poche
     # pdf_A5()
@@ -248,34 +251,56 @@ def pdf():
 def pdf_A5():
     print("A5")
     tmp_pdf = "../build/llm_assisted_software_design_a5.pdf"
+    final_pdf = "../pdf/llm_assisted_software_design_a5.pdf"
+
+    # Générer le PDF de base
     export_pdf(
-        [
-            "../build/llm_assisted_software_design.md",
-        ],
+        ["../build/llm_assisted_software_design.md"],
         tmp_pdf,
         "../ressources/print.css",
         paper_size="A5",
     )
+
+    # Ajouter les footers
     print("Ajout du footer")
-    ajouter_footer_pdf(
-        tmp_pdf, "../pdf/llm_assisted_software_design_a5.pdf", 8, fontsize=9
+    ajouter_footer_pdf(tmp_pdf, final_pdf, 8, fontsize=9)
+
+    # Ajouter les couvertures
+    ajouter_couverture_pdf(
+        input_pdf=final_pdf,
+        output_pdf=final_pdf,  # Écrase le fichier avec les couvertures
+        cover_margin=0.0,
+        back_cover_margin=0.0,
+        cover_image="../../images/cover2.png",
+        back_cover_image="../../images/quatrieme_couverture.png",
     )
 
 
 def pdf_A4():
     print("A4")
+    tmp_pdf = "../build/llm_assisted_software_design.pdf"
+    tmp_footer_pdf = "../build/llm_assisted_software_design_footer.pdf"
+    final_pdf = "../pdf/llm_assisted_software_design.pdf"
+
+    # Générer le PDF de base
     export_pdf(
-        [
-            "../build/llm_assisted_software_design.md",
-        ],
-        "../build/llm_assisted_software_design.pdf",
+        ["../build/llm_assisted_software_design.md"],
+        tmp_pdf,
         "../ressources/pdf.css",
     )
-    ajouter_footer_pdf(
-        "../build/llm_assisted_software_design.pdf",
-        "../pdf/llm_assisted_software_design.pdf",
-        8,
-        fontsize=11,
+
+    # Ajouter les footers
+    print("A4 Ajout du footer")
+    ajouter_footer_pdf(tmp_pdf, tmp_footer_pdf, 8, fontsize=11)
+
+    # Ajouter les couvertures
+    ajouter_couverture_pdf(
+        input_pdf=tmp_footer_pdf,
+        output_pdf=final_pdf,
+        cover_margin=0.0,
+        back_cover_margin=0.0,
+        cover_image="../images/cover2.png",
+        back_cover_image="../images/quatrieme_couverture.png",
     )
 
 
@@ -295,6 +320,7 @@ def epub():
             "--resource-path=../images",
         ],
     )
+    print("📖 Epub done")
 
 
 def pdf_pandoc():

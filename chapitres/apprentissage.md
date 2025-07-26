@@ -17,7 +17,7 @@ Un langage de motifs ne vaut que s’il est :
 * **intégré**,
 * **transmis**.
 
-Ce chapitre répond à une question clé : **comment faire vivre les motifs dans votre organisation, votre communauté ou votre écosystème de pratique ?**
+Ce chapitre répond à une question clé : **comment faire vivre les motifs dans votre organisation, votre communauté ou votre écosystème de pratique ?**
 
 <p style="text-align: center;">
     <img src="../images/apprentissage.png" width="50%" />

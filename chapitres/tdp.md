@@ -41,21 +41,20 @@ Structurer les interactions avec un LLM **de manière rigoureuse et vérifiable*
 
 > **Intention** : Générer une API REST Node.js basique avec Express
 >
-> **Critères de succès** :<br/>
->
+> **Critères de succès** : 
 > * Doit contenir au moins deux routes
 > * Utiliser `express.json()`
 > * Inclure une structure de dossier propre
 >
-> **Prompt initial** :<br/>
+> **Prompt initial** :  
 > « Crée une API REST Express avec deux routes (GET/POST), utilisant express.json() et une structure propre. »
 >
-> **Cas de test** :<br/>
+> **Cas de test** :
 > * Présence d’un fichier `index.js` avec routes claires ✅
 > * Utilisation de `express.json()` ✅
 > * Structure MVC ❌ → à préciser
 >
-> **Boucle d’ajustement** :<br/>
+> **Boucle d’ajustement** :  
 > → Ajouter au prompt : « Organise le code en respectant un modèle MVC simple. »
 
 ---

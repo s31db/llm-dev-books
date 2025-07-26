@@ -1,13 +1,15 @@
 
 ---
 
-## 🎯 Chapitre 1 — Anatomie d’un bon prompt : précision, contexte et intention
+## 🎯 Chapitre 1 — Anatomie d’un bon prompt : précision, contexte et intention
 
 > Le prompt n’est pas une commande. C’est une interface de pensée. Il structure le dialogue, oriente la réponse, et conditionne la qualité de la collaboration.
 
 ### Pourquoi ce chapitre ?
 
-Dans tout échange avec un LLM, **le prompt est le point d’entrée**. C’est lui qui définit le cadre, la tâche, le niveau de détail attendu. Mais un bon prompt ne se résume pas à une question bien formulée. C’est un acte de design. Il combine trois dimensions fondamentales : la **précision**, le **contexte** et l’**intention**. Il s’apparente à une interface entre deux intelligences : humaine et artificielle.
+Dans tout échange avec un LLM, **le prompt est le point d’entrée**. C’est lui qui définit le cadre, la tâche, le niveau de détail attendu. Mais un bon prompt ne se résume pas à une question bien formulée. C’est un acte de design.  
+Il combine trois dimensions fondamentales : la **précision**, le **contexte** et l’**intention**.  
+Il s’apparente à une interface entre deux intelligences : humaine et artificielle.
 
 Dans ce chapitre, nous proposons une grille simple mais robuste pour concevoir des prompts utiles, exploitables et adaptés aux situations réelles de développement logiciel.
 
@@ -19,10 +21,11 @@ Dans ce chapitre, nous proposons une grille simple mais robuste pour concevoir d
 
 Un prompt vague produit une réponse vague.
 
-> ❌ *« Donne-moi un code de trie. »*<br/>
+> ❌ *« Donne-moi un code de trie. »*  
 > ✅ *« Écris une fonction Python qui trie une liste de dictionnaires par la clé ‘date’, en ordre décroissant. »*
 
-Soyez explicite. Précisez la tâche, le niveau de détail, le langage. Définissez les frontières de la réponse attendue.
+Soyez explicite. Précisez la tâche, le niveau de détail, le langage.  
+Définissez les frontières de la réponse attendue.
 
 #### 2. **Contexte : donner au modèle de quoi raisonner juste**
 
@@ -52,7 +55,7 @@ Il est utile de voir le prompt non comme une requête, mais comme la **première
 
 ### 🧭 Typologie des formes de prompts
 
-Voici quelques formats fréquents que vous retrouverez dans la bibliothèque de motifs (chapitre 4) :
+Voici quelques formats fréquents que vous retrouverez dans la bibliothèque de motifs (chapitre 4) :
 
 | Type de prompt          | Exemple                                                                                    | Usage typique                                 |
 |-------------------------|--------------------------------------------------------------------------------------------|-----------------------------------------------|

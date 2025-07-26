@@ -34,6 +34,8 @@ Ce chapitre se fonde sur l’observation de prototypes, d’outils open source e
 
 ---
 
+<div class="pb-A4"></div>
+
 ### 🔭 Nouveaux patterns avec les LLM
 
 #### 🧠 Pattern “Agent Collaboratif”
@@ -131,6 +133,8 @@ Ce chapitre se fonde sur l’observation de prototypes, d’outils open source e
 
 ---
 
+<div class="pb-A4"></div>
+
 #### 🧭 Pattern “Intention Router”
 
 > Sélection dynamique de l’outil, agent ou LLM en fonction de l’intention exprimée.
@@ -179,6 +183,8 @@ Des outils comme Mermaid, D2, ou tldraw peuvent être détournés pour représen
 * Peut être tenu dans Notion, Miro, Gitbook…
 
 ---
+
+<div class="pb-A4"></div>
 
 ### ⚠️ Limites et vigilance
 
