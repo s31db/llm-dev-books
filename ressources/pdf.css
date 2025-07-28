@@ -1,0 +1,132 @@
+/* Empêche la césure automatique des mots */
+body, h1, h2, h3, h4, h5, h6, p {
+  hyphens: none;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+body {
+  background-color: #fef6e4;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.pb-A4 {
+  page-break-before: always;
+}
+
+.pb-A5 {
+  display: none;
+}
+
+@page {
+  margin: 50pt;
+}
+
+/* Améliore l'espacement des paragraphes */
+p {
+  line-height: 1.5;
+  margin-bottom: 12pt;
+  text-align: justify;
+}
+
+/* Évite les sauts de page après les titres */
+h1, h2, h3, h4, h5, h6 {
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+
+h4 {
+  font-size: 1.05em;
+}
+
+h5 {
+  font-size: 1.025em;
+}
+
+h6 {
+  font-size: 1.012em;
+}
+
+img {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+hr {
+  border: none;
+  border-top: 3px dotted #8bd3dd;
+}
+
+.sommaire a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+blockquote {
+  border-right: 0.5px solid #444;
+  border-bottom: 0.5px solid #444;
+  border-top: 0.5px solid #444;
+  border-left: 1.5px solid #444;
+  background: #fef6e4;
+  padding: 3px;
+  border-radius: 1px;
+  page-break-after: avoid;
+  page-break-inside: avoid;
+  margin: 8px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+th, td {
+  border: 0.75px solid black;
+  border-collapse: collapse;
+  padding: 3px;
+}
+
+li {
+  list-style-type: disc;
+}
+
+ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.vertical_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 12480px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #f9f9f9;
+}
+
+.vertical_center > * {
+  flex: 1;
+  margin: 0;
+}
+
+.titre_garde{
+  margin-top: 100px;
+}
+
+.citation_garde {
+  margin-top: 40px;
+  margin-bottom: 120px;
+}
+
+.version_licence_garde{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}

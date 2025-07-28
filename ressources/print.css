@@ -1,0 +1,129 @@
+body {
+  /*font-family: "Merriweather", serif;*/
+  font-size: 9pt;
+  line-height: 1.5;
+  color: #000;
+  --background: #fff;
+}
+body, h1, h2, h3, h4, h5, h6, p {
+  hyphens: none;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+body {
+  background-color: #fef6e4;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.pb-A4 {
+  display: none;
+}
+
+.pb-A5 {
+  page-break-before: always;
+}
+
+@page {
+  size: A5;
+  margin: 2.5cm 1cm 1cm 2cm;
+}
+
+p {
+  text-align: justify;
+  margin: 0.6em 0;
+}
+
+h1, h2, h3, h4 {
+  /*font-family: "IBM Plex Sans", sans-serif;*/
+  /*margin: 2em 0 0.5em;*/
+  page-break-after: avoid;
+  page-break-inside: avoid;
+  color: #222;
+}
+
+h1 {
+  font-size: 18pt;
+  text-align: center;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 14pt;
+  margin-top: 0.5em;
+}
+
+h3 {
+  font-size: 12pt;
+  margin-top: 0.8em;
+}
+
+img {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+ul, ol {
+  margin: 0.5em 0 0.5em 2em;
+}
+
+code {
+  /*font-family: "Fira Code", monospace;*/
+  font-size: 10pt;
+  background-color: #f4f4f4;
+  padding: 0.1em 0.3em;
+}
+
+pre {
+  /*font-family: "Fira Code", monospace;*/
+  font-size: 9.5pt;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 0.8em;
+  overflow-x: auto;
+  page-break-inside: avoid;
+}
+
+blockquote {
+  margin: 1em 2em;
+  padding-left: 1em;
+  border-left: 3px solid #999;
+  color: #555;
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2em 0;
+}
+
+/* Fiches motifs */
+.motif {
+  border-left: 4px solid #005bbb;
+  background: #f1f6fc;
+  padding: 1em;
+  margin: 1.5em 0;
+  page-break-inside: avoid;
+}
+
+.motif h3 {
+  font-size: 12pt;
+  margin-top: 0;
+}
+
+/* Titres de page */
+header, footer {
+  font-size: 9pt;
+  /*font-family: "IBM Plex Sans", sans-serif;*/
+  text-align: center;
+  color: #999;
+  margin: 0.5cm 0;
+}
+
+li {
+  list-style-type: disc;
+}
