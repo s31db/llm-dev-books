@@ -28,8 +28,9 @@ Licence Creative Commons Attribution - Utilisation non commerciale - Pas d’Œu
 ---
 
 Ce livre est un projet vivant.
-Sa version complète et ses mises à jour sont disponibles en accès libre sur GitHub :
-**[github.com/s31db/llm-dev-books](https://github.com/s31db/llm-dev-books)**
+Sa version de travail complète et ses mises à jour sont disponibles en accès libre sur GitHub :
+**[github.com/s31db/llm-dev-books](https://github.com/s31db/llm-dev-books)**   
+La version pdf est disponible sur Leanpub : **[leanpub.com/llm_assisted_software_design](https://leanpub.com/llm_assisted_software_design)**
 
 </div>
 

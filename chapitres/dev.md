@@ -1,6 +1,6 @@
 
 ---
-
+<a id="dev"></a>
 ## 💻 Annexe 4 — **Développeur augmenté : étendre ses gestes avec l’appui d’un LLM**
 
 > Être développeur à l’ère des LLM, ce n’est pas seulement coder plus vite. C’est apprendre à **co-concevoir avec un partenaire dialogique**, à la fois génératif, imparfait… et étonnamment complémentaire.

@@ -28,6 +28,7 @@ body {
 p {
   line-height: 1.5;
   margin-bottom: 12pt;
+  text-align: justify;
 }
 
 /* Évite les sauts de page après les titres */
@@ -63,6 +64,10 @@ hr {
   border-top: 3px dotted #8bd3dd;
 }
 
+.sommaire a {
+  color: inherit;
+  text-decoration: inherit;
+}
 
 blockquote {
   border-right: 0.5px solid #444;
@@ -118,7 +123,7 @@ ul ul {
 
 .citation_garde {
   margin-top: 40px;
-  margin-bottom: 140px;
+  margin-bottom: 120px;
 }
 
 .version_licence_garde{

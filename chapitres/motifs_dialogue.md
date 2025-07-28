@@ -1,6 +1,6 @@
 
 ---
-
+<a id="motifs_dialogue"></a>
 ## 🧰 Chapitre 3 — Les motifs du dialogue : construire un langage de conception avec les LLM
 
 > Concevoir avec un LLM, c’est plus qu’écrire des prompts. C’est pratiquer un art du dialogue. Ce chapitre propose une bibliothèque de **motifs conversationnels** — des séquences typiques d’interaction, issues du terrain, à la fois réutilisables et adaptables.

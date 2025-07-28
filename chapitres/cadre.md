@@ -1,6 +1,6 @@
 
 ---
-
+<a id="cadre"></a>
 ## 🔬 Chapitre 9 — Cadres de mise en œuvre : ateliers, méthodes et rituels pour une pratique augmentée
 
 > Voici le terrain d’expérimentation : des formats pour apprendre ensemble, explorer, tester, documenter et transmettre les usages de l’IA dans vos équipes.
@@ -43,11 +43,11 @@ Choix collectif du sujet ou cas réel :
 
 #### Prompt initial (15 min)
 
-Écriture d’un **premier prompt naïf**, ensemble : “Que demanderait-on à un LLM dans ce contexte ?”  
+Écriture d’un **premier prompt naïf**, ensemble : “Que demanderait-on à un LLM dans ce contexte ?”
+
+<div class="pb-A4"></div>  
 
 Lecture de la réponse générée
-
-<div class="pb-A4"></div>
 
 Identification des problèmes potentiels :
 

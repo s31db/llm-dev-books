@@ -1,6 +1,6 @@
 
 ---
-
+<a id="agile"></a>
 ## 🌀 Chapitre 8 — Une agilité augmentée ?
 
 > Et si le LLM devenait un nouveau type de membre de l’équipe ?

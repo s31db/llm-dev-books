@@ -1,6 +1,6 @@
 
 ---
-
+<a id="introduction"></a>
 ## 🧩 Introduction : concevoir avec l’IA, un nouvel artisanat logiciel
 
 > *Ce n’est pas tant le code qui change, que notre manière de le concevoir.*

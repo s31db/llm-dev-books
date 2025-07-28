@@ -1,6 +1,6 @@
 
 ---
-
+<a id="cartographie_prompt"></a>
 ## 🗺️ Chapitre 5 — Cartographier les usages : typologie des situations et des rôles
 
 > Concevoir avec un LLM, ce n’est pas appliquer une méthode linéaire. C’est **naviguer dans un espace d’interactions possibles**, qui varie selon le contexte, l’intention, et le niveau de maturité. Ce chapitre propose une **carte de ces usages**, à la fois pour mieux s’orienter et pour enrichir sa pratique.

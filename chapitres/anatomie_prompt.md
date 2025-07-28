@@ -1,6 +1,6 @@
 
 ---
-
+<a id="anatomie_prompt"></a>
 ## 🎯 Chapitre 1 — Anatomie d’un bon prompt : précision, contexte et intention
 
 > Le prompt n’est pas une commande. C’est une interface de pensée. Il structure le dialogue, oriente la réponse, et conditionne la qualité de la collaboration.

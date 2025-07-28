@@ -3,14 +3,7 @@ import os
 import hashlib
 import shelve
 
-# import argparse
-from re import findall, UNICODE, compile as re_compile, MULTILINE
-from functools import wraps
-from time import time
-from typing import Dict, List, Callable
-
-# Import du module de profilage
-# from profiler import profile, Profiler
+from re import findall, UNICODE, compile as re_compile, MULTILINE, sub
 
 from emoji_img import emoji_to_image
 from base64 import b64encode
@@ -22,19 +15,6 @@ from cProfile import Profile
 from functools import wraps
 from pstats import Stats
 from io import StringIO
-
-
-def profile0(func):
-    @wraps(func)
-    def wrapper(*args, **kwargs):
-        profiler = Profile()
-        # profiler.enable()
-        result = func(*args, **kwargs)
-        profiler.disable()
-        profiler.print_stats(sort="time")
-        return result
-
-    return wrapper
 
 
 def profile(func):
@@ -101,7 +81,6 @@ PAGES = [
 
 def get_cache_path() -> Path:
     """Retourne le chemin du fichier de cache."""
-    # cache_dir = Path.home() / ".llm-dev-books-cache"
     cache_dir = Path("../build/.llm-dev-books-cache")
     cache_dir.mkdir(exist_ok=True)
     return cache_dir / "image_cache.db"
@@ -165,6 +144,7 @@ def unique_md(
     images: bool = True,
     emoji: bool = True,
     emoji_image: bool = False,
+    sommaire_pages: bool = True,
 ) -> None:
     files = PAGES
     if cover:
@@ -176,6 +156,16 @@ def unique_md(
         for file in files:
             with open(file, "r", encoding="utf-8") as f2:
                 content = f2.read()
+
+                if not sommaire_pages and "sommaire" in file:
+                    content = sub(
+                        r" ... p. \d+",
+                        "",
+                        content,
+                    )
+
+                if not sommaire_pages:
+                    content = content.replace("---\n<a id", "---\n\n<a id")
 
                 pattern = (
                     "["
@@ -282,6 +272,8 @@ def pdf_A4():
     tmp_footer_pdf = "../build/llm_assisted_software_design_footer.pdf"
     final_pdf = "../pdf/llm_assisted_software_design.pdf"
 
+    Path("../pdf").mkdir(parents=False, exist_ok=True)
+
     # Générer le PDF de base
     export_pdf(
         ["../build/llm_assisted_software_design.md"],
@@ -307,7 +299,9 @@ def pdf_A4():
 def epub():
     from publish_epub import export_epub
 
-    unique_md(False, False)
+    Path("../epub").mkdir(parents=False, exist_ok=True)
+
+    unique_md(False, False, sommaire_pages=False)
     export_epub(
         [
             "../build/llm_assisted_software_design.md",
@@ -375,12 +369,11 @@ def check_chapters_sommaire():
 if __name__ == "__main__":
     # check_pages()
     # check_chapters_sommaire()
+
     # To send file to LLM
-    # main()
     # unique_md(cover=False, images64=False, images=False, emoji=True, emoji_image=False)
 
     pdf()
-    # cProfile.run("pdf()")
     # Test pandoc
     # pdf_pandoc()
     epub()

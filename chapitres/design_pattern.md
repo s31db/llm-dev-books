@@ -1,6 +1,6 @@
 
 ---
-
+<a id="design_pattern"></a>
 ## 🏠 Chapitre 15 — Repenser les design patterns à l’ère des LLM
 
 > *Et si les patterns devenaient des dialogues vivants plutôt que des recettes figées ?*

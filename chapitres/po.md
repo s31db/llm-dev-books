@@ -1,6 +1,6 @@
 
 ---
-
+<a id="po"></a>
 ## 🧭 Annexe 3 — **PO augmenté : pratiquer son rôle avec l’appui d’un LLM**
 
 > 🎯 *Le LLM est un partenaire d’exploration, pas un pilote produit.*

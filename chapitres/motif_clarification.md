@@ -41,7 +41,7 @@ La solution paraît correcte. Il relance avec :
 
 Le LLM répond :
 
-> *« Dijkstra n’est pas adapté à ce cas. Il faudrait utiliser Bellman-Ford, qui gère les poids négatifs. »*
+> *« Dijkstra n’est pas adapté à ce cas. Il faudrait utiliser Bellman-Ford, qui gère les poids négatifs. »*
 
 Cette simple relance transforme une session de génération en **moment d’apprentissage algorithmique**, en rendant visible une hypothèse invisible.
 
@@ -63,4 +63,4 @@ Ne te satisfais pas de la « bonne réponse » en apparence. Adopte une **postur
 
 **💬 Prompt-type à mémoriser**
 
-> *« Donne un cas qui fait échouer cette solution. Qu’est-ce que cela révèle sur ses limites ? »*
+> *« Donne un cas qui fait échouer cette solution. Qu’est-ce que cela révèle sur ses limites ? »*

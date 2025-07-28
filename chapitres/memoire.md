@@ -1,6 +1,6 @@
 
 ---
-
+<a id="memoire"></a>
 ## 🗂️ Chapitre 12 — Documenter, archiver, capitaliser : vers une mémoire augmentée
 
 > Chaque échange avec un LLM laisse une trace. Mais si cette trace n’est ni conservée, ni structurée, ni transmise, elle s’efface.

@@ -1,6 +1,6 @@
 
 ---
-
+<a id="responsabilite"></a>
 ## ⚖️ Chapitre 7 — Responsabilité, transparence et limites : une éthique du développement augmenté
 
 > Utiliser un LLM dans le développement, ce n’est pas seulement une opportunité. C’est aussi une responsabilité.

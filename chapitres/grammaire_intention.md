@@ -1,6 +1,6 @@
 
 ---
-
+<a id="grammaire_intention"></a>
 ## 🧠 Chapitre 2 — La grammaire de l’intention : penser et formuler avec un LLM
 
 > Un LLM ne comprend pas. Il complète. Il n'infère pas un raisonnement vrai, mais une suite plausible. C’est à nous, humains, d’en faire un partenaire valable — en cadrant l’échange, en le structurant, en l’habitant.
@@ -70,7 +70,7 @@ Ne prenez pas la réponse du modèle pour une vérité. Demandez-lui d’envisag
 ### 🔎 Cas d’usage : reformuler pour penser mieux
 
 Une équipe travaille sur un module de gestion de stock. Elle utilise un LLM pour choisir entre une architecture monolithique et des microservices. Le prompt initial — *« Quelle architecture choisir ? »* — génère une réponse générique.
-
+<div class="pb-A4"></div>
 En injectant des contraintes spécifiques (taille de l’équipe, fréquence des déploiements, besoins d’évolutivité horizontale), la réponse s’affine. Le LLM devient alors un **simulateur d’options**, et le dialogue une façon d'explorer des possibles.
 
 ---

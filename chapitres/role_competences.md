@@ -1,6 +1,6 @@
 
 ---
-
+<a id="role_competences"></a>
 ## 👥 Chapitre 4 — Nouveaux rôles, nouvelles compétences : l’évolution des équipes augmentées
 
 <p style="text-align: center;">

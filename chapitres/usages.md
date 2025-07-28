@@ -1,6 +1,6 @@
 
 ---
-
+<a id="usages"></a>
 ## 🎓 Chapitre 11 — Usages de l’IA dans l’apprentissage
 
 ### L’IA comme tuteur et partenaire pédagogique

@@ -1,7 +1,7 @@
 
 ---
-
-## 🤖 **Chapitre 16 — Nouveaux design patterns émergents à l’ère des LLM et des agents IA**
+<a id="nouveaux_design_pattern"></a>
+## 🤖 Chapitre 16 — Nouveaux design patterns émergents à l’ère des LLM et des agents IA
 
 > *Quand l’intelligence artificielle devient un acteur du système, de nouveaux patterns apparaissent.*
 

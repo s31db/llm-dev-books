@@ -1,6 +1,6 @@
 
 ---
-
+<a id="motifs"></a>
 ## 🛠️ Chapitre 6 — Intégrer les motifs au quotidien : entre travail individuel et pratiques d’équipe
 
 > Un motif n’a de valeur que s’il est vécu, adapté, partagé. Ce chapitre propose des façons concrètes d’**ancrer les motifs dans votre quotidien**, que vous soyez en solo ou en équipe.

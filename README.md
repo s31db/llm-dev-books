@@ -12,12 +12,18 @@ Le contenu de ce dépôt est publié sous licence [CC BY-NC-NC-ND 4.0](https://c
 
     Partager — copier, distribuer et communiquer le matériel par tous moyens et sous tous formats, en respectant les termes de la licence.
 
+## Livre 
+
+La version pdf est disponible sur [Leanpub](https://leanpub.com/llm_assisted_software_design)  
+[Forum associé](https://leanpub.com/llm_assisted_software_design/forum) sur Leanpub
+
 ## Auteurs
 
 - Samuel Bastiat — auteur principal
 - Olivier Azeau — Idée originale
+- Bêta lecteurs : Gowen Pottiez, Guillaume Saint-Etienne, Cindy Schlaufmann, Philippe Charrière
 - Assistance rédactionnelle : ChatGPT (OpenAI), avec supervision humaine complète
-- Assistance technique et images : Microsoft Copilot, avec supervision humaine complète
+- Assistance technique et images : Microsoft Copilot, ChatGPT (OpenAI), Gemini, avec supervision humaine complète
 
 ---
 

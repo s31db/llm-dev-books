@@ -59,24 +59,6 @@ def ajouter_image_page(
         available_height = page_rect.height - 2 * margin
         available_ratio = available_width / available_height
 
-        # Adapter les dimensions tout en conservant les proportions
-        if False:
-            if img_ratio > available_ratio:
-                # Image trop large → ajuster largeur
-                display_width = available_width
-                display_height = available_width / img_ratio
-            else:
-                # Image plus haute → ajuster hauteur
-                display_height = available_height
-                display_width = display_height * img_ratio
-
-            # Calculer les coordonnées pour centrer l’image dans la page
-            x0 = page_rect.x0 + (page_rect.width - display_width) / 2
-            y0 = page_rect.y0 + (page_rect.height - display_height) / 2
-            x1 = x0 + display_width
-            y1 = y0 + display_height
-            rect = fitz.Rect(x0, y0, x1, y1)
-
         # Objectif : largeur totale, et ajuster la hauteur selon les proportions
         display_width = page_rect.width
         display_height = display_width / img_ratio
@@ -92,9 +74,6 @@ def ajouter_image_page(
         page.insert_image(
             rect, filename=image_path, keep_proportion=False, overlay=True
         )
-
-        # Sauvegarder le résultat si nécessaire
-        # doc.save("nouveau_fichier.pdf")
 
         return True
     except Exception as e:

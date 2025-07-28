@@ -1,6 +1,6 @@
 
 ---
-
+<a id="prospectifs"></a>
 ## 🔮 Chapitre 13 — Scénarios prospectifs : vers une ingénierie conversationnelle générative
 
 Et si demain, le développement logiciel n’était plus un processus centré sur le code, mais une série de dialogues, de validations progressives, de co-conceptions fluides entre humains et agents conversationnels ? Si certaines équipes n’étaient plus composées que de rôles de supervision, de validation et d’orchestration ? Ce chapitre explore plusieurs scénarios à la frontière du plausible, pour interroger les devenirs possibles du développement augmenté.

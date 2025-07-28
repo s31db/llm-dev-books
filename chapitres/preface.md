@@ -1,7 +1,7 @@
 
 ---
 
-## **Préface**
+## <a id="preface"></a>Préface
 
 Le logiciel est un artisanat. Depuis les débuts de l’informatique, les meilleurs développeurs ne se contentent pas d’écrire du code : ils imaginent des architectures, explorent des idées, testent des hypothèses, et tissent une conversation constante entre problème et solution, entre intention et implémentation.
 

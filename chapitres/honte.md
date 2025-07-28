@@ -1,6 +1,6 @@
 
 ---
-
+<a id="honte"></a>
 ## 🤔 Chapitre 14 — Dois-je avoir honte d'utiliser l'IA dans mon métier de développeur informatique ?
 
 <p style="text-align: center;">

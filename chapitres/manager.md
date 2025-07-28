@@ -1,6 +1,6 @@
 
 ---
-
+<a id="manager"></a>
 ## 👩‍💼 Annexe 6 — **Manager 3.0 augmenté : soutenir les dynamiques collectives avec un LLM**
 
 > Le management 3.0 repose sur la confiance, la transparence, la délégation, la culture du feedback. Intégrer un LLM dans cette posture, c’est **ouvrir un espace de dialogue élargi**, pour mieux questionner, clarifier, décider… et parfois sortir de ses angles morts.
