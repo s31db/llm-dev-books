@@ -13,8 +13,18 @@ def export_epub(file: Union[list, str, Path, Iterator], outputfile, extra_args):
     )
 
 
+def export_pdf(file: Union[list, str, Path, Iterator], outputfile, extra_args):
+    pypandoc.convert_file(
+        source_file=file,
+        to="pdf",
+        outputfile="../build/pandoc_valided_llm_assisted_software_design_pandoc.pdf",
+        sort_files=False,
+        extra_args=extra_args,
+    )
+
+
 if __name__ == "__main__":
-    export_epub(
+    export_pdf(
         [
             "../chapitres/page_garde.md",
             "../chapitres/sommaire.md",

@@ -1,7 +1,9 @@
 from markdown_pdf import MarkdownPdf, Section
 
 
-def export_pdf(files, outputfile: str, css_file: str, paper_size: str = "A4"):
+def export_pdf(
+    files, outputfile: str, css_file: str, paper_size: str, title: str, author: str
+):
     with open(css_file, "r", encoding="utf-8") as f:
         css = f.read()
 
@@ -19,10 +21,13 @@ def export_pdf(files, outputfile: str, css_file: str, paper_size: str = "A4"):
             Section(markdown_text, paper_size=paper_size, borders=borders), user_css=css
         )
 
-    pdf.meta["title"] = (
-        "LLM-Assisted Software Design, a Pattern Language of New Development Practices"
-    )
-    pdf.meta["author"] = "S@M depuis idée de OAZ avec ChatGPT et Microsoft Copilot"
+    # pdf.meta["title"] = (
+    #     "LLM-Assisted Software Design, a Pattern Language of New Development Practices"
+    # )
+    # pdf.meta["author"] = "S@M depuis idée de OAZ avec ChatGPT et Microsoft Copilot"
+
+    pdf.meta["title"] = title
+    pdf.meta["author"] = author
 
     # Save normalized PDF
     pdf_path = outputfile

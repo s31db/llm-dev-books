@@ -10,9 +10,10 @@ DEFAULT_MARGIN = 0.0  # Marge par défaut pour les couvertures
 
 def ajouter_image_page(
     doc: fitz.Document,
-    image_path: Union[str, Path],
+    image_path: str,
     page_number: int,
-    margin: float = DEFAULT_MARGIN,
+    margin: float,
+    paper_size: str,
 ) -> bool:
     """
     Ajoute une image sur toute une page avec une marge donnée.
@@ -31,8 +32,9 @@ def ajouter_image_page(
         return False
 
     try:
-        # Créer une nouvelle page vide à la fin
-        new_page = doc.new_page(-1)
+        # Créer une nouvelle page vide à la fin avec la taille spécifiée
+        rect = fitz.paper_rect(paper_size.lower())
+        new_page = doc.new_page(-1, width=rect.width, height=rect.height)
 
         # Réorganiser la nouvelle page à la position souhaitée (si valide)
         if 0 <= page_number < len(doc) - 1:  # -1 car on vient d'ajouter une page
@@ -84,16 +86,18 @@ def ajouter_image_page(
 def ajouter_couverture(
     doc: fitz.Document,
     image_path: str,
-    margin: float = DEFAULT_MARGIN,
+    margin: float,
+    paper_size: str,
 ) -> bool:
     """Ajoute une page de couverture au début du document."""
-    return ajouter_image_page(doc, image_path, 0, margin)
+    return ajouter_image_page(doc, image_path, 0, margin, paper_size)
 
 
 def ajouter_quatrieme_couverture(
     doc: fitz.Document,
     image_path: str,
-    margin: float = DEFAULT_MARGIN,
+    margin: float,
+    paper_size: str,
 ) -> bool:
     """Ajoute une page de quatrième de couverture à la fin du document."""
-    return ajouter_image_page(doc, image_path, -1, margin)
+    return ajouter_image_page(doc, image_path, -1, margin, paper_size)
