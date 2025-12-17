@@ -4,7 +4,7 @@
 ### 🟣 Motif 6 — **Prompt piloté par les tests** *TDP* : *Définir les attentes avant d’écrire*
 
 <p style="text-align: center;">
-    <img src="../images/tdp2.png" width="50%" />
+    <img src="../images/tdp2.png" class="tdp" />
 </p>
 
 **🎯 Contexte**

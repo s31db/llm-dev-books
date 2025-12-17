@@ -17,6 +17,8 @@ De nombreuses équipes encouragent déjà cet usage comme un réflexe naturel : 
 
 ---
 
+<div class="pb-paper"></div>
+
 ### Génération assistée de documentation
 
 La production de documentation est souvent négligée ou reportée. Avec l’IA, il devient possible de la générer **de manière incrémentale et contextuelle**, à partir :
@@ -44,6 +46,8 @@ Un des concepts les plus innovants dans ce nouveau paradigme est celui de **prom
 > **Exemple :**
 > Un prompt utilisé pour générer un plan de test automatisé ou un gabarit de composant peut être stocké, versionné, relu, partagé, adapté à d’autres projets.
 
+<div class="pb-paper"></div>
+
 Cela implique :
 
 * de conserver une trace des prompts importants (dans Git, dans un wiki, dans une base de prompts) ;
@@ -68,6 +72,8 @@ Chaque membre apporte un prompt qu’il ou elle a utilisé, et l’équipe discu
 * les possibilités d’amélioration.
 
 Cela permet de partager des pratiques de formulation et de cultiver une posture réflexive.
+
+<div class="pb-paper"></div>
 
 #### Learning Loop augmentée
 

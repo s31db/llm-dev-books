@@ -75,6 +75,8 @@ Formalise les motifs, bonnes pratiques, prompt canvas et tests d’intention uti
 | Journal d’équipe génératif   | Historique d’usage, discussion, évolution |
 | Grammaire maison             | Guide de formulation interne              |
 
+<div class="pb-paper"></div>
+
 👉 **Outils associés** : Miro / Notion / Gitbook / Docusaurus…  
 👉 Conseil : commencez petit. Une page “Motifs de la semaine” suffit à démarrer.
 
@@ -109,6 +111,8 @@ Une “mémoire augmentée” n’est pas un répertoire figé. C’est :
 * **Un espace de dialogue avec les futurs contributeurs**
 * **Un support d’apprentissage et d’amélioration continue**
 * **Un levier de confiance et de transparence**
+
+<div class="pb-paper"></div>
 
 Elle peut être **personnelle, d’équipe, ou collective**, mais elle doit toujours être :
 

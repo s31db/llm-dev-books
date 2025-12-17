@@ -13,6 +13,8 @@ Concevoir avec un LLM, ce n’est pas poser une question puis attendre la répon
 
 ---
 
+<div class="pb-paper"></div>
+
 ### 🧠 Pourquoi un langage de motifs ?
 
 Nous ne partons pas de zéro. Dans le monde du logiciel, nous avons appris à structurer l’expérience collective à travers des *design patterns*, des bonnes pratiques, des frameworks. Ce livre propose une approche dans cette lignée : **un langage de motifs pour concevoir en interaction avec un LLM**.
@@ -53,6 +55,8 @@ Tu y trouveras :
 * des cadres pour transmettre, adapter, faire vivre ces pratiques.
 
 ---
+
+<div class="pb-paper"></div>
 
 ### 🎤 Et maintenant ?
 

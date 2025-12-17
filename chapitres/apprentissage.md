@@ -25,6 +25,8 @@ Ce chapitre répond à une question clé : **comment faire vivre les motifs dans
 
 ---
 
+<div class="pb-paper"></div>
+
 ### 🧑‍🏫 Formation initiale : apprendre par la pratique
 
 #### 🧪 1. Ateliers d’initiation
@@ -34,6 +36,8 @@ Ce chapitre répond à une question clé : **comment faire vivre les motifs dans
 | **Prompt Dojo**                   | Créer un prompt, l’itérer, le tester       | 1h     | Binômes / petits groupes |
 | **Exploration par motifs**        | Résoudre un problème en utilisant un motif | 1h30   | Cas d’usage réel         |
 | **Décryptage de conversation IA** | Analyser une interaction générée           | 45 min | Exercice en miroir       |
+
+<div class="pb-A4"></div>
 
 > Chaque atelier est centré sur un ou deux **gestes conversationnels**. Il vise l’appropriation, pas l’exhaustivité.
 
@@ -88,6 +92,7 @@ Ce format court (10–15 min) favorise la **démocratisation du langage de motif
 ---
 
 <div class="pb-A4"></div>
+<div class="pb-paper"></div>
 
 ### 🧠 Une posture à transmettre
 

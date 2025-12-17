@@ -20,18 +20,74 @@ Ces motifs ne sont ni des recettes, ni des règles : ce sont des **formes d’us
 
 ---
 
-#### 🧩 Fiche récapitulative — Les 8 premiers motifs du langage LLM-Assisted Software Design
+#### 🧩 Fiche récapitulative — Les 9 premiers motifs du langage LLM-Assisted Software Design
 
-| 🎯 Motif                   | 🔢 Finalité principale   | 💡 Geste clé             | 🧠 Posture recommandée                                    | 💬 Prompt-type     |
-|----------------------------|--------------------------|--------------------------|-----------------------------------------------------------|----------------------------------------------------------|
-| **1. Question Socratique** | Clarifier un besoin flou |Poser des questions ciblées | Se mettre en position de facilitateur de sa propre pensée | *« Aide-moi à clarifier ma demande en me posant des questions. »* |
-| **2. Exploration guidée**    | Structurer un sujet complexe | Demander un découpage ou un plan | Explorer sans chercher à résoudre d’un coup | *« Propose un plan en étapes pour aborder ce sujet. »*   |
-| **3. Spécification inversée** | Comprendre du code sans doc | Inférer les intentions à partir du code | Interpréter, reformuler, confronter | *« Quelles règles métier ce code implémente-t-il ? »*    |
-| **4. Modèle miroir**         | Comparer des options avant un choix | Générer plusieurs solutions puis les comparer | Ne pas se précipiter, ouvrir l’espace de décision | *« Propose 2 ou 3 options et compare-les sur ces critères… »* |
-| **5. Contre-exemple**        | Tester la solidité d’une solution | Demander un cas où ça échoue | Adopter une posture critique, tester la limite | *« Quelle situation rend cette solution invalide ? »*    |
-| **6. Prompt piloté par les tests** | Stabiliser la qualité des réponses | Définir les attentes avant d’écrire | Concevoir le prompt comme un artefact testable | *« Voici un exemple de sortie attendue. Que faut-il inclure dans le prompt ? »* |
-| **7. Reformulation visuelle** | Détecter les flous dans une solution textuelle | Représenter sous forme visuelle puis reformuler | Clarifier en dessinant, dialoguer à partir du schéma | *« Voici ma compréhension sous forme structurée. Que manque-t-il ? »* |
-| **8. Soin systémique**       | Identifier les causes profondes d’un problème | Enquêter par questionnement causal | Suspendre l’action pour investiguer en profondeur | *« Peux-tu m’aider à explorer les causes racines de ce problème ? »* |
+##### 1. Question Socratique
+
+🔢 Finalité principale : Clarifier un besoin flou  
+💡 Geste clé : Poser des questions ciblées  
+🧠 Posture recommandée : Se mettre en position de facilitateur de sa propre pensée  
+💬 Prompt-type : *« Aide-moi à clarifier ma demande en me posant des questions. »*
+
+##### 2. Exploration guidée
+
+🔢 Finalité principale : Structurer un sujet complexe  
+💡 Geste clé : Demander un découpage ou un plan  
+🧠 Posture recommandée : Explorer sans chercher à résoudre d’un coup  
+💬 Prompt-type : *« Propose un plan en étapes pour aborder ce sujet. »*
+
+##### 3. Spécification inversée
+
+🔢 Finalité principale : Comprendre du code sans documentation  
+💡 Geste clé : Inférer les intentions à partir du code  
+🧠 Posture recommandée : Interpréter, reformuler, confronter  
+💬 Prompt-type : *« Quelles règles métier ce code implémente-t-il ? »*
+
+##### 4. Modèle miroir
+
+🔢 Finalité principale : Comparer des options avant un choix  
+💡 Geste clé : Générer plusieurs solutions puis les comparer  
+🧠 Posture recommandée : Ne pas se précipiter, ouvrir l’espace de décision  
+💬 Prompt-type : *« Propose 2 ou 3 options et compare-les sur ces critères… »*
+
+<div class="pb-paper"></div>
+
+##### 5. Contre-exemple
+
+🔢 Finalité principale : Tester la solidité d’une solution  
+💡 Geste clé : Demander un cas où ça échoue  
+🧠 Posture recommandée : Adopter une posture critique, tester la limite  
+💬 Prompt-type : *« Quelle situation rend cette solution invalide ? »*
+
+##### 6. Prompt piloté par les tests
+
+🔢 Finalité principale : Stabiliser la qualité des réponses  
+💡 Geste clé : Définir les attentes avant d’écrire  
+🧠 Posture recommandée : Concevoir le prompt comme un artefact testable  
+💬 Prompt-type : *« Voici un exemple de sortie attendue. Que faut-il inclure dans le prompt ? »*
+
+##### 7. Reformulation visuelle
+
+🔢 Finalité principale : Détecter les flous dans une solution textuelle  
+💡 Geste clé : Représenter sous forme visuelle puis reformuler  
+🧠 Posture recommandée : Clarifier en dessinant, dialoguer à partir du schéma  
+💬 Prompt-type : *« Voici ma compréhension sous forme structurée. Que manque-t-il ? »*
+
+<div class="pb-paper"></div>
+
+##### 8. Soin systémique
+
+🔢 Finalité principale : Identifier les causes profondes d’un problème  
+💡 Geste clé : Enquêter par questionnement causal  
+🧠 Posture recommandée : Suspendre l’action pour investiguer en profondeur  
+💬 Prompt-type : « Peux-tu m’aider à explorer les causes racines de ce problème ? »
+
+##### 9. Cascade de prompts
+
+🔢 Finalité principale : Approfondir un sujet complexe étape par étape  
+💡 Geste clé : Construire une progression (question → esquisse → test → raffinement → synthèse)  
+🧠 Posture recommandée : Orchestrer le cheminement plutôt que forcer une réponse unique  
+💬 Prompt-type : *« Nous allons travailler en plusieurs étapes. Voici la première : pose-moi 5 questions pour clarifier… »*
 
 ---
 
@@ -40,4 +96,4 @@ Ces motifs ne sont ni des recettes, ni des règles : ce sont des **formes d’us
 * ✅ En **revue d’interaction avec un LLM** : repérez quel motif correspond à votre situation actuelle.
 * 🌀 En **atelier d’équipe** : proposez une situation → faites choisir un motif → expérimentez.
 * 🧭 En **coaching / mentoring** : formez aux gestes réflexifs associés à chaque motif.
-* 📓 En **documentation de pratique** : ajoutez à vos templates d’atelier, vos miro ou vos outils de facilitation augmentée.
+* 📓 En **documentation de pratique** : ajoutez ces motifs à vos templates d’atelier, vos miro ou vos outils de facilitation augmentée.

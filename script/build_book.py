@@ -52,6 +52,7 @@ PAGES = [
     "../chapitres/motif_tdp.md",
     "../chapitres/motif_reformulation.md",
     "../chapitres/motif_soin_systemique.md",
+    "../chapitres/motif_cascade.md",
     "../chapitres/motif_synthese.md",
     "../chapitres/role_competences.md",
     "../chapitres/cartographie_prompt.md",
@@ -195,6 +196,8 @@ def unique_md(
     sommaire_pages: bool = True,
     css_styles: str = "",
     remove_interne_link: bool = False,
+    decalage: int = 1,
+    replaces: dict[str, str] | None = None,
 ) -> None:
     files = pages
     if cover:
@@ -216,6 +219,16 @@ def unique_md(
                         "",
                         content,
                     )
+                elif "sommaire" in file:
+                    content = sub(
+                        r"(\.{3}\s*p\.\s*)(\d+)",  # Capture " ... p. " et le numéro séparément
+                        lambda m: f"{m.group(1)}{int(m.group(2)) + decalage - 1}",  # Applique le décalage au numéro
+                        content,
+                    )
+
+                if replaces:
+                    for replace, replace_by in replaces.items():
+                        content = content.replace(replace, replace_by)
 
                 if not sommaire_pages:
                     content = content.replace("---\n<a id", "---\n\n<a id")
@@ -224,6 +237,11 @@ def unique_md(
                     content = sub(
                         r"\[(.*?)\]\(.*?\)",
                         r"\1",
+                        content,
+                    )
+                    content = sub(
+                        r'<a id=".*"></a>',
+                        r"",
                         content,
                     )
 
@@ -286,7 +304,9 @@ def unique_md(
                 f.write(f"{content}\n")
                 # if "quatrieme_couverture" not in file:
                 if file != files[-1]:
-                    f.write('<div style="page-break-after: always;"></div>\n')
+                    f.write(
+                        '<div class="pb" style="page-break-after: always;"></div>\n'
+                    )
 
 
 # @profile
@@ -294,13 +314,19 @@ def pdf(
     titre: str,
     title: str,
     pages: list[str],
-    cover_image: str,
-    back_cover_image: str,
+    cover_image: str | None,
+    back_cover_image: str | None,
     start_page_index: int,
-    author: str,
+    meta: dict[str, str],
+    css_file: str,
+    watermark_path: str | Path | None,
+    remove_interne_link: bool,
     emoji_image: bool = True,
     css_a5_file: str = "../ressources/print.css",
-):
+    decalage: int = 1,
+    paper_size: str or list or tuple = "A4",
+    replaces: set[str] | None = None,
+) -> str:
     unique_md(
         titre=titre,
         pages=pages,
@@ -309,15 +335,21 @@ def pdf(
         images=True,
         emoji=True,
         emoji_image=emoji_image,
+        decalage=decalage,
+        remove_interne_link=remove_interne_link,
+        replaces=replaces,
     )
-    pdf_A4(
+    html_final = finalize_pdf(
         titre,
         title=title,
         cover_image=cover_image,
         back_cover_image=back_cover_image,
         start_page_index=start_page_index,
-        # css_file=css_file,
-        author=author,
+        css_file=css_file,
+        meta=meta,
+        decalage=decalage,
+        paper_size=paper_size,
+        watermark_path=watermark_path,
     )
     # PDF pour impression format de poche
     # pdf_A5(
@@ -329,6 +361,7 @@ def pdf(
     #         css_file=css_a5_file,
     #         author=author,
     #     )
+    return html_final
 
 
 def sample_book_pdf(
@@ -338,10 +371,11 @@ def sample_book_pdf(
     cover_image: str,
     back_cover_image: str,
     nb_pages: int,
-    author: str,
+    meta: dict[str, str],
     css_a5_file: str,
     start_page_index: int = 0,
     emoji_image: bool = True,
+    paper_size: str | list | tuple = "A4",
 ):
     unique_md(
         titre + "_sample_book",
@@ -353,14 +387,15 @@ def sample_book_pdf(
         emoji_image=emoji_image,
         remove_interne_link=True,
     )
-    pdf_A4(
+    finalize_pdf(
         titre + "_sample_book",
         title=title,
         cover_image=cover_image,
         back_cover_image=back_cover_image,
         start_page_index=start_page_index,
         # css_a5_file=css_a5_file,
-        author=author,
+        meta=meta,
+        paper_size=paper_size,
     )
 
 
@@ -408,36 +443,51 @@ def pdf_A5(
     )
 
 
-def pdf_A4(
+def finalize_pdf(
     titre: str,
     title: str,
-    author: str,
-    cover_image: str,
-    back_cover_image: str,
+    meta: dict[str, str],
+    cover_image: str | None,
+    back_cover_image: str | None,
     start_page_index: int,
+    paper_size: str | list | tuple,
+    watermark_path: str | Path | None,
     css_file: str = "../ressources/pdf.css",
-):
-    print(f"A4 {titre}")
-    tmp_pdf = f"../build/{titre}_A4.pdf"
-    tmp_footer_pdf = f"../build/{titre}_footer_A4.pdf"
+    decalage: int = 1,
+) -> str:
+    str_paper_size = (
+        paper_size
+        if isinstance(paper_size, str)
+        else "_".join([str(p) for p in paper_size])
+    )
+    print(f"{str_paper_size} {titre}")
+    tmp_pdf = f"../build/{titre}_{str_paper_size}.pdf"
+    tmp_footer_pdf = f"../build/{titre}_footer_{str_paper_size}.pdf"
+    tmp_watermark_pdf = f"../build/{titre}_watermark_{str_paper_size}.pdf"
     final_pdf = f"../pdf/{titre}.pdf"
 
     Path("../pdf").mkdir(parents=False, exist_ok=True)
 
-    export_pdf(
+    html_final = export_pdf(
         [f"../build/{titre}.md"],
         outputfile=tmp_pdf,
         css_file=css_file,
-        paper_size="A4",
+        paper_size=paper_size,
         title=title,
-        author=author,
+        meta=meta,
     )
+    print(f"{str_paper_size} PDF généré avec succès: {tmp_pdf}")
 
     # Ajouter les footers
-    print("A4 Ajout du footer")
+    print(f"{str_paper_size} Ajout du footer")
 
     ajouter_footer_pdf(
-        tmp_pdf, tmp_footer_pdf, start_page_index=start_page_index, fontsize=11
+        tmp_pdf,
+        tmp_footer_pdf,
+        start_page_index=start_page_index,
+        fontsize=11,
+        decalage=decalage,
+        watermark_path=watermark_path,
     )
 
     # Ajouter les couvertures
@@ -448,8 +498,10 @@ def pdf_A4(
         back_cover_margin=0.0,
         cover_image=cover_image,
         back_cover_image=back_cover_image,
-        paper_size="A4",
+        paper_size=paper_size,
     )
+
+    return html_final
 
 
 def epub(titre: str, pages: list[str], cover_image: str, extra_args: list):
@@ -563,16 +615,22 @@ def publish(
     titre: str,
     title: str,
     pages: list[str],
-    cover_image: str,
-    back_cover_image: str,
+    cover_image: str | None,
+    back_cover_image: str | None,
     nb_pages: int,
     extra_args: list,
-    author: str,
+    meta: dict[str, str],
+    css_file: str,
     emoji_image: bool = True,
     pages_epub: list[str] | None = None,
     start_page_index: int = 0,
     css_a5_file: str = "../ressources/print.css",
-):
+    decalage: int = 1,
+    paper_size: str | list | tuple = "A4",
+    remove_interne_link: bool = False,
+    replaces: dict[str, str] | None = None,
+    watermark_path: str | Path | None = None,
+) -> str:
     pages_epub = pages_epub or pages
     # To send file to LLM
     unique_md(
@@ -583,9 +641,10 @@ def publish(
         emoji=True,
         emoji_image=False,
         pages=pages,
+        remove_interne_link=remove_interne_link,
     )
 
-    pdf(
+    html_final = pdf(
         titre,
         title=title,
         pages=pages,
@@ -593,9 +652,16 @@ def publish(
         back_cover_image=back_cover_image,
         emoji_image=emoji_image,
         start_page_index=start_page_index,
+        css_file=css_file,
         css_a5_file=css_a5_file,
-        author=author,
+        meta=meta,
+        decalage=decalage,
+        paper_size=paper_size,
+        remove_interne_link=remove_interne_link,
+        replaces=replaces,
+        watermark_path=watermark_path,
     )
+
     sample_book_pdf(
         titre,
         title=title,
@@ -606,8 +672,11 @@ def publish(
         nb_pages=nb_pages,
         start_page_index=start_page_index,
         css_a5_file=css_a5_file,
-        author=author,
+        meta=meta,
+        paper_size=paper_size,
     )
+
+    return html_final
 
     # epub(
     #     titre,
@@ -639,8 +708,9 @@ def llm_assisted():
         extra_args=["--metadata-file=../chapitres/meta.yaml"],
         pages_epub=PAGES[1:],
         start_page_index=8,
+        css_file="../ressources/pdf.css",
         css_a5_file="../ressources/print.css",
-        author=meta["title"],
+        meta=meta,
     )
 
 
@@ -658,8 +728,9 @@ def llm_assisted_en():
         extra_args=["--metadata-file=../chapitres_en/meta.yaml"],
         pages_epub=PAGES_EN_US[1:],
         start_page_index=8,
+        css_file="../ressources/pdf.css",
         css_a5_file="../ressources/print.css",
-        author=meta["title"],
+        meta=meta,
     )
 
 
@@ -667,8 +738,8 @@ if __name__ == "__main__":
     # check_pages()
     # check_chapters_sommaire()
 
-    # llm_assisted()
-    llm_assisted_en()
+    llm_assisted()
+    # llm_assisted_en()
 
     # To send file to LLM
     # unique_md(cover=False, images64=False, images=False, emoji=True, emoji_image=False)

@@ -62,6 +62,8 @@ Le LLM est un nouvel outil dans cette longue chaîne d’augmentation du dévelo
 
 ---
 
+<div class="pb-paper"></div>
+
 ### ✊ Affirmer une nouvelle fierté professionnelle
 
 La fierté n’est pas dans le « tout fait main ».
