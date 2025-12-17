@@ -15,6 +15,7 @@ from cProfile import Profile
 from functools import wraps
 from pstats import Stats
 from io import StringIO
+from yaml import safe_load
 
 
 def profile(func):
@@ -77,6 +78,51 @@ PAGES = [
     # "../chapitres/quatrieme_couverture.md",
 ]
 # PAGES = PAGES[:2]
+PAGES_EN_US = [
+    "../chapitres_en/page_garde.md",
+    "../chapitres_en/advertissement.md",
+    "../chapitres_en/preface.md",
+    "../chapitres_en/sommaire.md",
+    "../chapitres_en/avant_propos.md",
+    "../chapitres_en/introduction.md",
+    "../chapitres_en/anatomie_prompt.md",
+    "../chapitres_en/grammaire_intention.md",
+    "../chapitres_en/motifs_dialogue.md",
+    "../chapitres_en/motif_socratique.md",
+    "../chapitres_en/motif_exploration.md",
+    "../chapitres_en/motif_specification.md",
+    "../chapitres_en/motif_miroir.md",
+    "../chapitres_en/motif_clarification.md",
+    "../chapitres_en/motif_tdp.md",
+    "../chapitres_en/motif_reformulation.md",
+    "../chapitres_en/motif_soin_systemique.md",
+    "../chapitres_en/motif_synthese.md",
+    "../chapitres_en/role_competences.md",
+    "../chapitres_en/cartographie_prompt.md",
+    "../chapitres_en/motifs.md",
+    "../chapitres_en/responsabilite.md",
+    "../chapitres_en/agile.md",
+    "../chapitres_en/cadre.md",
+    "../chapitres_en/apprentissage.md",
+    "../chapitres_en/usages.md",
+    "../chapitres_en/memoire.md",
+    "../chapitres_en/prospectifs.md",
+    "../chapitres_en/honte.md",
+    "../chapitres_en/histoires.md",
+    "../chapitres_en/design_pattern.md",
+    "../chapitres_en/nouveaux_design_pattern.md",
+    "../chapitres_en/conclusion.md",
+    "../chapitres_en/intro_annexe.md",
+    "../chapitres_en/fiches_outils.md",
+    "../chapitres_en/tdp.md",
+    "../chapitres_en/po.md",
+    "../chapitres_en/dev.md",
+    "../chapitres_en/coach.md",
+    "../chapitres_en/manager.md",
+    # "../chapitres/quatrieme_couverture.md",
+]
+
+# PAGES_EN_US = PAGES_EN_US[:6]
 
 
 def get_cache_path() -> Path:
@@ -139,20 +185,27 @@ def img64(image_path: str) -> str:
 
 # @profile
 def unique_md(
+    titre: str,
+    pages: list[str],
     cover: bool = True,
     images64: bool = True,
     images: bool = True,
     emoji: bool = True,
     emoji_image: bool = False,
     sommaire_pages: bool = True,
+    css_styles: str = "",
+    remove_interne_link: bool = False,
 ) -> None:
-    files = PAGES
+    files = pages
     if cover:
         files.insert(0, "../chapitres/cover.md")
 
     Path("../build").mkdir(parents=False, exist_ok=True)
 
-    with open("../build/llm_assisted_software_design.md", "w", encoding="utf-8") as f:
+    with open(f"../build/{titre}.md", "w", encoding="utf-8") as f:
+        # Ajouter les styles CSS si spécifiés
+        if css_styles:
+            f.write(f"<style>{css_styles}</style>\n\n")
         for file in files:
             with open(file, "r", encoding="utf-8") as f2:
                 content = f2.read()
@@ -166,6 +219,13 @@ def unique_md(
 
                 if not sommaire_pages:
                     content = content.replace("---\n<a id", "---\n\n<a id")
+
+                if remove_interne_link:
+                    content = sub(
+                        r"\[(.*?)\]\(.*?\)",
+                        r"\1",
+                        content,
+                    )
 
                 pattern = (
                     "["
@@ -230,60 +290,155 @@ def unique_md(
 
 
 # @profile
-def pdf():
-    # unique_md(True, True, True, True, True)
-    unique_md(False, True, True, True, True)
-    pdf_A4()
+def pdf(
+    titre: str,
+    title: str,
+    pages: list[str],
+    cover_image: str,
+    back_cover_image: str,
+    start_page_index: int,
+    author: str,
+    emoji_image: bool = True,
+    css_a5_file: str = "../ressources/print.css",
+):
+    unique_md(
+        titre=titre,
+        pages=pages,
+        cover=False,
+        images64=True,
+        images=True,
+        emoji=True,
+        emoji_image=emoji_image,
+    )
+    pdf_A4(
+        titre,
+        title=title,
+        cover_image=cover_image,
+        back_cover_image=back_cover_image,
+        start_page_index=start_page_index,
+        # css_file=css_file,
+        author=author,
+    )
     # PDF pour impression format de poche
-    # pdf_A5()
+    # pdf_A5(
+    #         titre,
+    #         title=title,
+    #         cover_image=cover_image,
+    #         back_cover_image=back_cover_image,
+    #         start_page_index=start_page_index,
+    #         css_file=css_a5_file,
+    #         author=author,
+    #     )
 
 
-def pdf_A5():
-    print("A5")
-    tmp_pdf = "../build/llm_assisted_software_design_a5.pdf"
-    final_pdf = "../pdf/llm_assisted_software_design_a5.pdf"
-
-    # Générer le PDF de base
-    export_pdf(
-        ["../build/llm_assisted_software_design.md"],
-        tmp_pdf,
-        "../ressources/print.css",
-        paper_size="A5",
+def sample_book_pdf(
+    titre: str,
+    title: str,
+    pages,
+    cover_image: str,
+    back_cover_image: str,
+    nb_pages: int,
+    author: str,
+    css_a5_file: str,
+    start_page_index: int = 0,
+    emoji_image: bool = True,
+):
+    unique_md(
+        titre + "_sample_book",
+        pages=pages[:nb_pages],
+        cover=False,
+        images64=True,
+        images=True,
+        emoji=True,
+        emoji_image=emoji_image,
+        remove_interne_link=True,
+    )
+    pdf_A4(
+        titre + "_sample_book",
+        title=title,
+        cover_image=cover_image,
+        back_cover_image=back_cover_image,
+        start_page_index=start_page_index,
+        # css_a5_file=css_a5_file,
+        author=author,
     )
 
-    # Ajouter les footers
-    print("Ajout du footer")
-    ajouter_footer_pdf(tmp_pdf, final_pdf, 8, fontsize=9)
 
-    # Ajouter les couvertures
-    ajouter_couverture_pdf(
-        input_pdf=final_pdf,
-        output_pdf=final_pdf,  # Écrase le fichier avec les couvertures
-        cover_margin=0.0,
-        back_cover_margin=0.0,
-        cover_image="../../images/cover2.png",
-        back_cover_image="../../images/quatrieme_couverture.png",
-    )
-
-
-def pdf_A4():
-    print("A4")
-    tmp_pdf = "../build/llm_assisted_software_design.pdf"
-    tmp_footer_pdf = "../build/llm_assisted_software_design_footer.pdf"
-    final_pdf = "../pdf/llm_assisted_software_design.pdf"
+def pdf_A5(
+    titre: str,
+    title: str,
+    cover_image: str,
+    back_cover_image: str,
+    start_page_index: int,
+    css_a5_file: str,
+    author: str,
+):
+    print(f"A5 {titre}")
+    tmp_pdf = f"../build/{titre}.pdf"
+    tmp_footer_pdf = f"../build/{titre}_footer.pdf"
+    final_pdf = f"../pdf/{titre}_format_poche.pdf"
 
     Path("../pdf").mkdir(parents=False, exist_ok=True)
 
     # Générer le PDF de base
     export_pdf(
-        ["../build/llm_assisted_software_design.md"],
+        [f"../build/{titre}.md"],
         tmp_pdf,
-        "../ressources/pdf.css",
+        css_file=css_a5_file,
+        paper_size="A5",
+        title=title,
+        author=author,
+    )
+
+    # Ajouter les footers
+    print("Ajout du footer")
+    ajouter_footer_pdf(
+        tmp_pdf, tmp_footer_pdf, start_page_index=start_page_index, fontsize=9
+    )
+
+    # Ajouter les couvertures
+    ajouter_couverture_pdf(
+        input_pdf=tmp_footer_pdf,
+        output_pdf=final_pdf,  # Écrase le fichier avec les couvertures
+        cover_margin=0.0,
+        back_cover_margin=0.0,
+        cover_image=cover_image,
+        back_cover_image=back_cover_image,
+        paper_size="A5",
+    )
+
+
+def pdf_A4(
+    titre: str,
+    title: str,
+    author: str,
+    cover_image: str,
+    back_cover_image: str,
+    start_page_index: int,
+    css_file: str = "../ressources/pdf.css",
+):
+    print(f"A4 {titre}")
+    tmp_pdf = f"../build/{titre}_A4.pdf"
+    tmp_footer_pdf = f"../build/{titre}_footer_A4.pdf"
+    final_pdf = f"../pdf/{titre}.pdf"
+
+    Path("../pdf").mkdir(parents=False, exist_ok=True)
+
+    export_pdf(
+        [f"../build/{titre}.md"],
+        outputfile=tmp_pdf,
+        css_file=css_file,
+        paper_size="A4",
+        title=title,
+        author=author,
     )
 
     # Ajouter les footers
     print("A4 Ajout du footer")
-    ajouter_footer_pdf(tmp_pdf, tmp_footer_pdf, 8, fontsize=11)
+
+    ajouter_footer_pdf(
+        tmp_pdf, tmp_footer_pdf, start_page_index=start_page_index, fontsize=11
+    )
 
     # Ajouter les couvertures
     ajouter_couverture_pdf(
@@ -291,30 +446,68 @@ def pdf_A4():
         output_pdf=final_pdf,
         cover_margin=0.0,
         back_cover_margin=0.0,
-        cover_image="../images/cover2.png",
-        back_cover_image="../images/quatrieme_couverture.png",
+        cover_image=cover_image,
+        back_cover_image=back_cover_image,
+        paper_size="A4",
     )
 
 
-def epub():
+def epub(titre: str, pages: list[str], cover_image: str, extra_args: list):
     from publish_epub import export_epub
 
     Path("../epub").mkdir(parents=False, exist_ok=True)
 
-    unique_md(False, False, sommaire_pages=False)
+    unique_md(
+        titre=titre,
+        pages=pages,
+        cover=False,
+        images64=False,
+        sommaire_pages=False,
+    )
     export_epub(
         [
-            "../build/llm_assisted_software_design.md",
+            f"../build/{titre}.md",
         ],
-        "../epub/llm_assisted_software_design.epub",
+        f"../epub/{titre}.epub",
         extra_args=[
-            "--epub-cover-image=../images/cover2.png",
-            "--metadata",
-            "language=fr",
+            f"--epub-cover-image={cover_image}",
             "--resource-path=../images",
-        ],
+        ]
+        + extra_args,
     )
-    print("📖 Epub done")
+    print(f"📖 Epub {titre} done")
+
+
+def sample_book_epub(
+    titre: str,
+    pages: list[str],
+    cover_image: str,
+    nb_pages: int,
+    extra_args,
+):
+    from publish_epub import export_epub
+
+    Path("../epub").mkdir(parents=False, exist_ok=True)
+
+    unique_md(
+        titre=titre,
+        pages=pages[:nb_pages],
+        cover=False,
+        images64=False,
+        sommaire_pages=False,
+    )
+    export_epub(
+        [
+            f"../build/{titre}_sample_book.md",
+        ],
+        f"../epub/{titre}_sample_book.epub",
+        extra_args=[
+            f"--epub-cover-image={cover_image}",
+            "--resource-path=../images",
+        ]
+        + extra_args,
+    )
+    print(f"📖 Epub {titre}_sample_book done")
 
 
 def pdf_pandoc():
@@ -366,15 +559,122 @@ def check_chapters_sommaire():
                     print(f"{page[13:]} - Chapter {title} is not in sommaire.md")
 
 
+def publish(
+    titre: str,
+    title: str,
+    pages: list[str],
+    cover_image: str,
+    back_cover_image: str,
+    nb_pages: int,
+    extra_args: list,
+    author: str,
+    emoji_image: bool = True,
+    pages_epub: list[str] | None = None,
+    start_page_index: int = 0,
+    css_a5_file: str = "../ressources/print.css",
+):
+    pages_epub = pages_epub or pages
+    # To send file to LLM
+    unique_md(
+        titre=titre + "_md",
+        cover=False,
+        images64=False,
+        images=False,
+        emoji=True,
+        emoji_image=False,
+        pages=pages,
+    )
+
+    pdf(
+        titre,
+        title=title,
+        pages=pages,
+        cover_image=cover_image,
+        back_cover_image=back_cover_image,
+        emoji_image=emoji_image,
+        start_page_index=start_page_index,
+        css_a5_file=css_a5_file,
+        author=author,
+    )
+    sample_book_pdf(
+        titre,
+        title=title,
+        pages=pages,
+        cover_image=cover_image,
+        back_cover_image=back_cover_image,
+        emoji_image=emoji_image,
+        nb_pages=nb_pages,
+        start_page_index=start_page_index,
+        css_a5_file=css_a5_file,
+        author=author,
+    )
+
+    # epub(
+    #     titre,
+    #     pages=pages_epub,
+    #     cover_image=cover_image,
+    #     extra_args=extra_args,
+    # )
+    #
+    # sample_book_epub(
+    #     titre,
+    #     pages=pages_epub,
+    #     cover_image=cover_image,
+    #     nb_pages=nb_pages,
+    #     extra_args=extra_args,
+    # )
+
+
+def llm_assisted():
+    with open("../chapitres/meta.yaml", "r", encoding="utf-8") as fichier:
+        meta = safe_load(fichier)
+
+    publish(
+        titre="llm_assisted_software_design",
+        title=meta["title"],
+        pages=PAGES,
+        cover_image="../images/cover2.png",
+        back_cover_image="../images/quatrieme_couverture.png",
+        nb_pages=2,
+        extra_args=["--metadata-file=../chapitres/meta.yaml"],
+        pages_epub=PAGES[1:],
+        start_page_index=8,
+        css_a5_file="../ressources/print.css",
+        author=meta["title"],
+    )
+
+
+def llm_assisted_en():
+    with open("../chapitres_en/meta.yaml", "r", encoding="utf-8") as fichier:
+        meta = safe_load(fichier)
+
+    publish(
+        titre="llm_assisted_software_design_en_us",
+        title=meta["title"],
+        pages=PAGES_EN_US,
+        cover_image="../images/cover2_en.png",
+        back_cover_image="../images/quatrieme_couverture_en.png",
+        nb_pages=7,
+        extra_args=["--metadata-file=../chapitres_en/meta.yaml"],
+        pages_epub=PAGES_EN_US[1:],
+        start_page_index=8,
+        css_a5_file="../ressources/print.css",
+        author=meta["title"],
+    )
+
+
 if __name__ == "__main__":
     # check_pages()
     # check_chapters_sommaire()
 
+    # llm_assisted()
+    llm_assisted_en()
+
     # To send file to LLM
     # unique_md(cover=False, images64=False, images=False, emoji=True, emoji_image=False)
 
-    pdf()
+    # pdf()
     # Test pandoc
     # pdf_pandoc()
-    epub()
+    # epub()
     print("Done")

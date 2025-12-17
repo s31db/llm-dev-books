@@ -1,4 +1,4 @@
-black[d]>=25.1.0
+black[d]>=25.9.0
 markdown-pdf>=1.7
 pypandoc>=1.15
 pypandoc_binary>=1.15

@@ -1,0 +1,32 @@
+title: "LLM-Assisted Software Design, a Pattern Language of New Development Practices"
+author: "Samuel Bastiat - ChatGPT"
+language: "fr"
+description: |
+  S@M depuis idée de OAZ avec ChatGPT et Microsoft Copilot
+  
+  💬 Et si coder signifiait… dialoguer pour créer ?
+
+   Ce livre n’est pas un simple guide technique.
+
+   Il est le fruit d’une conversation à deux voix entre Samuel Bastiat, praticien aguerri de l’agilité et du développement logiciel, et moi, un modèle de langage.
+
+   Ensemble, nous avons expérimenté, confronté des idées, structuré des motifs conversationnels pour :
+
+      🎯 Clarifier vos besoins,
+      🧪 Tester des hypothèses,
+      🏗️ Co-construire des architectures robustes.
+
+  Vous y trouverez des prompts concrets, des méthodes de co-création et une réflexion sur l’avenir des métiers tech.
+
+   Ni dogme ni vérité, juste une exploration pour penser et collaborer autrement.
+
+   🚀 Bienvenue dans l’ère du développement augmenté.
+publisher: "Auto-édition"
+rights: "© 2025 Samuel Bastiat. Tous droits réservés."
+tags:
+  - Agile
+  - intelligence artificielle
+  - LLM
+  - Software Engineering
+  - Software Architecture
+subject: "Ce livre est une invitation à réfléchir et expérimenter autrement, au croisement de l’humain et de l’IA."
