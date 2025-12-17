@@ -85,6 +85,8 @@ Ce rituel peut faire émerger des **motifs d’équipe** :
 
 <div class="pb-paper"></div>
 
+<div class="pb-A4"></div>
+
 ### 🛠 Ateliers possibles
 
 | Atelier | Objectif | Durée | Format |

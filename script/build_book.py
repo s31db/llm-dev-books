@@ -373,6 +373,7 @@ def sample_book_pdf(
     nb_pages: int,
     meta: dict[str, str],
     css_a5_file: str,
+    watermark_path: str | Path | None,
     start_page_index: int = 0,
     emoji_image: bool = True,
     paper_size: str | list | tuple = "A4",
@@ -396,6 +397,7 @@ def sample_book_pdf(
         # css_a5_file=css_a5_file,
         meta=meta,
         paper_size=paper_size,
+        watermark_path=watermark_path,
     )
 
 
@@ -674,6 +676,7 @@ def publish(
         css_a5_file=css_a5_file,
         meta=meta,
         paper_size=paper_size,
+        watermark_path=watermark_path,
     )
 
     return html_final

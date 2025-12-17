@@ -20,7 +20,7 @@
 
 <div class="version_licence_garde">
 
-### Édition numérique — Juillet 2025
+### Édition numérique — Juillet 2025 — version Décembre 2025
 
 Licence Creative Commons Attribution - Utilisation non commerciale - Pas d’Œuvre dérivée 4.0 International [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 

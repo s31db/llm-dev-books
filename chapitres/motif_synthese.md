@@ -82,6 +82,8 @@ Ces motifs ne sont ni des recettes, ni des règles : ce sont des **formes d’us
 🧠 Posture recommandée : Suspendre l’action pour investiguer en profondeur  
 💬 Prompt-type : « Peux-tu m’aider à explorer les causes racines de ce problème ? »
 
+<div class="pb-A4"></div>
+
 ##### 9. Cascade de prompts
 
 🔢 Finalité principale : Approfondir un sujet complexe étape par étape  

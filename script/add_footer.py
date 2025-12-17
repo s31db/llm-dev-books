@@ -80,6 +80,6 @@ def ajouter_footer_pdf(
             start_page_index=start_page_index,
             fontsize=fontsize,
             decalage=decalage,
-            watermark_path=watermark_path
+            watermark_path=watermark_path,
         )
         doc.save(sortie)

@@ -35,6 +35,8 @@ Vous devenez le **chef d’orchestre de la progression**, en posant à chaque é
 2. une contrainte ou critère supplémentaire,  
 3. une demande de synthèse ou de variation.
 
+<div class="pb-A4"></div>
+
 **📌 Conséquences**
 
 * Réduction de la charge cognitive par étape  
