@@ -16,6 +16,8 @@ Le modèle donne souvent une solution « idéale » ou typique, qui **masque les
 **✅ Solution**
 Interroger la réponse **par la négation** : demander un **contre-exemple**, une situation où la solution échoue, devient inefficace ou produit un effet inattendu. Cela révèle les **limites implicites** du raisonnement et affine la compréhension de ce que la solution couvre — ou pas.
 
+<div class="pb-paper"></div>
+
 > Exemples de prompts :
 >
 > * « Dans quel cas cette solution pourrait échouer ? »
@@ -44,6 +46,8 @@ Le LLM répond :
 > *« Dijkstra n’est pas adapté à ce cas. Il faudrait utiliser Bellman-Ford, qui gère les poids négatifs. »*
 
 Cette simple relance transforme une session de génération en **moment d’apprentissage algorithmique**, en rendant visible une hypothèse invisible.
+
+<div class="pb-paper"></div>
 
 **🌀 Variantes utiles**
 

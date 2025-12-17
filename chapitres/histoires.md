@@ -66,6 +66,8 @@ Mais au fond, il doute.
 
 ---
 
+<div class="pb-paper"></div>
+
 ### 🌱 **Ce qu’on cultive**
 
 Sarah n’est pas du genre à garder les choses pour elle. Développeuse fullstack depuis cinq ans, elle aime autant coder que réfléchir à la manière dont on collabore. Elle a proposé récemment d’ajouter un temps de veille IA dans la rétrospective. “Pour qu’on arrête de faire nos tests dans notre coin.”

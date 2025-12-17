@@ -22,7 +22,7 @@ Un LLM peut devenir :
 
 #### 🌱 2. Développer ses motifs personnels
 
-En expérimentant, vous allez découvrir vos propres séquences efficaces. Par exemple :
+En expérimentant, vous allez découvrir vos propres séquences efficaces. Par exemple :
 
 * Une forme de prompt qui vous convient mieux,
 * Une manière d’introduire un contexte projet,
@@ -58,9 +58,11 @@ Lors d’un stand-up, d’une revue, ou d’un débrief :
 
 Ces questions rendent **visible** la pratique conversationnelle avec l’IA.
 
+<div class="pb-paper"></div>
+
 #### 🧩 2. Revue augmentée par motifs
 
-En code review, ajoutez une dimension “dialogue avec le LLM” :
+En code review, ajoutez une dimension “dialogue avec le LLM” :
 
 * Montrer les prompts utilisés,
 * Expliquer les arbitrages faits avec l’IA,
@@ -70,16 +72,20 @@ En code review, ajoutez une dimension “dialogue avec le LLM” :
 
 #### ✨ 3. Design dialogué en binôme
 
-Un binôme travaille avec un LLM :
-🧑‍💻 1 pose les questions,
-👂 1 observe, reformule, propose une variation.
+Un binôme travaille avec un LLM :  
+🧑‍💻 1 pose les questions,  
+👂 1 observe, reformule, propose une variation.  
 Le prompt devient un **objet partagé**, **construit à deux**, **testé ensemble**.
 
-Ce rituel peut faire émerger des **motifs d’équipe** :
-→ “Voici notre manière d’explorer un design.”
-→ “Voici notre canevas de refactorisation.”
+Ce rituel peut faire émerger des **motifs d’équipe** :  
+→ “Voici notre manière d’explorer un design.”  
+→ “Voici notre canevas de refactorisation.”  
 
 ---
+
+<div class="pb-paper"></div>
+
+<div class="pb-A4"></div>
 
 ### 🛠 Ateliers possibles
 

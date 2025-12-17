@@ -16,6 +16,8 @@ Le prompt initial mène à une réponse trop large, confuse ou superficielle. Vo
 **✅ Solution**
 Utiliser le LLM comme **facilitateur de structuration**. Lui demander explicitement de proposer un **découpage progressif du sujet** en étapes, catégories, niveaux d’analyse ou zones fonctionnelles. Vous ne demandez pas encore de solution, mais une **carte du territoire**.
 
+<div class="pb-paper"></div>
+
 > Exemples de prompts :
 >
 > * « Quelles grandes étapes pour concevoir ce module ? »

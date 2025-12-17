@@ -42,11 +42,11 @@ Le LLM propose une architecture pour un système de notifications multicanal. Un
 
 Il reformule :
 
-> *« Si j’ai bien compris, l’alerte arrive dans un gestionnaire, qui la classe, la stocke, puis la transmet. Redis sert de cache. Est-ce juste ? Que faudrait-il ajouter ? »*
+> *« Si j’ai bien compris, l’alerte arrive dans un gestionnaire, qui la classe, la stocke, puis la transmet. Redis sert de cache. Est-ce juste ? Que faudrait-il ajouter ? »*
 
 Le LLM répond :
 
-> *« Il manque un mécanisme de gestion des échecs d’envoi. Vous pourriez ajouter une file de retry avec journalisation. »*
+> *« Il manque un mécanisme de gestion des échecs d’envoi. Vous pourriez ajouter une file de retry avec journalisation. »*
 
 Cette boucle de reformulation **renforce la robustesse** de la solution.
 
@@ -65,6 +65,8 @@ Cette boucle de reformulation **renforce la robustesse** de la solution.
 
 **🧠 Posture recommandée**
 Ne restez pas dans le flou textuel. Passez par la **visualisation pour clarifier, valider, enrichir**. Le dessin ou la structure posée est une **forme de dialogue** en soi — avec soi-même, avec les autres, avec le modèle.
+
+<div class="pb-paper"></div>
 
 **💬 Prompt-type à mémoriser**
 

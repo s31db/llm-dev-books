@@ -13,13 +13,13 @@
 
 ### 📌 Pourquoi ce chapitre ?
 
-Nous avons vu comment interagir efficacement avec un LLM (chap. 2-3) et comment structurer ces interactions sous forme de motifs (chap. 4), il devient pertinent de s’interroger sur ce que cette nouvelle pratique modifie dans la vie des équipes.
+Nous avons vu comment interagir efficacement avec un LLM (chap. 2) et comment structurer ces interactions sous forme de motifs (chap. 3), il devient pertinent de s’interroger sur ce que cette nouvelle pratique modifie dans la vie des équipes.
 
 Quelques questions émergent naturellement :
 
-* Est-ce que de **nouveaux rôles** apparaissent réellement ?
-* Quelles **compétences prennent de l’importance**, même sans être nouvelles ?
-* Les **rôles traditionnels** changent-ils de nature, ou seulement de modalités d’expression ?
+* Est-ce que de **nouveaux rôles** apparaissent réellement ?
+* Quelles **compétences prennent de l’importance**, même sans être nouvelles ?
+* Les **rôles traditionnels** changent-ils de nature, ou seulement de modalités d’expression ?
 
 Ces questions ne visent pas à produire une réponse définitive, mais à **ouvrir un espace d’observation**. Les transformations sont encore en cours, souvent silencieuses, parfois invisibles dans les grilles de poste. Ce chapitre propose d’en cartographier quelques lignes de force.
 
@@ -40,6 +40,8 @@ Ce sont les manières d’interagir avec le LLM : poser des questions, filtrer, 
 > Ces deux dimensions ne s’excluent pas. Un·e développeur·euse peut adopter tour à tour des postures de **concepteur**, de **curateur**, de **testeur d’hypothèses** — selon le moment, le contexte, l’intention.
 
 ---
+
+<div class="pb-paper"></div>
 
 ### 🔄 Transformation des rôles existants
 
@@ -78,6 +80,8 @@ Cette posture d’éditeur n’est pas nécessairement nouvelle — mais elle pr
 > **Le développeur-éditeur**
 >
 > Un développeur aguerri m’a récemment dit : *« Je me sens plus proche d’un éditeur que d’un rédacteur. L’IA propose, je choisis, je coupe, je reformule, je structure. »* Ce parallèle avec le travail éditorial révèle bien la nouvelle nature de la production logicielle : elle n’est plus linéaire, mais interactive, critique, narrative.
+
+<div class="pb-paper"></div>
 
 ### 🧪 Postures émergentes dans le dialogue avec le LLM
 
@@ -138,6 +142,8 @@ Certains savoir-faire deviennent transversaux à tous les métiers techniques :
 Ces compétences peuvent s’apprendre, s’observer, se cultiver. Elles mériteraient peut-être d’être mieux valorisées.
 
 ---
+
+<div class="pb-paper"></div>
 
 ### 🧪 Illustrations de terrain
 

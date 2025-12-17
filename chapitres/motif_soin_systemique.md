@@ -28,24 +28,26 @@ Mobiliser le LLM comme **partenaire d’investigation systémique**. Ne pas lui 
 
 <div class="pb-A4"></div>
 
-> 🧭 **Les Neuf Pourquoi : creuser le sens pour mieux agir**
+🧭 **Les Neuf Pourquoi : creuser le sens pour mieux agir**
+
+Inspiré des **Liberating Structures**, le canevas des *Nine Whys* propose un rituel simple, mais puissant : poser neuf fois de suite la question **« Pourquoi est-ce important pour toi ? »** à partir d’un sujet donné.
+
+Loin d’être un interrogatoire, c’est un **chemin de clarification progressive**, où chaque réponse devient la base de la question suivante. On ne cherche pas une cause unique, mais une **profondeur de sens** : ce qui motive vraiment l’action, ce qui fonde les choix, ce qui compte profondément.
+
+Dans le cadre du développement logiciel, cet outil devient précieux quand :
+
+* une décision semble évidente mais suscite du flou ou de la résistance,
+* un problème technique récurrent cache des tensions humaines ou systémiques,
+* une équipe veut aligner ses efforts sur ce qui a du sens.
+
+<div class="pb-paper"></div>
+
+👉 Le LLM peut ici jouer un rôle de **facilitateur de questionnement** : en proposant des formulations de relance, en structurant les réponses, ou en révélant des contradictions implicites.
+
+> Exemples de prompts :
 >
-> Inspiré des **Liberating Structures**, le canevas des *Nine Whys* propose un rituel simple, mais puissant : poser neuf fois de suite la question **« Pourquoi est-ce important pour toi ? »** à partir d’un sujet donné.
->
-> Loin d’être un interrogatoire, c’est un **chemin de clarification progressive**, où chaque réponse devient la base de la question suivante. On ne cherche pas une cause unique, mais une **profondeur de sens** : ce qui motive vraiment l’action, ce qui fonde les choix, ce qui compte profondément.
->
-> Dans le cadre du développement logiciel, cet outil devient précieux quand :
->
-> * une décision semble évidente mais suscite du flou ou de la résistance,
-> * un problème technique récurrent cache des tensions humaines ou systémiques,
-> * une équipe veut aligner ses efforts sur ce qui a du sens.
->
-> 👉 Le LLM peut ici jouer un rôle de **facilitateur de questionnement** : en proposant des formulations de relance, en structurant les réponses, ou en révélant des contradictions implicites.
->
-> > Exemples de prompts :
-> >
-> > *« Peux-tu m’aider à simuler une session de Nine Whys sur ce problème : \[décrire la situation] ? »*
-> > *« À chaque réponse, propose une reformulation de "Pourquoi est-ce important ?" en changeant légèrement l’angle (valeurs, impact, émotion, système…). »*
+> *« Peux-tu m’aider à simuler une session de Nine Whys sur ce problème : \[décrire la situation] ? »*
+> *« À chaque réponse, propose une reformulation de "Pourquoi est-ce important ?" en changeant légèrement l’angle (valeurs, impact, émotion, système…). »*
 
 **📌 Conséquences**
 
@@ -65,6 +67,8 @@ Prompt initial :
 
 Réponses : un peu génériques (célébrer les victoires, changer d’environnement…).
 Le Scrum Master reformule :
+
+<div class="pb-paper"></div>
 
 > *« Pourquoi cette démotivation, selon toi ? Peux-tu explorer plusieurs causes possibles, en croisant les dimensions technique, humaine et organisationnelle ? »*
 

@@ -1,7 +1,7 @@
 
 ---
 <a id="coach"></a>
-## 🎯 Annexe 5 — **Coach agile augmenté : enrichir ses accompagnements avec un LLM**
+## 🎯 Annexe 5 — **Coach agile augmenté : enrichir ses accompagnements avec un LLM**
 
 > Le LLM ne remplace pas l’humain dans la relation d’accompagnement. Mais il peut devenir un **allié discret**, un **amplificateur de questionnement**, un **miroir des dynamiques d’équipe**, voire un **catalyseur d’intelligence collective**.
 

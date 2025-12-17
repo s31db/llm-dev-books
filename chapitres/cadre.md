@@ -9,6 +9,8 @@ Après avoir exploré les motifs, les principes et les scénarios du développem
 
 ---
 
+<div class="pb-paper"></div>
+
 ### ✍️ 1. Atelier “Design de prompt en équipe”
 
 > **Objectif :** Apprendre à formuler, reformuler et tester des prompts collectivement pour explorer un sujet réel et améliorer la qualité des interactions avec les LLM.
@@ -69,7 +71,7 @@ Reformulation du prompt selon différents angles ou stratégies :
 Pour chaque version :
 
 * LLM génère une réponse
-* Discussion rapide : en quoi est-elle différente ? plus utile ? biaisée ?
+* Discussion rapide : en quoi est-elle différente ? plus utile ? biaisée ?
 
 Si utile : comparaison directe de plusieurs formulations avec un même modèle.
 
@@ -121,6 +123,8 @@ Décision éventuelle :
 
 ---
 
+<div class="pb-paper"></div>
+
 ### 🗣️ 2. Rituel “Daily du dialogue”
 
 > **Objectif :** Instaurer un rituel court, informel et régulier où chaque membre d’équipe partage ses interactions marquantes avec un LLM. Favorise l’apprentissage collectif, la vigilance et l’inspiration.
@@ -151,6 +155,8 @@ Rappel des **3 questions guides** (affichées ou rappelées) :
 * **📌 Qu’est-ce que j’en retiens ou que je voudrais essayer ?**
 
 ---
+
+<div class="pb-paper"></div>
 
 #### Partages spontanés ou tournants (5 à 8 min)
 
@@ -184,6 +190,8 @@ Mise à jour éventuelle du support partagé :
 
 ---
 
+<div class="pb-paper"></div>
+
 > **🧠 Résumé :**
 >
 > * Rituel simple, léger, sans préparation
@@ -199,6 +207,8 @@ Mise à jour éventuelle du support partagé :
 > * Ne pas prévoir de lieu pour capitaliser les récits utiles
 
 ---
+
+<div class="pb-paper"></div>
 
 ### 🗺️ 3. Atelier “Cartographie des motifs de dialogue”
 
@@ -305,6 +315,8 @@ Chaque participant ou sous-groupe esquisse un **nouveau motif** sur une fiche vi
 > * Fait émerger les usages dominants… et les angles morts
 > * Donne un point de départ pour des motifs à formaliser ou diffuser
 
+<div class="pb-paper"></div>
+
 > ⚠️ **Pièges à éviter :**
 >
 > * Ne parler que des motifs techniques (ou que fonctionnels)
@@ -315,6 +327,7 @@ Chaque participant ou sous-groupe esquisse un **nouveau motif** sur une fiche vi
 ---
 
 <div class="pb-A4"></div>
+<div class="pb-paper"></div>
 
 ### 🎲 4. Le jeu des prompts absurdes
 
@@ -347,6 +360,8 @@ Chaque participant ou sous-groupe esquisse un **nouveau motif** sur une fiche vi
 * Le groupe choisit 2 ou 3 à soumettre au LLM pour lancer la dynamique.
 
 ---
+
+<div class="pb-paper"></div>
 
 #### Création et sélection des prompts (15 à 20 min)
 
@@ -422,6 +437,7 @@ Créer une fiche “Erreur fictive mais plausible” :
 ---
 
 <div class="pb-A4"></div>
+<div class="pb-paper"></div>
 
 ### 📘 5. Référentiel d’équipe “LLM Ready”
 
@@ -492,6 +508,8 @@ Proposer une **grille commune** :
 * Sécurité
 * Cohérence avec les standards de l’équipe
 
+<div class="pb-paper"></div>
+
 ##### **Règles d’usage**
 
 Définir ensemble des règles claires et simples :
@@ -526,6 +544,7 @@ Tour de table :
 
 Rappel : un référentiel n’est **jamais terminé**, il est **en co-évolution** avec l’équipe.
 
+<div class="pb-paper"></div>
 
 > **🧠 Résumé :**
 >

@@ -54,6 +54,8 @@ la **documentation des interactions avec les LLM** devient un enjeu majeur. Non 
 
 ---
 
+<div class="pb-paper"></div>
+
 #### Exemple concret
 
 > **Fonction générée à partir d’un prompt GPT-4 le 12/04/2025**
@@ -81,6 +83,8 @@ Les modèles sont puissants, mais :
 * peuvent générer du contenu non conforme ou juridiquement risqué,
 * ne sont pas capables de refuser une tâche inappropriée par eux-mêmes.
 
+<div class="pb-paper"></div>
+
 > **Un bug venu d’un exemple convaincant**
 >
 > Un développeur a récemment intégré un snippet de code généré par LLM pour l’authentification OAuth. Le code était syntaxiquement parfait, commenté, et semblait sécurisé… sauf qu’il utilisait une bibliothèque obsolète et vulnérable. L’audit de sécurité a révélé une faille critique. Le LLM avait simplement “recopié” un exemple daté, sans signaler de mise en garde. Résultat : plusieurs jours perdus, et une prise de conscience utile.
@@ -100,6 +104,8 @@ Les modèles sont puissants, mais :
 | **Manque de traçabilité**     | Code généré sans indication de son origine ni de sa validation           |
 
 ---
+
+<div class="pb-paper"></div>
 
 #### Questions à se poser (checklist éthique)
 

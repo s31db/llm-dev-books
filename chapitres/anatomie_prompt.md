@@ -21,6 +21,8 @@ Dans ce chapitre, nous proposons une grille simple mais robuste pour concevoir d
 
 Un prompt vague produit une réponse vague.
 
+<div class="pb-paper"></div>
+
 > ❌ *« Donne-moi un code de trie. »*  
 > ✅ *« Écris une fonction Python qui trie une liste de dictionnaires par la clé ‘date’, en ordre décroissant. »*
 
@@ -47,6 +49,8 @@ Nommer l’intention, c’est guider la forme, le ton, et le niveau de complexit
 
 ---
 
+<div class="pb-paper"></div>
+
 ### 🗨️ Le prompt est une conversation amorcée
 
 Il est utile de voir le prompt non comme une requête, mais comme la **première phrase d’un échange**. Un bon prompt **ouvre l’espace de dialogue**, il invite à l’itération, à la reformulation, au rebond. Il pose un cadre… mais laisse de la place à la co-construction.
@@ -55,15 +59,15 @@ Il est utile de voir le prompt non comme une requête, mais comme la **première
 
 ### 🧭 Typologie des formes de prompts
 
-Voici quelques formats fréquents que vous retrouverez dans la bibliothèque de motifs (chapitre 4) :
+Voici quelques formats fréquents que vous retrouverez dans la bibliothèque de motifs (chapitre 3) :
 
 | Type de prompt          | Exemple                                                                                    | Usage typique                                 |
 |-------------------------|--------------------------------------------------------------------------------------------|-----------------------------------------------|
 | **Contexte + Tâche**    | « Dans le cadre d’un service d’authentification OAuth2 en Go, écris un middleware... »     | Implémentation ciblée                         |
 | **Exemple + Variation** | « Voici une fonction JS. Peux-tu proposer une version plus performante avec `reduce` ? »   | Refactor, optimisation                        |
 | **Roleplay**            | « Agis comme un expert Django senior. Quelles étapes pour refactorer cette application ? » | Conseil spécialisé, expertise simulée         |
-| **Pas-à-pas**           | « Explique étape par étape comment sécuriser une API contre les attaques CSRF. »           | Pédagogie, onboarding, formation              |
-| **Cascade**             | « Ajoute un système de trace des actions dans des logs spécifiques »                       | Implémentation ciblée, Refactor, optimisation |
+| **Pas-à-pas**           | « Explique étape par étape comment sécuriser une API contre les attaques CSRF. »           | Pédagogie, onboarding, formation              |
+| **Cascade**             | « Ajoute un système de trace des actions dans des logs spécifiques. »                      | Implémentation ciblée, Refactor, optimisation |
 
 ---
 

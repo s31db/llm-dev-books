@@ -44,6 +44,8 @@ Il relance :
 
 > *« Ce script doit détecter des erreurs de facturation dans des fichiers CSV. Quels types d’erreurs puis-je surveiller ? Peux-tu me proposer des catégories ? »*
 
+<div class="pb-paper"></div>
+
 Le LLM identifie :
 
 * Montants incohérents
@@ -67,6 +69,7 @@ Cette démarche transforme un prompt vague en **spécification dialoguée**.
   > « Imagine que je ne suis pas sûr de ce que je veux. Aide-moi à explorer les options à partir de mes contraintes. »
 
 <div class="pb-A4"></div>
+<div class="pb-paper"></div>
 
 **🛠️ Outils associés**
 
