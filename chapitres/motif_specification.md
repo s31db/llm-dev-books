@@ -24,7 +24,7 @@ Utiliser le LLM comme **détecteur d’intention rétroactif**. Lui soumettre de
 > Exemples de prompts :
 >
 > * « Que fait ce code ? »
-> * « Quelles règles métier cela semble-t-il implémenter ? »
+> * « Quelles règles métier cela semble-t-il implémenter ? »
 > * « Quelle user story pourrait correspondre à ce bloc de code ? »
 > * « Quelles hypothèses implicites sur les données ou le contexte ce code semble-t-il faire ? »
 
@@ -42,7 +42,7 @@ Utiliser le LLM comme **détecteur d’intention rétroactif**. Lui soumettre de
 Lors d’un audit, une équipe hérite d’un module PHP de 800 lignes, sans test ni doc.
 Au lieu d’une lecture ligne à ligne, elle découpe le fichier en blocs logiques et utilise ce prompt :
 
-> *« Quelles règles métier ce bloc semble-t-il implémenter ? »*
+> *« Quelles règles métier ce bloc semble-t-il implémenter ? »*
 
 Le LLM détecte :
 

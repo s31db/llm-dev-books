@@ -27,6 +27,8 @@
 
 ---
 
+<div class="pb-paper"></div>
+
 ### 🧠 Postures recommandées
 
 | Situation                        | Motif recommandé                 | Posture du PO                 |
@@ -54,7 +56,9 @@
 
 ---
 
-### 📎 Pour aller plus loin
+<div class="pb-paper"></div>
+
+### 🛠 Pour aller plus loin
 
 * Partager vos prompts utiles dans un canal d’équipe.
 * Organiser une revue collective des prompts de specs.

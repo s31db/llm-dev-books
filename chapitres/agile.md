@@ -68,6 +68,8 @@ Sans remplacer les échanges humains, un LLM peut aider à synthétiser les poin
 
 > **Exemple** : une équipe a connecté un LLM à son tableau Kanban. Chaque matin, un résumé automatisé des mouvements sur le board était proposé. Cela a permis de gagner en réactivité sur les points bloquants.
 
+<div class="pb-paper"></div>
+
 > **Actions rapides**
 > * Reformuler les blocages en prompt pour les rendre actionnables
 > * Générer rapidement des solutions de contournement
@@ -109,6 +111,8 @@ Cela n’exclut pas l’intelligence collective humaine, mais permet de **poser 
 | **Illusion de vélocité**     | Générer vite ≠ avancer mieux                                           |
 | **Biais dans les décisions** | Le modèle propose une “moyenne” sans tenir compte du contexte réel     |
 | **Automatisation aveugle**   | Remplacer les conversations humaines par des réponses IA non discutées |
+
+<div class="pb-paper"></div>
 
 > L’agilité est une culture du feedback. Le LLM ne doit **jamais supprimer la boucle humaine**.
 

@@ -22,6 +22,8 @@ Imaginez une séance de conception avec un collègue ultra-compétent mais :
 
 C’est cela, travailler avec un LLM. Il faut donc créer les conditions d’un échange utile : structurer, contextualiser, itérer.
 
+<div class="pb-paper"></div>
+
 > Le LLM connaît tout, mais ne sait rien de vous.
 > Il est rapide, mais oublie.
 > Il est créatif, mais naïf.
@@ -35,7 +37,7 @@ C’est cela, travailler avec un LLM. Il faut donc créer les conditions d’un 
 
 Un LLM ne possède ni mémoire longue ni connaissance de votre projet. Vous devez réinjecter le **contexte fonctionnel, technique, métier** dans chaque interaction.
 
-> *« Je travaille sur une application bancaire en Java, mon objectif est de sécuriser les appels à l’API de transaction. »*
+> *« Je travaille sur une application bancaire en Java, mon objectif est de sécuriser les appels à l’API de transaction. »*
 
 <div class="pb-A4"></div>
 
@@ -67,10 +69,14 @@ Ne prenez pas la réponse du modèle pour une vérité. Demandez-lui d’envisag
 
 ---
 
+<div class="pb-paper"></div>
+
 ### 🔎 Cas d’usage : reformuler pour penser mieux
 
 Une équipe travaille sur un module de gestion de stock. Elle utilise un LLM pour choisir entre une architecture monolithique et des microservices. Le prompt initial — *« Quelle architecture choisir ? »* — génère une réponse générique.
+
 <div class="pb-A4"></div>
+
 En injectant des contraintes spécifiques (taille de l’équipe, fréquence des déploiements, besoins d’évolutivité horizontale), la réponse s’affine. Le LLM devient alors un **simulateur d’options**, et le dialogue une façon d'explorer des possibles.
 
 ---
@@ -90,6 +96,8 @@ Une autre équipe utilise un LLM comme **facilitateur d’idéation** lors d’u
 | **Reformuler** | Est-ce que je vérifie ce que le modèle a compris ? |
 | **Synthétiser** | Est-ce que je stabilise ce qui a été décidé ? |
 | **Tester**     | Quelles limites n’ont pas été explorées ? |
+
+---
 
 <p style="text-align: center;">
     <img src="../images/collaboration.png" width="50%" />

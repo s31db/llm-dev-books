@@ -31,6 +31,8 @@ Maîtrisez l’art de formuler vos demandes pour tirer le meilleur des LLM : pr�
 
 ---
 
+<div class="pb-paper"></div>
+
 ### 🧠 [**Chapitre 2 — La grammaire de l’intention : penser et formuler avec un LLM** ... p. 16](#grammaire_intention)
 
 *Le vrai pouvoir, c’est de structurer le dialogue.*  
@@ -47,7 +49,7 @@ Accédez à une bibliothèque de motifs concrets : pour clarifier, explorer, com
 
 ### 👥 [**Chapitre 4 — Nouveaux rôles, nouvelles compétences : l’évolution des équipes augmentées** ... p. 41](#role_competences)
 
-*Et si le développeur devenait chef d’orchestre du raisonnement ?*  
+*Et si le développeur devenait chef d’orchestre du raisonnement ?*  
 Explorez comment les rôles techniques évoluent avec les LLM, et découvrez les postures clés de demain.
 
 ---
@@ -60,6 +62,8 @@ Explorez comment les rôles techniques évoluent avec les LLM, et découvrez les
 Une typologie claire des situations fréquentes pour savoir quel motif ou posture activer à chaque étape.
 
 ---
+
+<div class="pb-paper"></div>
 
 ### 🛠️ [**Chapitre 6 — Intégrer les motifs au quotidien : entre travail individuel et pratiques d’équipe** ... p. 50](#motifs)
 
@@ -89,6 +93,8 @@ Découvrez comment intégrer les motifs dans la réalité de vos pratiques : ate
 
 ---
 
+<div class="pb-paper"></div>
+
 ### 🧱 [**Chapitre 10 — Transmettre, former, partager les motifs** ... p. 73](#apprentissage)
 
 *Un langage vivant se diffuse par la pratique.*  
@@ -107,10 +113,12 @@ Ce chapitre explore les façons dont les LLM transforment les pratiques d’appr
 
 ### 🗂️ [**Chapitre 12 — Documenter, archiver, capitaliser : vers une mémoire augmentée** ... p. 79](#memoire)
 
-*Et si les prompts devenaient un patrimoine vivant ?*  
+*Et si les prompts devenaient un patrimoine vivant ?*  
 Ce chapitre propose des méthodes pour structurer, conserver et partager les interactions avec les LLM : comment documenter les prompts utiles, créer une mémoire collective d’équipe, et faire émerger des pratiques durables autour de la capitalisation assistée par IA.
 
 ---
+
+<div class="pb-paper"></div>
 
 ### 🔮 [**Chapitre 13 — Scénarios prospectifs : vers une ingénierie conversationnelle générative** ... p. 82](#prospectifs)
 
@@ -133,7 +141,7 @@ Ce chapitre revisite les design patterns classiques à la lumière des interacti
 
 ---
 
-<div class="pb-A4"></div>
+<div class="pb-A4"></div><div class="pb-paper"></div>
 
 ### 🤖 [**Chapitre 16 — Nouveaux design patterns émergents à l’ère des LLM et des agents IA** ... p. 97](#nouveaux_design_pattern)
 
@@ -144,7 +152,7 @@ Découvrez les motifs émergents nés de la collaboration entre humains, LLM et 
 
 ### 🧵 [**Conclusion : vers un manifeste du développement augmenté** ... p. 102](#conclusion)
 
-*Et maintenant, que faisons-nous de ce nouveau langage ?*  
+*Et maintenant, que faisons-nous de ce nouveau langage ?*  
 Ce chapitre conclut le livre en ouvrant un horizon : celui d’un développement plus réflexif, éthique, collaboratif et vivant. Il propose des principes fondateurs pour une pratique du code augmentée par les LLM, et invite chacun à s’en emparer, à le prolonger… ou à le transformer.
 
 ---
@@ -155,6 +163,8 @@ Ce chapitre conclut le livre en ouvrant un horizon : celui d’un développement
 Cette annexe regroupe les outils concrets mobilisables au quotidien : fiches de motifs, canevas d’interaction, structures de prompt, grilles d’atelier. À adapter, détourner, enrichir selon vos contextes.
 
 ---
+
+<div class="pb-paper"></div>
 
 ### 🧪 [**Annexe 2 — TDP : Test-Driven Prompting** ... p. 107](#tdp)
 
@@ -178,6 +188,8 @@ Cette annexe propose un ensemble d’outils, motifs, prompts et bonnes pratiques
 Cette annexe explore les gestes, postures et routines qui transforment le quotidien du développeur au contact des LLM : concevoir, explorer, reformuler, documenter… avec plus de clarté et de réflexivité. Un guide pour devenir éditeur de sens autant que producteur de code.
 
 ---
+
+<div class="pb-paper"></div>
 
 ### 🎯 [**Annexe 5 — Coach agile augmenté : enrichir ses accompagnements avec un LLM** ... p. 114](#coach)
 

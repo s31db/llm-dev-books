@@ -15,6 +15,8 @@ Dans le développement logiciel, certaines situations reviennent sans cesse : fo
 
 ---
 
+<div class="pb-paper"></div>
+
 ### 🔧 Structure d’un motif
 
 Chaque motif suit une structure claire :

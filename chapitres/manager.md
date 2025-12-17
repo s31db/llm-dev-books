@@ -71,6 +71,8 @@ Explorer comment un manager 3.0 peut **mobiliser un LLM comme partenaire de réf
 
 ---
 
+<div class="pb-paper"></div>
+
 ### 🛠 Pour aller plus loin
 
 * Intégrer le LLM dans une **préparation collective de décisions** (comité, atelier…).

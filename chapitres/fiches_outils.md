@@ -24,6 +24,8 @@
 
 ---
 
+<div class="pb-paper"></div>
+
 ### 🎯 Fiche-Outil 2 — Design de Prompt
 
 > À utiliser pour concevoir ou améliorer un prompt dans un cas d’usage réel.
@@ -41,6 +43,8 @@
 
 ---
 
+<div class="pb-paper"></div>
+
 ### 🧪 Fiche-Outil 3 — Test-Driven Prompting (TDP)
 
 > Pour formaliser les attentes avant de rédiger un prompt
@@ -56,6 +60,8 @@
 | **Prompt associé**                    | À construire en regard des tests ci-dessus             |
 
 ---
+
+<div class="pb-paper"></div>
 
 ### 📋 Fiche-Outil 4 — Retex d’interaction LLM
 

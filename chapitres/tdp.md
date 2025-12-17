@@ -25,6 +25,8 @@ Structurer les interactions avec un LLM **de manière rigoureuse et vérifiable*
 
 ---
 
+<div class="pb-paper"></div>
+
 ### 🧱 Structure d’un TDP
 
 1. **Intent** → Ce que je veux produire, générer, explorer
@@ -89,6 +91,8 @@ Structurer les interactions avec un LLM **de manière rigoureuse et vérifiable*
 * Le **risque inverse existe aussi** : trop vague, un prompt reste interprété au petit bonheur.
 
 ---
+
+<div class="pb-paper"></div>
 
 ### 🛠 Pour aller plus loin
 

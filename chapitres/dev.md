@@ -1,7 +1,7 @@
 
 ---
 <a id="dev"></a>
-## 💻 Annexe 4 — **Développeur augmenté : étendre ses gestes avec l’appui d’un LLM**
+## 💻 Annexe 4 — **Développeur augmenté : étendre ses gestes avec l’appui d’un LLM**
 
 > Être développeur à l’ère des LLM, ce n’est pas seulement coder plus vite. C’est apprendre à **co-concevoir avec un partenaire dialogique**, à la fois génératif, imparfait… et étonnamment complémentaire.
 
@@ -25,6 +25,8 @@ Développer un **rapport conscient, stratégique et évolutif** à l’usage des
 | Faire une veille techno       | Explorer un sujet par étapes interactives          |
 
 ---
+
+<div class="pb-paper"></div>
 
 ### 🧠 Postures activables
 
@@ -72,6 +74,8 @@ Développer un **rapport conscient, stratégique et évolutif** à l’usage des
 * Trop déléguer sans conscience peut **affaiblir l’intuition technique** : privilégier l’interaction, pas la délégation aveugle.
 
 ---
+
+<div class="pb-paper"></div>
 
 ### 🛠 Pour aller plus loin
 

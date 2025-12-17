@@ -1,6 +1,6 @@
 <div class="titre_garde">
 
-# **LLM-Assisted Software Design** <img src="../images/llm.png" alt="Logo LLM-Assisted Software Design, a Pattern Language of New Development Practices" width="120" />
+# **LLM-Assisted Software Design**
 
 </div>
 
@@ -22,10 +22,12 @@
 
 ### Édition numérique — Juillet 2025
 
-Licence Creative Commons Attribution - Utilisation non commerciale - Pas d’Œuvre dérivée 4.0 International (CC BY-NC-ND 4.0)
-[https://creativecommons.org/licenses/by-nc-nd/4.0/)
+Licence Creative Commons Attribution - Utilisation non commerciale - Pas d’Œuvre dérivée 4.0 International [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
 
 ---
+
+<div class="pb-paper"></div>
 
 Ce livre est un projet vivant.
 Sa version de travail complète et ses mises à jour sont disponibles en accès libre sur GitHub :

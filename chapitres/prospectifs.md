@@ -19,6 +19,8 @@ Dans cette configuration, un humain ne code plus lui-même, mais orchestre un en
 
 L’humain interagit en langage naturel avec ces agents. Son rôle ? Poser le cadre, arbitrer, valider les itérations.
 
+<div class="pb-paper"></div>
+
 > **Extrait de dialogue fictif :**
 >
 > **Humain :** Je veux une API REST pour gérer un agenda partagé entre utilisateurs.
@@ -66,6 +68,8 @@ De plus en plus, le développement logiciel devient un dialogue : avec les utili
 * **Comment représenter visuellement un raisonnement émergent ?**
 
 Ce design n’est plus uniquement une UX de chatbot. Il devient le **noyau de l’interaction avec les systèmes**.
+
+<div class="pb-paper"></div>
 
 > **Atelier “Prompt-Design as Code”**
 >

@@ -150,7 +150,7 @@ Les LLM permettent de :
 
 **Prompt augmenté** :
 
-> "Je veux protéger l'accès à une ressource distante avec des logs et de la mémorisation. Quelle structure proposer ?"
+> "Je veux protéger l'accès à une ressource distante avec des logs et de la mémorisation. Quelle structure proposer ?"
 
 **Ce que propose le LLM** :
 
@@ -197,6 +197,8 @@ Les LLM permettent de :
 **Mise en garde** : attention à la multiplication des classes inutiles.
 
 ---
+
+<div class="pb-paper"></div>
 
 #### ✨ Le pattern “Event Sourcing”
 
@@ -254,6 +256,8 @@ Les LLM permettent de :
 
 ---
 
+<div class="pb-paper"></div>
+
 ### 🎮 Nouveaux motifs de dialogue architectural
 
 | Motif | Intention | Prompt-type | Risque |
@@ -271,6 +275,8 @@ Les LLM permettent de :
 #### Objectif :
 
 S’entraîner à faire dialoguer architecture humaine et IA dans un cadre collectif.
+
+<div class="pb-paper"></div>
 
 #### Déroulé :
 

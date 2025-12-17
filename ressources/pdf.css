@@ -9,7 +9,7 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 body {
   background-color: #fef6e4;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .pb-A4 {
@@ -17,6 +17,10 @@ body {
 }
 
 .pb-A5 {
+  display: none;
+}
+
+.pb-paper {
   display: none;
 }
 
@@ -121,6 +125,10 @@ ul ul {
   margin-top: 100px;
 }
 
+.titre_garde img{
+     width: 120px;
+}
+
 .citation_garde {
   margin-top: 40px;
   margin-bottom: 120px;
@@ -129,4 +137,8 @@ ul ul {
 .version_licence_garde{
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+.tdp {
+  width: 50%;
 }
